@@ -1,0 +1,27 @@
+@use "./variables";
+
+.aboutMe {
+    width: 100%;
+    background-color: variables.$secondaryBg;
+    padding: 50px 0 ;
+
+    h2 {
+        padding: 100px 0 50px;
+    }
+
+    .aboutTxtContainer {
+        display: flex;
+        margin-bottom: 50px;
+        p:first-child {
+            border-top: 3px solid variables.$tertinary;
+            width: 20%;
+            margin: 15px 15px 0 0;
+        }
+        
+        
+    }
+
+    span {
+        color: variables.$tertinary;
+    }
+}

@@ -281,6 +281,17 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 120%;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
 .collapsibleMenu {
   background-color: rgba(52, 53, 58, 0.8352941176);
   width: 100%;
@@ -302,14 +313,21 @@ h1, h2, h3, h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.flexNav {
+  margin: 20px 0;
+}
 .flexNav li {
   margin-right: 30px;
 }
 .flexNav li a {
   color: #abacb0;
-  padding: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
 }
 .flexNav li a:hover, .flexNav li a:focus {
   color: #f9f9f9;
@@ -319,6 +337,7 @@ h1, h2, h3, h4 {
 
 .hamburgerMenu {
   visibility: hidden;
+  margin: 0;
 }
 
 .mainHeader {
@@ -388,4 +407,27 @@ h1, h2, h3, h4 {
   color: #f9f9f9;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.aboutMe {
+  width: 100%;
+  background-color: #31333b;
+  padding: 50px 0;
+}
+.aboutMe h2 {
+  padding: 100px 0 50px;
+}
+.aboutMe .aboutTxtContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+.aboutMe .aboutTxtContainer p:first-child {
+  border-top: 3px solid #ffc86b;
+  width: 20%;
+  margin: 15px 15px 0 0;
+}
+.aboutMe span {
+  color: #ffc86b;
 }
