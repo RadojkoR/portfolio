@@ -1,0 +1,43 @@
+@use "./variables";
+
+footer {
+    width: 100%;
+    background-color: variables.$primaryBg;
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        p {
+            width: 50%;
+            border-bottom: 3px solid variables.$tertinary;
+            margin-bottom: 60px;
+         }
+        li {
+            padding: 0 20px 0 20px;
+            a {
+                color: variables.$fontColor;
+                font-size: 1.5rem;
+                transition: all 0.2s ease;
+
+                &:hover, 
+                &:focus {
+                    color: variables.$tertinary;
+                }
+            }
+        }
+    }
+    h4 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 50px 0 150px;
+        color: variables.$tertinary;
+    }
+    p {
+        text-align: center;
+        padding: 30px;
+        font-size: 1.2rem;
+
+    }
+}
