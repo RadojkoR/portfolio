@@ -1,0 +1,39 @@
+@use "./variables";
+
+
+
+.collapsibleMenu {
+    background-color: variables.$navBgcolor;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    .menu {
+        display: flex;
+        justify-content: center;
+        
+        .flexNav {
+            display: flex;
+            justify-content: center;
+        }
+    
+    }
+}
+
+.flexNav {
+
+    li {
+        margin-right: 30px;
+
+        a {
+            color: variables.$navFontColor;
+            padding: 10px;
+
+            &:hover, 
+            &:focus {
+                color: variables.$fontColor;
+                transition: all 0.2s ease;
+           }
+        }                              
+    }
+}
+    

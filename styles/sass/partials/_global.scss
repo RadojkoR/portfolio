@@ -1,0 +1,39 @@
+@use "./variables";
+
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    z-index: 10;
+    background-color: variables.$primaryBg;
+    color: variables.$fontColor;
+    font-size: 1rem;
+    padding: 10px 0;
+    text-decoration: none;
+    margin: 0;
+}
+
+.skipLink:focus {
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}

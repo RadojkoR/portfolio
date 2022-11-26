@@ -1,5 +1,8 @@
 @use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/global";
+@use "./partials/typography";
+@use "./partials/nav";
+@use "./partials/collapsibleMenu";
+@use "./partials/header";
 
-.headerSocialMedia li a img{
-    color: #FFF;
-}
