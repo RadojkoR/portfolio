@@ -21,7 +21,6 @@
         width: 55%;
         img {
             width: 100%;
-            // padding: 50px 0;
         }
     }
 
@@ -44,6 +43,7 @@
             padding: 5px 30px 5px 5px;
             margin: 0px 10px 0;
             transition: all 0.4s ease;
+            
 
             i {
                 padding-left: 25px;
@@ -57,7 +57,6 @@
             &:focus {
                 color: variables.$tertinary;
                 background-color: variables.$navFontColor;
-                
             }
         }
     }

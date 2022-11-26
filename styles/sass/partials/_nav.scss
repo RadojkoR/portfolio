@@ -9,19 +9,15 @@
     z-index: 9;
     .menu {
         display: flex;
-        justify-content: center;
-        
-        .flexNav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
+        justify-content: center;  
     }
 }
 
 .flexNav {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     li {
         margin-right: 30px;
 

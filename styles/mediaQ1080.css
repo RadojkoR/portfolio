@@ -1,0 +1,22 @@
+@media (max-width: 1080px) {
+  .contactMe .contactHrContainer p {
+    width: 30%;
+  }
+}
+@media (max-width: 900px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .portfolio .projectImgContainer {
+    width: 50%;
+  }
+  .portfolio .projectTxtContainer {
+    width: 48%;
+  }
+}

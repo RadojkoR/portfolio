@@ -230,7 +230,7 @@ html {
   position: absolute;
   left: -1000px;
   z-index: 10;
-  background-color: #34353A;
+  background-color: #3d3e42;
   color: #f9f9f9;
   font-size: 1rem;
   padding: 10px 0;
@@ -249,6 +249,7 @@ html {
   width: 80%;
   margin: 0 auto;
   max-width: 1300px;
+  position: relative;
 }
 
 a {
@@ -307,7 +308,9 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.collapsibleMenu .menu .flexNav {
+
+.flexNav {
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,10 +320,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.flexNav {
-  margin: 20px 0;
 }
 .flexNav li {
   margin-right: 30px;
@@ -341,10 +340,85 @@ p {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .mainHeader .wrapper {
+    width: 100%;
+  }
+  .collapsibleMenu .menu {
+    width: 50%;
+  }
+  .collapsibleMenu .menu .hamburgerMenu {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFF;
+    position: fixed;
+    cursor: pointer;
+    z-index: 12;
+    top: 20px;
+    left: 20px;
+  }
+  .collapsibleMenu .menu .hamburgerMenu i {
+    padding: 20px;
+  }
+  .collapsibleMenu .menu .hamburgerMenu .fa-solid {
+    font-size: 35px;
+    z-index: 12;
+  }
+  .collapsibleMenu .menu .hamburgerMenu .fa-x {
+    z-index: 12;
+  }
+  .collapsibleMenu .menu .hamburgerMenu p {
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 20px;
+    color: #FFF;
+  }
+  .flexNav {
+    background-color: rgba(52, 53, 58, 0.8352941176);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: 0;
+    left: -400px;
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+    margin: 0;
+    padding-top: 100px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .flexNav li a {
+    line-height: 80px;
+    color: #ffc86b;
+  }
+  .showFlexNav {
+    left: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+}
 .mainHeader {
   width: 100%;
   height: 100vh;
-  background-color: #34353A;
+  background-color: #3d3e42;
 }
 .mainHeader .headerContainer {
   width: 100%;
@@ -360,7 +434,7 @@ p {
           align-items: center;
 }
 .mainHeader .headerContainer .headerTxtContainer {
-  width: 50%;
+  width: 70%;
 }
 .mainHeader .headerContainer .headerTxtContainer h1 {
   font-size: 2.5rem;
@@ -373,15 +447,12 @@ p {
 .mainHeader .headerContainer .headerTxtContainer p {
   font-size: 2rem;
 }
-.mainHeader .wrapper {
-  position: relative;
-}
-.mainHeader .wrapper .headerSocialMedia {
+.mainHeader .headerSocialMedia {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.mainHeader .wrapper .headerSocialMedia ul {
+.mainHeader .headerSocialMedia ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,21 +464,21 @@ p {
       -ms-flex-align: center;
           align-items: center;
 }
-.mainHeader .wrapper .headerSocialMedia ul::before {
+.mainHeader .headerSocialMedia ul::before {
   content: "";
   border-left: 4px solid #ffc86b;
   height: 50%;
   position: absolute;
   bottom: 260px;
 }
-.mainHeader .wrapper .headerSocialMedia ul li {
+.mainHeader .headerSocialMedia ul li {
   padding-bottom: 20px;
 }
-.mainHeader .wrapper .headerSocialMedia ul li a {
+.mainHeader .headerSocialMedia ul li a {
   color: #abacb0;
   font-size: 1.5rem;
 }
-.mainHeader .wrapper .headerSocialMedia ul li a:hover, .mainHeader .wrapper .headerSocialMedia ul li a:focus {
+.mainHeader .headerSocialMedia ul li a:hover, .mainHeader .headerSocialMedia ul li a:focus {
   color: #f9f9f9;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -438,7 +509,7 @@ p {
 
 .portfolio {
   width: 100%;
-  background: #34353A;
+  background: #3d3e42;
 }
 .portfolio h2 {
   padding: 100px 0 50px;
@@ -475,7 +546,7 @@ p {
   margin-bottom: 30px;
 }
 .portfolio .projectTxtContainer a {
-  color: #34353A;
+  color: #3d3e42;
   background-color: #ffc86b;
   padding: 5px 30px 5px 5px;
   margin: 0px 10px 0;
@@ -528,14 +599,15 @@ p {
   text-align: center;
 }
 .contactMe .contactHrContainer p {
-  width: 38%;
+  width: 35%;
   border-bottom: 3px solid #ffc86b;
 }
 .contactMe .contactInfo {
   margin: 100px 0;
-  background-color: #34353A;
+  background-color: #3d3e42;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .contactMe .contactInfo i {
   font-size: 1.5rem;
@@ -553,7 +625,7 @@ p {
 
 footer {
   width: 100%;
-  background-color: #34353A;
+  background-color: #3d3e42;
 }
 footer ul {
   margin: 0;
@@ -594,5 +666,28 @@ footer h4 {
 footer p {
   text-align: center;
   padding: 30px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1080px) {
+  .contactMe .contactHrContainer p {
+    width: 30%;
+  }
+}
+@media (max-width: 900px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .portfolio .projectImgContainer {
+    width: 50%;
+  }
+  .portfolio .projectTxtContainer {
+    width: 48%;
+  }
 }

@@ -1,0 +1,44 @@
+@use "./variables";
+
+// 1080px and under
+@media (max-width: 1080px) {
+    .contactMe {
+    
+        .contactHrContainer {
+
+            p {
+            width: 30%;
+            }
+        }
+    }
+}
+
+// 900px and under
+@media (max-width: 900px) {
+
+    h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    
+    .wrapper {
+        width: 95%;
+    }
+    
+    .portfolio {
+        .projectImgContainer {
+            width: 50%;
+        }
+        .projectTxtContainer {
+            width: 48%;
+        }
+    }
+    
+}
+
+// 768px and under
+@media (max-width: 768px) {
+
+}

@@ -18,7 +18,7 @@
          }
 
          p {
-            width: 38%;
+            width: 35%;
             border-bottom: 3px solid variables.$tertinary;
          }
     }
@@ -27,6 +27,7 @@
         margin: 100px 0;
         background-color: variables.$primaryBg;
         transition: all 0.5s ease;
+        cursor: pointer;
         i {
             font-size: 1.5rem;
             padding: 20px 30px;
