@@ -1,0 +1,66 @@
+@use "./variables";
+
+.portfolio {
+    width: 100%;
+    background: variables.$primaryBg;
+    h2 {
+        padding: 100px 0 50px;
+    }
+    // PROJECT ONE
+    .projectOne, 
+    .projectTwo, 
+    .projectThree {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // outline: 2px solid red;
+        padding: 50px 0 150px;
+    }
+
+    .projectImgContainer {
+        width: 55%;
+        img {
+            width: 100%;
+            // padding: 50px 0;
+        }
+    }
+
+    .projectTxtContainer {
+        width: 43%;
+        // outline: 2px solid red;
+        h3 {
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: variables.$primaryBg;
+            background-color: variables.$tertinary;
+            padding: 5px 30px 5px 5px;
+            margin: 0px 10px 0;
+
+            i {
+                padding-left: 25px;
+                padding-right: 5px;
+            }
+            &:first-child {
+                padding-left: 30px;
+            }
+
+            &:hover, 
+            &:focus {
+                color: variables.$tertinary;
+                background-color: variables.$navFontColor;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+    // PROJECT TWO
+
+}

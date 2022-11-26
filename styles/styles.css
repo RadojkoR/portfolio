@@ -425,9 +425,67 @@ p {
 }
 .aboutMe .aboutTxtContainer p:first-child {
   border-top: 3px solid #ffc86b;
-  width: 20%;
+  width: 15%;
   margin: 15px 15px 0 0;
 }
 .aboutMe span {
   color: #ffc86b;
+}
+
+.portfolio {
+  width: 100%;
+  background: #34353A;
+}
+.portfolio h2 {
+  padding: 100px 0 50px;
+}
+.portfolio .projectOne,
+.portfolio .projectTwo,
+.portfolio .projectThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 150px;
+}
+.portfolio .projectImgContainer {
+  width: 55%;
+}
+.portfolio .projectImgContainer img {
+  width: 100%;
+}
+.portfolio .projectTxtContainer {
+  width: 43%;
+}
+.portfolio .projectTxtContainer h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+.portfolio .projectTxtContainer p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.portfolio .projectTxtContainer a {
+  color: #34353A;
+  background-color: #ffc86b;
+  padding: 5px 30px 5px 5px;
+  margin: 0px 10px 0;
+}
+.portfolio .projectTxtContainer a i {
+  padding-left: 25px;
+  padding-right: 5px;
+}
+.portfolio .projectTxtContainer a:first-child {
+  padding-left: 30px;
+}
+.portfolio .projectTxtContainer a:hover, .portfolio .projectTxtContainer a:focus {
+  color: #ffc86b;
+  background-color: #abacb0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
