@@ -269,6 +269,7 @@ html {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 28px;
   letter-spacing: 1px;
@@ -360,11 +361,14 @@ p {
 }
 .mainHeader .headerContainer .headerTxtContainer {
   width: 50%;
-  font-size: 1.3rem;
+}
+.mainHeader .headerContainer .headerTxtContainer h1 {
+  font-size: 2.5rem;
+  line-height: 120px;
 }
 .mainHeader .headerContainer .headerTxtContainer span {
   color: #ffc86b;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .mainHeader .headerContainer .headerTxtContainer p {
   font-size: 2rem;
@@ -475,6 +479,8 @@ p {
   background-color: #ffc86b;
   padding: 5px 30px 5px 5px;
   margin: 0px 10px 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .portfolio .projectTxtContainer a i {
   padding-left: 25px;
@@ -486,6 +492,61 @@ p {
 .portfolio .projectTxtContainer a:hover, .portfolio .projectTxtContainer a:focus {
   color: #ffc86b;
   background-color: #abacb0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+}
+
+.contactMe {
+  width: 100%;
+  background-color: #31333b;
+  padding: 100px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactMe .contactHrContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactMe .contactHrContainer h2 {
+  text-align: center;
+}
+.contactMe .contactHrContainer p {
+  width: 38%;
+  border-bottom: 3px solid #ffc86b;
+}
+.contactMe .contactInfo {
+  margin: 100px 0;
+  background-color: #34353A;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contactMe .contactInfo i {
+  font-size: 1.5rem;
+  padding: 20px 30px;
+}
+.contactMe .contactInfo a {
+  color: #ffc86b;
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
+.contactMe .contactInfo:hover, .contactMe .contactInfo:focus {
+  color: #ffc86b;
+  background-color: #abacb0;
 }

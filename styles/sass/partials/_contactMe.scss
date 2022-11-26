@@ -1,0 +1,50 @@
+@use "./variables";
+
+.contactMe {
+    width: 100%;
+    background-color: variables.$secondaryBg;
+    padding: 100px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contactHrContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+        text-align: center;
+         }
+
+         p {
+            width: 38%;
+            border-bottom: 3px solid variables.$tertinary;
+         }
+    }
+
+    .contactInfo {
+        margin: 100px 0;
+        background-color: variables.$primaryBg;
+        transition: all 0.5s ease;
+        i {
+            font-size: 1.5rem;
+            padding: 20px 30px;
+        }
+        a {
+            color: variables.$tertinary;  
+            font-size: 1.5rem;
+            padding-right: 20px;
+        }
+
+        &:hover, 
+        &:focus {
+            color: variables.$tertinary;
+            background-color: variables.$navFontColor;
+                
+        }
+        
+    }
+    
+    
+}
