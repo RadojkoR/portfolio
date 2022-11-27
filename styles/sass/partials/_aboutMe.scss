@@ -6,12 +6,11 @@
     padding: 50px 0 ;
 
     h2 {
-        padding: 100px 0 50px;
+        padding: 50px 0 100px;
     }
 
     .aboutTxtContainer {
         display: flex;
-        margin-bottom: 50px;
         p:first-child {
             border-top: 3px solid variables.$tertinary;
             width: 15%;

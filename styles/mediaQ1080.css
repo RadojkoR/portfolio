@@ -20,3 +20,172 @@
     width: 48%;
   }
 }
+@media (max-width: 768px) {
+  .wrapper {
+    width: 98%;
+  }
+  .mainHeader .headerContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainHeader .headerContainer .headerTxtContainer {
+    width: 100%;
+  }
+  .portfolio .projectOne,
+.portfolio .projectThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .portfolio .projectTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+  .portfolio .projectImgContainer {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .portfolio .projectTxtContainer {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .contactMe .contactInfo a {
+    font-size: 1.2rem;
+  }
+  .contactMe .contactInfo a i {
+    font-size: 1.2rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 610px) {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .mainHeader .headerContainer .headerTxtContainer h1 {
+    font-size: 2rem;
+  }
+  .mainHeader .headerContainer .headerTxtContainer span {
+    font-size: 4rem;
+  }
+  .mainHeader .headerContainer .headerTxtContainer p {
+    font-size: 1.8rem;
+  }
+  .mainHeader .headerSocialMedia {
+    right: 10px;
+  }
+  .aboutMe h2 {
+    padding: 50px 0;
+  }
+  .portfolio {
+    width: 100%;
+    background: #3d3e42;
+  }
+  .portfolio h3 {
+    padding: 70px 0 20px;
+  }
+  .contactMe .contactHrContainer p {
+    width: 25%;
+    border-bottom: 3px solid #ffc86b;
+  }
+  .contactMe .contactInfo a {
+    font-size: 1.1rem;
+  }
+  .contactMe .contactInfo a i {
+    font-size: 1.1rem;
+  }
+  footer h4 {
+    font-size: 2.5rem;
+  }
+  footer p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 490px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .mainHeader .headerContainer .headerTxtContainer h1 {
+    font-size: 1.2rem;
+  }
+  .mainHeader .headerContainer .headerTxtContainer span {
+    font-size: 3rem;
+  }
+  .mainHeader .headerContainer .headerTxtContainer p {
+    font-size: 1rem;
+  }
+  .mainHeader .headerSocialMedia {
+    right: 5px;
+    bottom: -20px;
+  }
+  .mainHeader .headerSocialMedia ul::before {
+    height: 30%;
+  }
+  .mainHeader .headerSocialMedia ul li a {
+    font-size: 1.1rem;
+  }
+  .portfolio .projectOne,
+.portfolio .projectThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .portfolio .projectTxtContainer h3 {
+    font-size: 1.3rem;
+  }
+  .portfolio .projectTxtContainer p {
+    font-size: 0.9rem;
+  }
+  .portfolio .projectTxtContainer a {
+    padding: 5px 20px 5px 5px;
+    margin-right: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .portfolio .projectTxtContainer a i {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  .contactMe .contactHrContainer p {
+    width: 21%;
+    border-bottom: 3px solid #ffc86b;
+  }
+  .contactMe .contactInfo a {
+    font-size: 0.8rem;
+  }
+  .contactMe .contactInfo a i {
+    font-size: 0.9rem;
+    padding: 20px 10px;
+  }
+  footer ul li {
+    padding: 10px;
+  }
+  footer ul li a {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  footer h4 {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+}

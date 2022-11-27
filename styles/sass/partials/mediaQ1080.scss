@@ -21,12 +21,10 @@
     }
     p {
         font-size: 1.2rem;
-    }
-    
+    }    
     .wrapper {
         width: 95%;
-    }
-    
+    }   
     .portfolio {
         .projectImgContainer {
             width: 50%;
@@ -34,11 +32,244 @@
         .projectTxtContainer {
             width: 48%;
         }
-    }
-    
+    }    
 }
 
 // 768px and under
 @media (max-width: 768px) {
+    .wrapper {
+        width: 98%;
+    }
 
+    // HEADER
+    .mainHeader {
+        .headerContainer {
+            justify-content: center;
+            .headerTxtContainer {
+                width: 100%;
+            }
+        }        
+     }
+    //  PORTFOLIO SECTION
+    .portfolio {
+        .projectOne, 
+        .projectThree {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+        .projectTwo {
+            flex-direction: column-reverse;
+            padding-bottom: 50px;
+        }
+        .projectImgContainer {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .projectTxtContainer {
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    }
+    .contactMe {
+        .contactInfo {
+            a {
+                font-size: 1.2rem;
+                i {
+                    font-size: 1.2rem;
+                }
+            }        
+        }
+    }
+
+    // FOOTER
+    footer {
+        p {
+            font-size: 1rem;
+        }
+    }   
+}
+
+// 610px and under
+@media (max-width: 610px) {
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    // HEADER
+    .mainHeader {
+        .headerContainer {
+            .headerTxtContainer {
+                h1 {
+                    font-size: 2rem;
+                }
+                span {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .headerSocialMedia {
+            right: 10px;
+        }
+     } 
+
+    //  ABOUT ME SECTION
+    .aboutMe {
+        h2 {
+            padding: 50px 0;
+        }
+    }
+    .portfolio {
+        width: 100%;
+        background: variables.$primaryBg;
+        h3 {
+            padding: 70px 0 20px;
+        }
+    }
+
+    // CONTACT ME SECTION
+    .contactMe {
+        .contactHrContainer {
+            p {
+                width: 25%;
+                border-bottom: 3px solid variables.$tertinary;
+            }
+        }     
+        .contactInfo {
+            a {
+                font-size: 1.1rem;
+                i {
+                    font-size: 1.1rem;
+                }
+                }        
+        }
+        
+    }
+    // FOOTER
+    footer {
+        h4 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 0.85rem;
+        }
+    }
+}
+
+// 490px and under
+@media (max-width: 490px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+     // HEADER
+    .mainHeader {
+        .headerContainer {
+            .headerTxtContainer {
+                h1 {
+                    font-size: 1.2rem;
+                }
+                span {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .headerSocialMedia {
+            right: 5px;
+            bottom: -20px;
+             ul {
+                &::before {
+                    height: 30%;               
+                }
+
+                li {
+                    a {
+                        font-size: 1.1rem;                       
+                    }
+                }
+            }   
+        }
+    } 
+
+    //  PORTFOLIO SECTION
+    .portfolio {
+        .projectOne, 
+        .projectThree {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+        .projectTxtContainer {
+            h3 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            a {
+                padding: 5px 20px 5px 5px;
+                margin-right: 20px;
+                transition: all 0.4s ease;
+            
+
+                i {
+                    padding-left: 15px;
+                    padding-right: 5px;
+                }
+            
+            }
+        }
+    }
+
+    // CONTACT ME SECTION
+    .contactMe {
+        .contactHrContainer {
+            p {
+                width: 21%;
+                border-bottom: 3px solid variables.$tertinary;
+            }
+        }
+            .contactInfo {
+                a {
+                    font-size: 0.8rem;
+                    i {
+                        font-size: 0.9rem;
+                        padding: 20px 10px;
+                    }
+                }        
+            }
+        
+    }
+    // FOOTER
+    footer {
+        ul {
+            li {
+                padding: 10px;
+                a {
+                    padding: 10px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        h4 {
+            font-size: 2rem;
+            line-height: 50px;
+        }
+        p {
+            font-size: 0.5rem;
+        }
+    }
 }

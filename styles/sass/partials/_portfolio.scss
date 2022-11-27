@@ -6,7 +6,7 @@
     h2 {
         padding: 100px 0 50px;
     }
-    // PROJECT ONE
+    
     .projectOne, 
     .projectTwo, 
     .projectThree {
@@ -41,7 +41,7 @@
             color: variables.$primaryBg;
             background-color: variables.$tertinary;
             padding: 5px 30px 5px 5px;
-            margin: 0px 10px 0;
+            margin-right: 20px;
             transition: all 0.4s ease;
             
 
@@ -60,7 +60,4 @@
             }
         }
     }
-
-    // PROJECT TWO
-
 }

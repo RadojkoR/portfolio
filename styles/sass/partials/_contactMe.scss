@@ -24,26 +24,27 @@
     }
 
     .contactInfo {
-        margin: 100px 0;
+        margin: 100px auto;
         background-color: variables.$primaryBg;
-        transition: all 0.5s ease;
-        cursor: pointer;
-        i {
-            font-size: 1.5rem;
-            padding: 20px 30px;
-        }
+        
+        padding: 0;
         a {
             color: variables.$tertinary;  
             font-size: 1.5rem;
-            padding-right: 20px;
+            padding: 20px;
+            transition: all 0.5s ease;
+            i {
+                font-size: 1.5rem;
+                padding: 20px;
+            }
+
+            &:hover, 
+            &:focus {
+                color: variables.$primaryBg;
+                background-color: variables.$navFontColor;               
+            }
         }
 
-        &:hover, 
-        &:focus {
-            color: variables.$tertinary;
-            background-color: variables.$navFontColor;
-                
-        }
         
     }
     
