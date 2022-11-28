@@ -356,7 +356,7 @@ p {
   .logo {
     visibility: visible;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 10px;
     z-index: 15;
   }
@@ -383,7 +383,7 @@ p {
     position: fixed;
     cursor: pointer;
     z-index: 12;
-    top: 10px;
+    top: 0px;
     left: 0px;
   }
   .collapsibleMenu .menu .hamburgerMenu i {
