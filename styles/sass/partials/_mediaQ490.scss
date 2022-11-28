@@ -1,0 +1,140 @@
+@use "./variables";
+
+// 490px and under
+@media (max-width: 490px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    .flexNav {
+        width: 60%;
+        li {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+     // HEADER
+    .mainHeader {
+        .headerContainer {
+            .headerTxtContainer {
+                h1 {
+                    font-size: 1.2rem;
+                }
+                span {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .headerSocialMedia {
+            right: 5px;
+            bottom: -20px;
+             ul {
+                &::before {
+                    height: 30%;               
+                }
+
+                li {
+                    a {
+                        font-size: 1.1rem;                       
+                    }
+                }
+            }   
+        }
+    } 
+    //  MY SKILLS SECTION
+    .mySkills {
+        .skillsEl {
+            .boxEl {
+                width: 49%;
+                padding: 30px 30px;
+                &:last-child {
+                    margin: 0 auto;
+                }
+                i {
+                    font-size: 2.5rem;
+                    padding-bottom: 25px;
+                }
+                p {
+                   font-size: 0.9rem; 
+                }
+            
+            }
+        }      
+    }
+
+    //  PORTFOLIO SECTION
+    .portfolio {
+        .projectOne, 
+        .projectThree {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+        .projectTxtContainer {
+            h3 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            a {
+                padding: 5px 20px 5px 5px;
+                margin-right: 20px;
+                transition: all 0.4s ease;
+            
+
+                i {
+                    padding-left: 15px;
+                    padding-right: 5px;
+                }
+            
+            }
+        }
+    }
+
+    // CONTACT ME SECTION
+    .contactMe {
+        .contactHrContainer {
+            p {
+                width: 21%;
+                border-bottom: 3px solid variables.$tertinary;
+            }
+        }
+            .contactInfo {
+                a {
+                    font-size: 0.8rem;
+                    i {
+                        font-size: 0.9rem;
+                        padding: 20px 10px;
+                    }
+                }        
+            }
+        
+    }
+    // FOOTER
+    footer {
+        ul {
+            li {
+                padding: 10px;
+                a {
+                    padding: 10px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        h4 {
+            font-size: 2rem;
+            line-height: 50px;
+        }
+        p {
+            font-size: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@use "./variables";
+
+// 610px and under
+@media (max-width: 610px) {
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    // HEADER
+    .mainHeader {
+        .headerContainer {
+            .headerTxtContainer {
+                h1 {
+                    font-size: 2rem;
+                }
+                span {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .headerSocialMedia {
+            right: 10px;
+        }
+     } 
+
+    //  ABOUT ME SECTION
+    .aboutMe {
+        h2 {
+            padding: 50px 0;
+        }
+    }
+    // MY SKILLS SECTION
+    .mySkills {
+        .skillsEl {
+            .boxEl {
+                width: 31%;
+                padding: 30px 30px;
+            
+            }
+        }      
+    }
+    .portfolio {
+        width: 100%;
+        background: variables.$primaryBg;
+        h3 {
+            padding-bottom: 20px;
+        }
+    }
+
+    // CONTACT ME SECTION
+    .contactMe {
+        .contactHrContainer {
+            p {
+                width: 25%;
+                border-bottom: 3px solid variables.$tertinary;
+            }
+        }     
+        .contactInfo {
+            a {
+                font-size: 1.1rem;
+                i {
+                    font-size: 1.1rem;
+                }
+                }        
+        }
+        
+    }
+    // FOOTER
+    footer {
+        h4 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 0.85rem;
+        }
+    }
+}

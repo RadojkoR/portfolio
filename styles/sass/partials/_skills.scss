@@ -11,20 +11,12 @@
         h2 {
             padding: 50px 0 100px;
         }
-        .rowOne, 
-        .rowTwo {
+        .rowOne {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 50px;
-        }
-        
-        .rowThree {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
             padding-bottom: 50px;
         }
     }
@@ -33,27 +25,27 @@
         width: 22%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         border-radius: 8px;
-        padding: 50px 30px;
+        padding: 40px 30px;
+        margin: 15px 0;
         transition: all 0.3s ease;
         cursor: pointer;
+        &:last-child {
+            margin: 0 auto;
+        }
         &:hover,
         &:focus {
             background-color: variables.$tertinary;
             color: variables.$primaryBg;
         }
         i {
-            font-size: 5rem;
-            padding-bottom: 50px;
-        }
-        p:first-child {
             font-size: 4rem;
-            padding-bottom: 50px;
+            padding-bottom: 45px;
         }
         p {
-            font-size: 1.3rem;
+            font-size: 1rem;
             // color: variables.$tertinary;
         }
     }

@@ -693,6 +693,12 @@ footer p {
 }
 
 @media (max-width: 1080px) {
+  .wrapper {
+    width: 85%;
+  }
+  .mySkills .boxEl {
+    padding: 30px 30px;
+  }
   .contactMe .contactHrContainer p {
     width: 30%;
   }
@@ -706,6 +712,13 @@ footer p {
   }
   .wrapper {
     width: 95%;
+  }
+  .mySkills .skillsEl .boxEl {
+    width: 31%;
+    padding: 30px 30px;
+  }
+  .mySkills .skillsEl .boxEl:last-child {
+    margin: 0;
   }
   .portfolio .projectImgContainer {
     width: 50%;
@@ -725,6 +738,13 @@ footer p {
   }
   .mainHeader .headerContainer .headerTxtContainer {
     width: 100%;
+  }
+  .mySkills .skillsEl .boxEl i {
+    font-size: 2.8rem;
+    padding-bottom: 35px;
+  }
+  .mySkills .skillsEl .boxEl p {
+    font-size: 0.9rem;
   }
   .portfolio .projectOne,
 .portfolio .projectThree {
@@ -783,6 +803,10 @@ footer p {
   .aboutMe h2 {
     padding: 50px 0;
   }
+  .mySkills .skillsEl .boxEl {
+    width: 31%;
+    padding: 30px 30px;
+  }
   .portfolio {
     width: 100%;
     background: #3d3e42;
@@ -838,6 +862,20 @@ footer p {
   }
   .mainHeader .headerSocialMedia ul li a {
     font-size: 1.1rem;
+  }
+  .mySkills .skillsEl .boxEl {
+    width: 49%;
+    padding: 30px 30px;
+  }
+  .mySkills .skillsEl .boxEl:last-child {
+    margin: 0 auto;
+  }
+  .mySkills .skillsEl .boxEl i {
+    font-size: 2.5rem;
+    padding-bottom: 25px;
+  }
+  .mySkills .skillsEl .boxEl p {
+    font-size: 0.9rem;
   }
   .portfolio .projectOne,
 .portfolio .projectThree {
@@ -907,8 +945,7 @@ footer p {
 .mySkills .skillsEl h2 {
   padding: 50px 0 100px;
 }
-.mySkills .skillsEl .rowOne,
-.mySkills .skillsEl .rowTwo {
+.mySkills .skillsEl .rowOne {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,19 +956,8 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
-}
-.mySkills .skillsEl .rowThree {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 50px;
 }
 .mySkills .boxEl {
@@ -944,32 +970,31 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px;
-  padding: 50px 30px;
+  padding: 40px 30px;
+  margin: 15px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+.mySkills .boxEl:last-child {
+  margin: 0 auto;
 }
 .mySkills .boxEl:hover, .mySkills .boxEl:focus {
   background-color: #04c2c9;
   color: #3d3e42;
 }
 .mySkills .boxEl i {
-  font-size: 5rem;
-  padding-bottom: 50px;
-}
-.mySkills .boxEl p:first-child {
   font-size: 4rem;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 .mySkills .boxEl p {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .mySkills .htmlSkill i {
   color: #e34f26;
