@@ -355,8 +355,9 @@ p {
   .logo {
     visibility: visible;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 10px;
+    z-index: 15;
   }
   .logo img {
     width: 50px;
@@ -365,6 +366,7 @@ p {
     width: 50%;
   }
   .collapsibleMenu .menu .hamburgerMenu {
+    width: 100%;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -375,18 +377,19 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: rgba(52, 53, 58, 0.8352941176);
     color: #FFF;
     position: fixed;
     cursor: pointer;
     z-index: 12;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
   }
   .collapsibleMenu .menu .hamburgerMenu i {
     padding: 20px;
   }
   .collapsibleMenu .menu .hamburgerMenu .fa-solid {
-    font-size: 35px;
+    font-size: 40px;
     z-index: 12;
   }
   .collapsibleMenu .menu .hamburgerMenu .fa-x {
@@ -422,12 +425,16 @@ p {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
+  .flexNav li {
+    width: 100%;
+    margin: 0;
+  }
   .flexNav li a {
     line-height: 80px;
     color: #04c2c9;
   }
   .showFlexNav {
-    left: 0;
+    left: 0px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
@@ -724,14 +731,14 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
   .portfolio .projectTwo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
   .portfolio .projectImgContainer {
     width: 95%;
@@ -780,7 +787,7 @@ footer p {
     background: #3d3e42;
   }
   .portfolio h3 {
-    padding: 70px 0 20px;
+    padding-bottom: 20px;
   }
   .contactMe .contactHrContainer p {
     width: 25%;
@@ -805,6 +812,12 @@ footer p {
   }
   p {
     font-size: 1rem;
+  }
+  .flexNav {
+    width: 60%;
+  }
+  .flexNav li a {
+    font-size: 1.2rem;
   }
   .mainHeader .headerContainer .headerTxtContainer h1 {
     font-size: 1.2rem;

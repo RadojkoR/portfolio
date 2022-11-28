@@ -55,11 +55,11 @@
         .projectOne, 
         .projectThree {
             flex-direction: column;
-            padding-bottom: 50px;
+            padding-bottom: 70px;
         }
         .projectTwo {
             flex-direction: column-reverse;
-            padding-bottom: 50px;
+            padding-bottom: 70px;
         }
         .projectImgContainer {
             width: 95%;
@@ -131,7 +131,7 @@
         width: 100%;
         background: variables.$primaryBg;
         h3 {
-            padding: 70px 0 20px;
+            padding-bottom: 20px;
         }
     }
 
@@ -171,6 +171,15 @@
     }
     p {
         font-size: 1rem;
+    }
+
+    .flexNav {
+        width: 60%;
+        li {
+            a {
+                font-size: 1.2rem;
+            }
+        }
     }
 
      // HEADER

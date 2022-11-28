@@ -14,8 +14,9 @@
     .logo {
         visibility: visible;
         position: absolute;
-        top: 30px;
+        top: 20px;
         right: 10px;
+        z-index: 15;
         img {
             width:50px;
         }
@@ -24,23 +25,25 @@
         .menu {
             width: 50%;
             .hamburgerMenu {
+                width: 100%;
                 visibility: visible;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                background-color: variables.$navBgcolor;
                 color: #FFF;
                 position: fixed;
                 cursor: pointer;
                 z-index: 12;
-                top: 20px;
-                left: 20px;
+                top: 0px;
+                left: 0px;
 
                 i {
                     padding: 20px;
                 }
 
                 .fa-solid {
-                    font-size: 35px;
+                    font-size: 40px;
                     z-index: 12;
                 }
                 .fa-x {
@@ -72,6 +75,8 @@
         padding-top: 100px;
         transition: all 0.3s ease;
         li {
+            width: 100%;
+            margin: 0;
             a {
                 line-height: 80px;
                 color: variables.$tertinary;
@@ -80,7 +85,7 @@
     }
 
     .showFlexNav {
-        left: 0;
+        left: 0px;
         transition: all 0.4s ease;
     }
 

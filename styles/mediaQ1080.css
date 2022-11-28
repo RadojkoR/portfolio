@@ -38,14 +38,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
   .portfolio .projectTwo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
   .portfolio .projectImgContainer {
     width: 95%;
@@ -94,7 +94,7 @@
     background: #3d3e42;
   }
   .portfolio h3 {
-    padding: 70px 0 20px;
+    padding-bottom: 20px;
   }
   .contactMe .contactHrContainer p {
     width: 25%;
@@ -119,6 +119,12 @@
   }
   p {
     font-size: 1rem;
+  }
+  .flexNav {
+    width: 60%;
+  }
+  .flexNav li a {
+    font-size: 1.2rem;
   }
   .mainHeader .headerContainer .headerTxtContainer h1 {
     font-size: 1.2rem;
