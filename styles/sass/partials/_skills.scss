@@ -1,0 +1,105 @@
+@use "./variables";
+
+.mySkills {
+    width: 100%;
+    background-color: variables.$primaryBg;
+    .skillsEl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        h2 {
+            padding: 50px 0 100px;
+        }
+        .rowOne, 
+        .rowTwo {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        
+        .rowThree {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+    }
+    .boxEl {
+        background-color: variables.$secondaryBg;
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        padding: 50px 30px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: variables.$tertinary;
+            color: variables.$primaryBg;
+        }
+        i {
+            font-size: 5rem;
+            padding-bottom: 50px;
+        }
+        p:first-child {
+            font-size: 4rem;
+            padding-bottom: 50px;
+        }
+        p {
+            font-size: 1.3rem;
+            // color: variables.$tertinary;
+        }
+    }
+    .htmlSkill {
+        i {
+            color: variables.$htmlColor;
+        }
+    }
+    .cssSkill {
+        i {
+            color: variables.$cssColor;
+        }
+    }
+    .sassSkill {
+        i {
+            color: variables.$sassColor;
+        }
+    }
+    .bootstrapSkill {
+        i {
+            color: variables.$bootstraoColor;
+        }
+    }
+    .jsSkill {
+        i {
+            color: variables.$jsColor;
+        }
+    }
+    .reactSkill {
+        i {
+            color: variables.$reactColor;
+        }
+    }
+    .jquerySkill {
+        i {
+            color: variables.$cssColor;
+        }
+    }
+    .gitSkill {
+        i {
+            color: variables.$gitColor;
+        }
+    }
+    .wordpressSkill {
+        i {
+            color: variables.$wordpressColor;
+        }
+    }
+} 

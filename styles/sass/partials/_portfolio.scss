@@ -2,7 +2,7 @@
 
 .portfolio {
     width: 100%;
-    background: variables.$primaryBg;
+    background: variables.$secondaryBg;
     h2 {
         padding: 100px 0 50px;
     }
@@ -56,7 +56,7 @@
             &:hover, 
             &:focus {
                 color: variables.$tertinary;
-                background-color: variables.$secondaryBg;
+                background-color: variables.$primaryBg;
             }
         }
     }

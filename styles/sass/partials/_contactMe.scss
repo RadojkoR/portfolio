@@ -2,7 +2,7 @@
 
 .contactMe {
     width: 100%;
-    background-color: variables.$secondaryBg;
+    background-color: variables.$primaryBg;
     padding: 100px 0 50px;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
 
     .contactInfo {
         margin: 100px auto;
-        background-color: variables.$primaryBg;
+        background-color: variables.$secondaryBg;
         
         padding: 0;
         a {
