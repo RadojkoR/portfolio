@@ -307,9 +307,17 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  width: 60px;
 }
 
 .flexNav {
+  width: 100%;
   margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,11 +336,11 @@ p {
   color: #abacb0;
   padding: 5px;
   font-size: 1.5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flexNav li a:hover, .flexNav li a:focus {
   color: #f9f9f9;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 .hamburgerMenu {
@@ -343,6 +351,15 @@ p {
 @media (max-width: 768px) {
   .mainHeader .wrapper {
     width: 100%;
+  }
+  .logo {
+    visibility: visible;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+  .logo img {
+    width: 50px;
   }
   .collapsibleMenu .menu {
     width: 50%;
@@ -407,7 +424,7 @@ p {
   }
   .flexNav li a {
     line-height: 80px;
-    color: #ffc86b;
+    color: #04c2c9;
   }
   .showFlexNav {
     left: 0;
@@ -441,7 +458,7 @@ p {
   line-height: 120px;
 }
 .mainHeader .headerContainer .headerTxtContainer span {
-  color: #ffc86b;
+  color: #04c2c9;
   font-size: 4.5rem;
 }
 .mainHeader .headerContainer .headerTxtContainer p {
@@ -466,7 +483,7 @@ p {
 }
 .mainHeader .headerSocialMedia ul::before {
   content: "";
-  border-left: 4px solid #ffc86b;
+  border-left: 4px solid #04c2c9;
   height: 50%;
   position: absolute;
   bottom: 260px;
@@ -478,11 +495,11 @@ p {
   color: #abacb0;
   font-size: 1.5rem;
   padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .mainHeader .headerSocialMedia ul li a:hover, .mainHeader .headerSocialMedia ul li a:focus {
   color: #f9f9f9;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 .aboutMe {
@@ -499,12 +516,12 @@ p {
   display: flex;
 }
 .aboutMe .aboutTxtContainer p:first-child {
-  border-top: 3px solid #ffc86b;
+  border-top: 3px solid #04c2c9;
   width: 15%;
   margin: 15px 15px 0 0;
 }
 .aboutMe span {
-  color: #ffc86b;
+  color: #04c2c9;
 }
 
 .portfolio {
@@ -547,7 +564,7 @@ p {
 }
 .portfolio .projectTxtContainer a {
   color: #3d3e42;
-  background-color: #ffc86b;
+  background-color: #04c2c9;
   padding: 5px 30px 5px 5px;
   margin-right: 20px;
   -webkit-transition: all 0.4s ease;
@@ -561,8 +578,8 @@ p {
   padding-left: 30px;
 }
 .portfolio .projectTxtContainer a:hover, .portfolio .projectTxtContainer a:focus {
-  color: #ffc86b;
-  background-color: #abacb0;
+  color: #04c2c9;
+  background-color: #31333b;
 }
 
 .contactMe {
@@ -600,7 +617,7 @@ p {
 }
 .contactMe .contactHrContainer p {
   width: 35%;
-  border-bottom: 3px solid #ffc86b;
+  border-bottom: 3px solid #04c2c9;
 }
 .contactMe .contactInfo {
   margin: 100px auto;
@@ -608,7 +625,7 @@ p {
   padding: 0;
 }
 .contactMe .contactInfo a {
-  color: #ffc86b;
+  color: #04c2c9;
   font-size: 1.5rem;
   padding: 20px;
   -webkit-transition: all 0.5s ease;
@@ -642,24 +659,24 @@ footer ul {
 }
 footer ul p {
   width: 50%;
-  border-bottom: 3px solid #ffc86b;
+  border-bottom: 3px solid #04c2c9;
   margin-bottom: 60px;
 }
 footer ul li a {
   padding: 20px;
   color: #f9f9f9;
   font-size: 1.5rem;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 footer ul li a:hover, footer ul li a:focus {
-  color: #ffc86b;
+  color: #04c2c9;
 }
 footer h4 {
   text-align: center;
   font-size: 3rem;
   padding: 50px 0 150px;
-  color: #ffc86b;
+  color: #04c2c9;
 }
 footer p {
   text-align: center;
@@ -767,7 +784,7 @@ footer p {
   }
   .contactMe .contactHrContainer p {
     width: 25%;
-    border-bottom: 3px solid #ffc86b;
+    border-bottom: 3px solid #04c2c9;
   }
   .contactMe .contactInfo a {
     font-size: 1.1rem;
@@ -834,7 +851,7 @@ footer p {
   }
   .contactMe .contactHrContainer p {
     width: 21%;
-    border-bottom: 3px solid #ffc86b;
+    border-bottom: 3px solid #04c2c9;
   }
   .contactMe .contactInfo a {
     font-size: 0.8rem;
