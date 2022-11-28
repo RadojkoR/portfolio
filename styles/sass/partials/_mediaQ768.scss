@@ -1,0 +1,71 @@
+@use "./variables";
+
+// 768px and under
+@media (max-width: 768px) {
+    .wrapper {
+        width: 98%;
+    }
+
+    // HEADER
+    .mainHeader {
+        .headerContainer {
+            justify-content: center;
+            .headerTxtContainer {
+                width: 100%;
+            }
+        }        
+     }
+    //  MY SKILLS SECTION
+     .mySkills {
+        .skillsEl {
+            .boxEl {
+                i {
+                    font-size: 2.8rem;
+                    padding-bottom: 35px;
+                }
+                p {
+                   font-size: 0.9rem; 
+                }
+            
+            }
+        }      
+    }
+    //  PORTFOLIO SECTION
+    .portfolio {
+        .projectOne, 
+        .projectThree {
+            flex-direction: column;
+            padding-bottom: 70px;
+        }
+        .projectTwo {
+            flex-direction: column-reverse;
+            padding-bottom: 70px;
+        }
+        .projectImgContainer {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .projectTxtContainer {
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+    }
+    .contactMe {
+        .contactInfo {
+            a {
+                font-size: 1.2rem;
+                i {
+                    font-size: 1.2rem;
+                }
+            }        
+        }
+    }
+
+    // FOOTER
+    footer {
+        p {
+            font-size: 1rem;
+        }
+    }   
+}

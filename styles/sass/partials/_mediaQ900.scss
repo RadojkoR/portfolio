@@ -1,0 +1,34 @@
+@use "./variables";
+
+// 900px and under
+@media (max-width: 900px) {
+
+    h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }    
+    .wrapper {
+        width: 95%;
+    }   
+    .mySkills {
+        .skillsEl {
+            .boxEl {
+                width: 31%;
+                padding: 30px 30px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }      
+    }
+    .portfolio {
+        .projectImgContainer {
+            width: 50%;
+        }
+        .projectTxtContainer {
+            width: 48%;
+        }
+    }    
+}

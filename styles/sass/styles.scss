@@ -9,6 +9,10 @@
 @use "./partials/portfolio";
 @use "./partials/contactMe";
 @use "./partials/footer";
-@use "./partials/mediaQ1080.scss";
+@use "./partials/mediaQ1080";
+@use "./partials/mediaQ900";
+@use "./partials/mediaQ768";
+@use "./partials/mediaQ610";
+@use "./partials/mediaQ490";
 @use "./partials/skills";
 
