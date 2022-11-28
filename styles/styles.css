@@ -267,6 +267,7 @@ ul {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -335,7 +336,7 @@ p {
 .flexNav li a {
   color: #abacb0;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.33rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -628,7 +629,7 @@ p {
 }
 .contactMe .contactInfo {
   margin: 100px auto;
-  background-color: #3d3e42;
+  background-color: #31333b;
   padding: 0;
 }
 .contactMe .contactInfo a {
@@ -953,6 +954,7 @@ footer p {
   padding: 50px 30px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .mySkills .boxEl:hover, .mySkills .boxEl:focus {
   background-color: #04c2c9;

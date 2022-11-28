@@ -38,6 +38,7 @@
         border-radius: 8px;
         padding: 50px 30px;
         transition: all 0.3s ease;
+        cursor: pointer;
         &:hover,
         &:focus {
             background-color: variables.$tertinary;
