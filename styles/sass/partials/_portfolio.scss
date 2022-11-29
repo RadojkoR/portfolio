@@ -21,6 +21,7 @@
         width: 55%;
         img {
             width: 100%;
+            min-width: 350px;
         }
     }
 
@@ -32,9 +33,14 @@
             padding-bottom: 20px;
 
         }
+        h5 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
         p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin-bottom: 20px;
         }
 
         a {
@@ -59,5 +65,20 @@
                 background-color: variables.$primaryBg;
             }
         }
+        .madeWith {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                padding-bottom: 20px;
+                i {
+                    font-size: 1.5rem;
+                    margin-right: 20px;
+                    transition: all 0.3s ease;
+                    &:hover, 
+                    &:focus {
+                        color: variables.$navFontColor;
+                    }
+                }
+            }
     }
 }

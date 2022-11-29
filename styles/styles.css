@@ -279,7 +279,7 @@ body {
   color: #f9f9f9;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: normal;
   margin: 0;
 }
@@ -558,6 +558,7 @@ p {
 }
 .portfolio .projectImgContainer img {
   width: 100%;
+  min-width: 350px;
 }
 .portfolio .projectTxtContainer {
   width: 43%;
@@ -566,9 +567,14 @@ p {
   font-size: 1.5rem;
   padding-bottom: 20px;
 }
+.portfolio .projectTxtContainer h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
 .portfolio .projectTxtContainer p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 .portfolio .projectTxtContainer a {
   color: #3d3e42;
@@ -588,6 +594,25 @@ p {
 .portfolio .projectTxtContainer a:hover, .portfolio .projectTxtContainer a:focus {
   color: #04c2c9;
   background-color: #3d3e42;
+}
+.portfolio .projectTxtContainer .madeWith {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 20px;
+}
+.portfolio .projectTxtContainer .madeWith i {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio .projectTxtContainer .madeWith i:hover, .portfolio .projectTxtContainer .madeWith i:focus {
+  color: #abacb0;
 }
 
 .contactMe {
