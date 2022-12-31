@@ -25,23 +25,23 @@
 
     .contactInfo {
         margin: 100px auto;
-        background-color: variables.$secondaryBg;
+        background-color: variables.$tertinary;
         
         padding: 0;
         a {
-            color: variables.$tertinary;  
+            color: variables.$primaryBg;  
             font-size: 1.5rem;
             padding: 20px;
             transition: all 0.5s ease;
             i {
                 font-size: 1.5rem;
-                padding: 20px;
+                padding: 23px;
             }
 
             &:hover, 
             &:focus {
-                color: variables.$primaryBg;
-                background-color: variables.$navFontColor;               
+                color: variables.$tertinary;
+                background-color: variables.$secondaryBg;               
             }
         }
 

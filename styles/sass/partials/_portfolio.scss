@@ -9,16 +9,24 @@
     
     .projectOne, 
     .projectTwo, 
-    .projectThree {
+    .projectThree, 
+    .projectFour, 
+    .projectFive, 
+    .projectSix {
         display: flex;
         justify-content: space-between;
         align-items: center;
         // outline: 2px solid red;
         padding: 50px 0 150px;
     }
+    .projectOne .projectImgContainer, 
+    .projectThree .projectImgContainer, 
+    .projectFive .projectImgContainer {
+        margin-right: 2%;
+    }
 
     .projectImgContainer {
-        width: 55%;
+        width: 52%;
         img {
             width: 100%;
             min-width: 350px;
@@ -65,6 +73,17 @@
                 background-color: variables.$primaryBg;
             }
         }
+
+        a.buttonDisabled {
+        color: variables.$tertinary;
+        background-color: variables.$primaryBg;
+        }
+    
+        a.buttonDisabled:hover, 
+        a.buttonDisabled:focus {
+            cursor: not-allowed;
+        }
+
         .madeWith {
                 width: 100%;
                 display: flex;

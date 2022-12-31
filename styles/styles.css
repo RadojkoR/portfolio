@@ -541,7 +541,10 @@ p {
 }
 .portfolio .projectOne,
 .portfolio .projectTwo,
-.portfolio .projectThree {
+.portfolio .projectThree,
+.portfolio .projectFour,
+.portfolio .projectFive,
+.portfolio .projectSix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,8 +556,13 @@ p {
           align-items: center;
   padding: 50px 0 150px;
 }
+.portfolio .projectOne .projectImgContainer,
+.portfolio .projectThree .projectImgContainer,
+.portfolio .projectFive .projectImgContainer {
+  margin-right: 2%;
+}
 .portfolio .projectImgContainer {
-  width: 55%;
+  width: 52%;
 }
 .portfolio .projectImgContainer img {
   width: 100%;
@@ -594,6 +602,14 @@ p {
 .portfolio .projectTxtContainer a:hover, .portfolio .projectTxtContainer a:focus {
   color: #04c2c9;
   background-color: #3d3e42;
+}
+.portfolio .projectTxtContainer a.buttonDisabled {
+  color: #04c2c9;
+  background-color: #3d3e42;
+}
+.portfolio .projectTxtContainer a.buttonDisabled:hover,
+.portfolio .projectTxtContainer a.buttonDisabled:focus {
+  cursor: not-allowed;
 }
 .portfolio .projectTxtContainer .madeWith {
   width: 100%;
@@ -654,11 +670,11 @@ p {
 }
 .contactMe .contactInfo {
   margin: 100px auto;
-  background-color: #31333b;
+  background-color: #04c2c9;
   padding: 0;
 }
 .contactMe .contactInfo a {
-  color: #04c2c9;
+  color: #3d3e42;
   font-size: 1.5rem;
   padding: 20px;
   -webkit-transition: all 0.5s ease;
@@ -666,11 +682,11 @@ p {
 }
 .contactMe .contactInfo a i {
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 23px;
 }
 .contactMe .contactInfo a:hover, .contactMe .contactInfo a:focus {
-  color: #3d3e42;
-  background-color: #abacb0;
+  color: #04c2c9;
+  background-color: #31333b;
 }
 
 footer {
