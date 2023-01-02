@@ -471,6 +471,34 @@ p {
 }
 .mainHeader .headerContainer .headerTxtContainer p {
   font-size: 2rem;
+  width: 22ch;
+  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 .mainHeader .headerSocialMedia {
   position: absolute;
@@ -676,7 +704,7 @@ p {
 .contactMe .contactInfo a {
   color: #3d3e42;
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 21px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -779,6 +807,7 @@ footer p {
   }
   .mainHeader .headerContainer .headerTxtContainer {
     width: 100%;
+    padding-left: 2%;
   }
   .mySkills .skillsEl .boxEl i {
     font-size: 2.8rem;
@@ -788,14 +817,17 @@ footer p {
     font-size: 0.9rem;
   }
   .portfolio .projectOne,
-.portfolio .projectThree {
+.portfolio .projectThree,
+.portfolio .projectFive {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 70px;
   }
-  .portfolio .projectTwo {
+  .portfolio .projectTwo,
+.portfolio .projectFour,
+.portfolio .projectSix {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -836,10 +868,10 @@ footer p {
     font-size: 4rem;
   }
   .mainHeader .headerContainer .headerTxtContainer p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .mainHeader .headerSocialMedia {
-    right: 10px;
+    right: 7px;
   }
   .aboutMe h2 {
     padding: 50px 0;
@@ -892,7 +924,8 @@ footer p {
     font-size: 3rem;
   }
   .mainHeader .headerContainer .headerTxtContainer p {
-    font-size: 1rem;
+    width: 23ch;
+    font-size: 1.1rem;
   }
   .mainHeader .headerSocialMedia {
     right: 5px;

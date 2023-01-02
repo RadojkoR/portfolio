@@ -12,6 +12,7 @@
             justify-content: center;
             .headerTxtContainer {
                 width: 100%;
+                padding-left: 2%;
             }
         }        
      }
@@ -33,11 +34,14 @@
     //  PORTFOLIO SECTION
     .portfolio {
         .projectOne, 
-        .projectThree {
+        .projectThree, 
+        .projectFive {
             flex-direction: column;
             padding-bottom: 70px;
         }
-        .projectTwo {
+        .projectTwo, 
+        .projectFour, 
+        .projectSix {
             flex-direction: column-reverse;
             padding-bottom: 70px;
         }
