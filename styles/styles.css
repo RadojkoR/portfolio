@@ -1056,9 +1056,6 @@ footer p {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.mySkills .boxEl:last-child {
-  margin: 0 auto;
-}
 .mySkills .boxEl:hover, .mySkills .boxEl:focus {
   background-color: #04c2c9;
   color: #3d3e42;
@@ -1096,4 +1093,7 @@ footer p {
 }
 .mySkills .wordpressSkill i {
   color: #21759b;
+}
+.mySkills .mobile {
+  text-align: center;
 }

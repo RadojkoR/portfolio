@@ -32,9 +32,9 @@
         margin: 15px 0;
         transition: all 0.3s ease;
         cursor: pointer;
-        &:last-child {
-            margin: 0 auto;
-        }
+        // &:last-child {
+        //     margin: 0 auto;
+        // }
         &:hover,
         &:focus {
             background-color: variables.$tertinary;
@@ -93,5 +93,9 @@
         i {
             color: variables.$wordpressColor;
         }
+    }
+    .mobile {
+        text-align: center;
+       
     }
 } 
