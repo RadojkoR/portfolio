@@ -39,6 +39,9 @@
         &:focus {
             background-color: variables.$tertinary;
             color: variables.$primaryBg;
+            .fa-react {
+            color: variables.$primaryBg;
+        }
         }
         i {
             font-size: 4rem;

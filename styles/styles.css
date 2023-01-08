@@ -1060,6 +1060,9 @@ footer p {
   background-color: #04c2c9;
   color: #3d3e42;
 }
+.mySkills .boxEl:hover .fa-react, .mySkills .boxEl:focus .fa-react {
+  color: #3d3e42;
+}
 .mySkills .boxEl i {
   font-size: 4rem;
   padding-bottom: 45px;
