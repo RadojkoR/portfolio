@@ -15,7 +15,8 @@ app.hamburgerEl.innerHTML = `<i class="fa-solid fa-bars"></i>`;
 //Create an event listener for when the user click on the icon
 app.iconEl = document.querySelector('i');
 
-app.hamburgerEl.addEventListener('click', (event) => {
+ app.hamburgerEl.addEventListener('click', (event) => {
+    event.preventDefault();
     if(event.target.tagName === 'I') {
         app.updateIcon(event.target);
     }
@@ -38,6 +39,25 @@ app.updateYear = () => {
     const spanElUpdateYear = document.querySelector('#copyrightYear');
     spanElUpdateYear.innerText = year;
 } 
+
+app.hideMenu = document.querySelector('.menu')
+app.hideMenu.addEventListener('click', (event) => {
+    console.log(event.target.tagName);
+    if(event.target.tagName === 'A') {
+        app.hideHamburger(event.target)
+
+    }
+});
+
+
+app.hideHamburger = (listEl) => {
+    console.log(listEl.offsetParent);
+    listEl.offsetParent.classList.remove("showFlexNav")
+    listEl.offsetParent.previousElementSibling.firstChild.classList.toggle("fa-x");
+    listEl.offsetParent.previousElementSibling.firstChild.classList.toggle("fa-bars");
+    //HIDE HAMBURGER MENU 
+    listEl.offsetParent.classList.remove('showFlexNav')
+}
 
 //CALL THE INIT METHOD
 app.init()

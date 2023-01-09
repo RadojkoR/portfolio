@@ -594,7 +594,6 @@ p {
 }
 .portfolio .projectImgContainer img {
   width: 100%;
-  min-width: 350px;
 }
 .portfolio .projectTxtContainer {
   width: 43%;
