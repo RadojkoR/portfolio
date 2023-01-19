@@ -35,7 +35,7 @@ window.addEventListener('scroll', checkMySkill);
 
 function checkMySkill() {
     // console.log(window.innerHeight / 5 * 4);
-    const triggerBottom = window.innerHeight / 6 * 4;
+    const triggerBottom = window.innerHeight / 5 * 4;
 
     mySkillbox.forEach((box) => {
         // console.log(box.getBoundingClientRect().top);
