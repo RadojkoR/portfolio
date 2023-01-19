@@ -471,34 +471,6 @@ p {
 }
 .mainHeader .headerContainer .headerTxtContainer p {
   font-size: 2rem;
-  width: 22ch;
-  -webkit-animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-          animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
 }
 .mainHeader .headerSocialMedia {
   position: absolute;
@@ -545,6 +517,22 @@ p {
 }
 .aboutMe h2 {
   padding: 50px 0 100px;
+}
+.aboutMe .box {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.9s ease;
+  transition: -webkit-transform 0.9s ease;
+  transition: transform 0.9s ease;
+  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+}
+.aboutMe .box:nth-child(even) {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+.aboutMe .box.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .aboutMe .aboutTxtContainer {
   display: -webkit-box;
@@ -1051,9 +1039,15 @@ footer p {
   border-radius: 8px;
   padding: 40px 30px;
   margin: 15px 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
   cursor: pointer;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .mySkills .boxEl:hover, .mySkills .boxEl:focus {
   background-color: #04c2c9;
@@ -1069,14 +1063,30 @@ footer p {
 .mySkills .boxEl p {
   font-size: 1rem;
 }
+.mySkills .showBoxEl {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
 .mySkills .htmlSkill i {
   color: #e34f26;
+}
+.mySkills .cssSkill {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 .mySkills .cssSkill i {
   color: #15499c;
 }
+.mySkills .sassSkill {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
 .mySkills .sassSkill i {
   color: #F06292;
+}
+.mySkills .bootstrapSkill {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 .mySkills .bootstrapSkill i {
   color: #673AB7;
@@ -1084,18 +1094,41 @@ footer p {
 .mySkills .jsSkill i {
   color: #f7df1e;
 }
+.mySkills .reactSkill {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
 .mySkills .reactSkill i {
   color: #00d8ff;
+}
+.mySkills .jquerySkill {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 .mySkills .jquerySkill i {
   color: #15499c;
 }
+.mySkills .gitSkill {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
 .mySkills .gitSkill i {
   color: #F4511E;
 }
+.mySkills .mobile {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  text-align: center;
+}
+.mySkills .accessibility {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  text-align: center;
+}
+.mySkills .wordpressSkill {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
 .mySkills .wordpressSkill i {
   color: #21759b;
-}
-.mySkills .mobile {
-  text-align: center;
 }

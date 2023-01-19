@@ -7,6 +7,20 @@
 
     h2 {
         padding: 50px 0 100px;
+        
+    }
+
+    .box {
+        transform: translateX(-100%);
+        transition: transform 0.9s ease;
+    }
+
+    .box:nth-child(even) {
+        transform: translateX(200%);
+    }
+
+    .box.show {
+        transform: translateX(0);
     }
 
     .aboutTxtContainer {
