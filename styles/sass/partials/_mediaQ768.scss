@@ -2,6 +2,9 @@
 
 // 768px and under
 @media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
     .wrapper {
         width: 98%;
     }
