@@ -809,8 +809,8 @@ footer p {
     font-size: 0.9rem;
   }
   .portfolio .projectOne,
-.portfolio .projectThree,
-.portfolio .projectFive {
+  .portfolio .projectThree,
+  .portfolio .projectFive {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -818,8 +818,8 @@ footer p {
     padding-bottom: 70px;
   }
   .portfolio .projectTwo,
-.portfolio .projectFour,
-.portfolio .projectSix {
+  .portfolio .projectFour,
+  .portfolio .projectSix {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -944,7 +944,7 @@ footer p {
     font-size: 0.9rem;
   }
   .portfolio .projectOne,
-.portfolio .projectThree {
+  .portfolio .projectThree {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
