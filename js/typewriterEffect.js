@@ -7,7 +7,7 @@ export default typewriter.typeInit = () => {
 
 
 typewriter.textDisplay = document.querySelector('.animatedTxt');
-typewriter.phrases = ['I am Frontend Web Developer. ', 'I love to code. '];
+typewriter.phrases = ['I am a Frontend Web Developer. ', 'I love to code. '];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
