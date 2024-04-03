@@ -1175,9 +1175,6 @@ footer p {
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
-.mySkills .typeScriptSkill i {
-  color: #c4002b;
-}
 .mySkills .jquerySkill {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
