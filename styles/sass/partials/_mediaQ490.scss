@@ -50,6 +50,26 @@
             }   
         }
     } 
+    //  MY SKILLS SECTION
+    .mySkills {
+        .skillsEl {
+            .boxEl {
+                width: 50px;
+                min-width: 50px;
+                height: 100px;
+
+                i {
+                    font-size: 2rem;
+                    padding-bottom: 15px;
+                }
+
+                p {
+                    font-size: 0.3rem;
+                }
+
+            }
+        }
+    }
 
     //  PORTFOLIO SECTION
     .portfolio {

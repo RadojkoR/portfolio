@@ -978,6 +978,18 @@ footer p {
   .mainHeader .headerSocialMedia ul li a {
     font-size: 1.1rem;
   }
+  .mySkills .skillsEl .boxEl {
+    width: 50px;
+    min-width: 50px;
+    height: 100px;
+  }
+  .mySkills .skillsEl .boxEl i {
+    font-size: 2rem;
+    padding-bottom: 15px;
+  }
+  .mySkills .skillsEl .boxEl p {
+    font-size: 0.3rem;
+  }
   .portfolio .projectOne,
   .portfolio .projectThree {
     -webkit-box-orient: vertical;
