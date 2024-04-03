@@ -50,26 +50,6 @@
             }   
         }
     } 
-    //  MY SKILLS SECTION
-    .mySkills {
-        .skillsEl {
-            .boxEl {
-                width: 49%;
-                padding: 30px 30px;
-                &:last-child {
-                    margin: 0 auto;
-                }
-                i {
-                    font-size: 2.5rem;
-                    padding-bottom: 25px;
-                }
-                p {
-                   font-size: 0.9rem; 
-                }
-            
-            }
-        }      
-    }
 
     //  PORTFOLIO SECTION
     .portfolio {

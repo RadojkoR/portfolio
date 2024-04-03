@@ -13,23 +13,29 @@
         }
         .rowOne {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
             padding-bottom: 50px;
+            .skillsRowOne{
+                display: flex;
+                justify-content: space-between;
+            }
+            .skillsRowTwo {
+                display: flex;
+                justify-content: space-between;
+            }
         }
     }
     .boxEl {
         background-color: variables.$secondaryBg;
-        width: 22%;
+        width: 140px;
+        min-width:140px;
+        height: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         border-radius: 8px;
         padding: 40px 30px;
-        margin: 15px 0;
+        margin: 15px 5px;
         transition: all 0.9s ease;
         cursor: pointer;
         transform: rotateY(90deg);
@@ -44,12 +50,11 @@
         }
         }
         i {
-            font-size: 4rem;
-            padding-bottom: 45px;
+            font-size: 2rem;
+            padding-bottom: 25px;
         }
         p {
-            font-size: 1rem;
-            // color: variables.$tertinary;
+            font-size: 0.7rem;
         }
     }
     .showBoxEl {
@@ -67,55 +72,92 @@
         }
     }
     .sassSkill {
-        transition-delay: 0.4s;
+        transition-delay: 0.3s;
         i {
             color: variables.$sassColor;
         }
     }
     .bootstrapSkill {
-        transition-delay: 0.6s;
+        transition-delay: 0.4s;
         i {
             color: variables.$bootstraoColor;
         }
     }
     .jsSkill {
+        transition-delay: 0.5s;
         i {
             color: variables.$jsColor;
         }
     }
     .reactSkill {
-        transition-delay: 0.2s;
+        transition-delay: 0.6s;
         i {
             color: variables.$reactColor;
         }
     }
+
+    .angularSkill {
+        transition-delay: 0.7s;
+        i {
+            color: variables.$angularColor;
+        }
+    }
+
+    .typeScriptSkill {
+        transition-delay: 0.8s;
+        i {
+            color: variables.$angularColor;
+        }
+    }
     .jquerySkill {
-        transition-delay: 0.4s;
+        transition-delay: 0.1s;
         i {
             color: variables.$cssColor;
         }
     }
+    .dotNetSkill {
+        transition-delay: 0.2s;
+        i {
+            color: variables.$cssColor;
+        }
+    }
+    
+    .cSkill {
+        transition-delay: 0.3s;
+        i {
+            color: variables.$cssColor;
+        }
+    }
+
+     .wordpressSkill {
+         transition-delay: 0.4s;
+
+         i {
+             color: variables.$wordpressColor;
+         }
+     }
     .gitSkill {
-        transition-delay: 0.6s;
+        transition-delay: 0.5s;
+        i {
+            color: variables.$gitColor;
+        }
+    }
+
+    .firebase {
+        transition-delay:0.6s;
         i {
             color: variables.$gitColor;
         }
     }
     .mobile {
-        transition-delay: 0.2s;
+        transition-delay: 0.7s;
         text-align: center;       
     }
 
     .accessibility {
-        transition-delay: 0.4s;
+        transition-delay: 0.8s;
         text-align: center;       
     }
 
-    .wordpressSkill {
-        transition-delay: 0.6s;
-        i {
-            color: variables.$wordpressColor;
-        }
-    }
-    
+   
 } 

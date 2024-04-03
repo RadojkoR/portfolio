@@ -750,12 +750,36 @@ footer p {
   font-size: 1.1rem;
 }
 
+@media (max-width: 1500px) {
+  .mySkills .skillsEl .boxEl {
+    width: 100px;
+    min-width: 100px;
+    height: 120px;
+  }
+  .mySkills .skillsEl .boxEl i {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .mySkills .skillsEl .boxEl p {
+    font-size: 0.5rem;
+  }
+}
 @media (max-width: 1080px) {
   .wrapper {
     width: 85%;
   }
-  .mySkills .boxEl {
+  .mySkills .skillsEl .boxEl {
+    width: 80px;
+    min-width: 80px;
+    height: 120px;
     padding: 30px 30px;
+  }
+  .mySkills .skillsEl .boxEl i {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .mySkills .skillsEl .boxEl p {
+    font-size: 0.5rem;
   }
   .contactMe .contactHrContainer p {
     width: 30%;
@@ -772,11 +796,8 @@ footer p {
     width: 95%;
   }
   .mySkills .skillsEl .boxEl {
-    width: 31%;
+    width: 30%;
     padding: 30px 30px;
-  }
-  .mySkills .skillsEl .boxEl:last-child {
-    margin: 0;
   }
   .portfolio .projectImgContainer {
     width: 50%;
@@ -801,12 +822,44 @@ footer p {
     width: 100%;
     padding-left: 2%;
   }
+  .mySkills .skillsEl h2 {
+    padding: 50px 0 30px !important;
+  }
+  .mySkills .skillsEl .rowOne {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .mySkills .skillsEl .rowOne .skillsRowOne {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mySkills .skillsEl .rowOne .skillsRowTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mySkills .skillsEl .boxEl {
+    width: 50px;
+    min-width: 50px;
+    height: 100px;
+  }
   .mySkills .skillsEl .boxEl i {
-    font-size: 2.8rem;
-    padding-bottom: 35px;
+    font-size: 2rem;
+    padding-bottom: 15px;
   }
   .mySkills .skillsEl .boxEl p {
-    font-size: 0.9rem;
+    font-size: 0.35rem;
   }
   .portfolio .projectOne,
   .portfolio .projectThree,
@@ -868,10 +921,6 @@ footer p {
   .aboutMe h2 {
     padding: 50px 0;
   }
-  .mySkills .skillsEl .boxEl {
-    width: 31%;
-    padding: 30px 30px;
-  }
   .portfolio {
     width: 100%;
     background: #3d3e42;
@@ -928,20 +977,6 @@ footer p {
   }
   .mainHeader .headerSocialMedia ul li a {
     font-size: 1.1rem;
-  }
-  .mySkills .skillsEl .boxEl {
-    width: 49%;
-    padding: 30px 30px;
-  }
-  .mySkills .skillsEl .boxEl:last-child {
-    margin: 0 auto;
-  }
-  .mySkills .skillsEl .boxEl i {
-    font-size: 2.5rem;
-    padding-bottom: 25px;
-  }
-  .mySkills .skillsEl .boxEl p {
-    font-size: 0.9rem;
   }
   .portfolio .projectOne,
   .portfolio .projectThree {
@@ -1013,22 +1048,29 @@ footer p {
 }
 .mySkills .skillsEl .rowOne {
   width: 100%;
+  padding-bottom: 50px;
+}
+.mySkills .skillsEl .rowOne .skillsRowOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 50px;
+}
+.mySkills .skillsEl .rowOne .skillsRowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .mySkills .boxEl {
   background-color: #31333b;
-  width: 22%;
+  width: 140px;
+  min-width: 140px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,7 +1085,7 @@ footer p {
           align-items: center;
   border-radius: 8px;
   padding: 40px 30px;
-  margin: 15px 0;
+  margin: 15px 5px;
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   cursor: pointer;
@@ -1062,11 +1104,11 @@ footer p {
   color: #3d3e42;
 }
 .mySkills .boxEl i {
-  font-size: 4rem;
-  padding-bottom: 45px;
+  font-size: 2rem;
+  padding-bottom: 25px;
 }
 .mySkills .boxEl p {
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 .mySkills .showBoxEl {
   -webkit-transform: rotateY(0deg);
@@ -1083,57 +1125,96 @@ footer p {
   color: #15499c;
 }
 .mySkills .sassSkill {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 .mySkills .sassSkill i {
   color: #F06292;
 }
 .mySkills .bootstrapSkill {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 .mySkills .bootstrapSkill i {
   color: #673AB7;
+}
+.mySkills .jsSkill {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 .mySkills .jsSkill i {
   color: #f7df1e;
 }
 .mySkills .reactSkill {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 .mySkills .reactSkill i {
   color: #00d8ff;
 }
+.mySkills .angularSkill {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+.mySkills .angularSkill i {
+  color: #c4002b;
+}
+.mySkills .typeScriptSkill {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+.mySkills .typeScriptSkill i {
+  color: #c4002b;
+}
 .mySkills .jquerySkill {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 .mySkills .jquerySkill i {
   color: #15499c;
 }
+.mySkills .dotNetSkill {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.mySkills .dotNetSkill i {
+  color: #15499c;
+}
+.mySkills .cSkill {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.mySkills .cSkill i {
+  color: #15499c;
+}
+.mySkills .wordpressSkill {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.mySkills .wordpressSkill i {
+  color: #21759b;
+}
 .mySkills .gitSkill {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 .mySkills .gitSkill i {
   color: #F4511E;
 }
-.mySkills .mobile {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-  text-align: center;
-}
-.mySkills .accessibility {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-  text-align: center;
-}
-.mySkills .wordpressSkill {
+.mySkills .firebase {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
-.mySkills .wordpressSkill i {
-  color: #21759b;
+.mySkills .firebase i {
+  color: #F4511E;
+}
+.mySkills .mobile {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+  text-align: center;
+}
+.mySkills .accessibility {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+  text-align: center;
 }

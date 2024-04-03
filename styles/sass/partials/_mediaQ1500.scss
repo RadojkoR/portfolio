@@ -1,0 +1,27 @@
+@use "./variables";
+
+// 1500px and under
+@media (max-width: 1500px) {
+   
+
+    //  MY SKILLS SECTION
+    .mySkills {
+        .skillsEl {
+            .boxEl {
+                width: 100px;
+                min-width:100px;
+                height: 120px;
+
+                i {
+                    font-size: 2rem;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    font-size: 0.5rem;
+                }
+
+            }
+        }
+    }
+}
