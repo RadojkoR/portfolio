@@ -647,6 +647,9 @@ p {
 .portfolio .projectTxtContainer .madeWith i:hover, .portfolio .projectTxtContainer .madeWith i:focus {
   color: #abacb0;
 }
+.portfolio .projectTxtContainer .madeWith .angularIcon {
+  color: #c4002b;
+}
 
 .contactMe {
   width: 100%;
