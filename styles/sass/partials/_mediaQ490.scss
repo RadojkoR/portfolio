@@ -73,8 +73,7 @@
 
     //  PORTFOLIO SECTION
     .portfolio {
-        .projectOne, 
-        .projectThree {
+        .projectContainerOdd {
             flex-direction: column;
             padding-bottom: 50px;
         }
