@@ -7,21 +7,15 @@
         padding: 100px 0 50px;
     }
     
-    .projectOne, 
-    .projectTwo, 
-    .projectThree, 
-    .projectFour, 
-    .projectFive, 
-    .projectSix {
+    .projectContainerOdd,
+    .projectContainerEven {
         display: flex;
         justify-content: space-between;
         align-items: center;
         // outline: 2px solid red;
         padding: 50px 0 150px;
     }
-    .projectOne .projectImgContainer, 
-    .projectThree .projectImgContainer, 
-    .projectFive .projectImgContainer {
+    .projectOdd .projectImgContainer {
         margin-right: 2%;
     }
 

@@ -557,12 +557,8 @@ p {
 .portfolio h2 {
   padding: 100px 0 50px;
 }
-.portfolio .projectOne,
-.portfolio .projectTwo,
-.portfolio .projectThree,
-.portfolio .projectFour,
-.portfolio .projectFive,
-.portfolio .projectSix {
+.portfolio .projectContainerOdd,
+.portfolio .projectContainerEven {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,9 +570,7 @@ p {
           align-items: center;
   padding: 50px 0 150px;
 }
-.portfolio .projectOne .projectImgContainer,
-.portfolio .projectThree .projectImgContainer,
-.portfolio .projectFive .projectImgContainer {
+.portfolio .projectOdd .projectImgContainer {
   margin-right: 2%;
 }
 .portfolio .projectImgContainer {
@@ -864,18 +858,14 @@ footer p {
   .mySkills .skillsEl .boxEl p {
     font-size: 0.35rem;
   }
-  .portfolio .projectOne,
-  .portfolio .projectThree,
-  .portfolio .projectFive {
+  .portfolio .projectContainerOdd {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 70px;
   }
-  .portfolio .projectTwo,
-  .portfolio .projectFour,
-  .portfolio .projectSix {
+  .portfolio .projectContainerEven {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -993,8 +983,7 @@ footer p {
   .mySkills .skillsEl .boxEl p {
     font-size: 0.3rem;
   }
-  .portfolio .projectOne,
-  .portfolio .projectThree {
+  .portfolio .projectContainerOdd {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
