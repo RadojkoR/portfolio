@@ -24,4 +24,12 @@
             }
         }
     }
+    // PORTFOLIO SECTION
+    .projectContainer {
+        width: calc(380px - 50px)!important;
+        height: 370px!important;
+        p{
+            padding: 15px 20px;
+        }
+    }
 }

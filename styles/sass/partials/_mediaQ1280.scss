@@ -1,0 +1,14 @@
+@use "./variables";
+
+// 1280px and under
+@media (max-width: 1280px) {
+    // PORTFOLIO SECTION
+    .projectContainer {
+        width: calc(330px - 50px) !important;
+        height: 350px;
+        p{
+            padding: 15px!important;
+            text-align: center;
+        }
+    }
+}

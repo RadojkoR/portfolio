@@ -575,84 +575,6 @@ p {
       flex-wrap: wrap;
   gap: 10px;
 }
-.portfolio .portfolioContainer .projectContainer {
-  background-position: center;
-  background-size: cover;
-  width: 380px;
-  height: 380px;
-  margin: 25px auto 0;
-  cursor: pointer;
-}
-.portfolio .portfolioContainer .projectContainer .details {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  background-color: rgba(49, 51, 59, 0.8549019608);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.portfolio .portfolioContainer .projectContainer .details h4 {
-  text-align: center;
-  color: #04c2c9;
-  font-size: 1.3rem;
-  font-weight: 800;
-  padding: 50px 30px 15px;
-}
-.portfolio .portfolioContainer .projectContainer .details p {
-  font-size: 1rem;
-  font-weight: 800;
-  padding: 15px 30px;
-}
-.portfolio .portfolioContainer .projectContainer .details h5 {
-  font-size: 1.2rem;
-  margin: 10px;
-}
-.portfolio .portfolioContainer .projectContainer .details .madeWith {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 15px;
-}
-.portfolio .portfolioContainer .projectContainer .details .madeWith i {
-  font-size: 1.3rem;
-}
-.portfolio .portfolioContainer .projectContainer .details button {
-  text-align: center;
-  color: #3d3e42;
-  background-color: #04c2c9;
-  padding: 8px 20px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  margin: 25px auto;
-  border: none;
-  cursor: pointer;
-}
-.portfolio .portfolioContainer .projectContainer .details button:hover, .portfolio .portfolioContainer .projectContainer .details button:focus {
-  color: #04c2c9;
-  background-color: #3d3e42;
-}
-.portfolio .portfolioContainer .projectContainer:hover .details {
-  opacity: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 .portfolio .portfolioContainer .projectContainerWorldCuisine {
   background-image: url("../../../assets/portfolioImg/worldCuisineSmall.webp");
 }
@@ -682,6 +604,85 @@ p {
 }
 .portfolio .portfolioContainer .projectContainerCocktails {
   background-image: url("../../../assets/portfolioImg/Cocktails.webp");
+}
+
+.projectContainer {
+  background-position: center;
+  background-size: cover;
+  width: 380px;
+  height: 380px;
+  margin: 25px auto 0;
+  cursor: pointer;
+}
+.projectContainer .details {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  background-color: rgba(49, 51, 59, 0.8549019608);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.projectContainer .details h4 {
+  text-align: center;
+  color: #04c2c9;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 50px 30px 15px;
+}
+.projectContainer .details p {
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 15px 30px;
+}
+.projectContainer .details h5 {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.projectContainer .details .madeWith {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+.projectContainer .details .madeWith i {
+  font-size: 1.3rem;
+}
+.projectContainer .details button {
+  text-align: center;
+  color: #3d3e42;
+  background-color: #04c2c9;
+  padding: 8px 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 25px auto;
+  border: none;
+  cursor: pointer;
+}
+.projectContainer .details button:hover, .projectContainer .details button:focus {
+  color: #04c2c9;
+  background-color: #3d3e42;
+}
+.projectContainer:hover .details {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contactMe {
@@ -799,6 +800,23 @@ footer p {
   .mySkills .skillsEl .boxEl p {
     font-size: 0.5rem;
   }
+  .projectContainer {
+    width: 330px !important;
+    height: 370px !important;
+  }
+  .projectContainer p {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .projectContainer {
+    width: 280px !important;
+    height: 350px;
+  }
+  .projectContainer p {
+    padding: 15px !important;
+    text-align: center;
+  }
 }
 @media (max-width: 1080px) {
   .wrapper {
@@ -819,6 +837,22 @@ footer p {
   }
   .contactMe .contactHrContainer p {
     width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio .projectContainer {
+    width: 300px !important;
+    height: 350px;
+  }
+  .portfolio .projectContainer .details h4 {
+    font-size: 1.1rem;
+    padding-top: 30px;
+  }
+  .portfolio .projectContainer .details p {
+    font-size: 0.8rem !important;
+  }
+  .portfolio .projectContainer .details h5 {
+    font-size: 1rem;
   }
 }
 @media (max-width: 900px) {
@@ -956,6 +990,9 @@ footer p {
   .portfolio {
     width: 100%;
     background: #3d3e42;
+  }
+  .portfolio h2 {
+    padding-top: 0px;
   }
   .portfolio h3 {
     padding-bottom: 20px;

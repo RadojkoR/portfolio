@@ -1,0 +1,26 @@
+@use "./variables";
+
+// 1024px and under
+@media (max-width: 1024px) {
+    .portfolio{
+        .projectContainer {
+            width: calc(350px - 50px) !important;
+            height: 350px;
+
+            .details {
+                h4{
+                    font-size: 1.1rem;
+                    padding-top: 30px;
+                }
+                p {
+                    font-size: 0.8rem !important;
+                }
+                h5{
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
+    
+}
