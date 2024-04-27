@@ -2,11 +2,11 @@
 
 const projectDetailsModalInit = () => {
 
-const modal = {}
+    const modal = {}
 
-modal.projectData = [];
-// World Cuisine
-modal.worldCuisine = {
+    modal.projectData = [];
+    // World Cuisine
+    modal.worldCuisine = {
         name: "World Cuisine",
         text: "This is a web app restaurant template that showcases features that can help restaurant admins keep track of their online orders. Try it out by setting up a test admin or customer account! ",
         demoLink: "https://worldcuisine.netlify.app/",
@@ -32,7 +32,7 @@ modal.worldCuisine = {
     }
     modal.projectData.push(modal.whatDoYouNoApp)
 
-     // MES
+    // MES
     modal.coachingApp = {
         name: "Coaching",
         text: "A web app designed with professional coaches in mind to showcase their services. Templates can be custom made to the needs of the coach.",
@@ -96,89 +96,73 @@ modal.worldCuisine = {
 
 
     // SEE MORE BUTTON
-modal.seeMoreBtn = document.querySelectorAll('.seeMoreBtn');
-modal.projectDetailsModalContainer = document.getElementById('projectDetailsModal');
-modal.projectDetailsContainer = document.getElementById('projectDetailsContainer')
-modal.exitButton = document.getElementById('exitButton');
+    modal.seeMoreBtn = document.querySelectorAll('.seeMoreBtn');
+    modal.projectDetailsModalContainer = document.getElementById('projectDetailsModal');
+    modal.projectDetailsContainer = document.getElementById('projectDetailsContainer')
+    modal.exitButton = document.getElementById('exitButton');
 
-modal.exitButton.addEventListener('click', ()=> {
-    modal.projectDetailsModalContainer.classList.remove("visible");
-    modal.projectDetailsContainer.innerHTML = '';
-})
+    modal.exitButton.addEventListener('click', () => {
+        modal.projectDetailsModalContainer.classList.remove("visible");
+        modal.projectDetailsContainer.innerHTML = '';
+    })
 
-modal.seeMoreBtn.forEach(button => {
-    button.addEventListener('click', () => {
-     modal.projectDetailsContainer.innerHTML = '';
-    // console.log("see More button",modal.seeMoreBtn.name)
-    // console.log(modal.projectDetailsModalContainer);
-    
+    modal.seeMoreBtn.forEach(button => {
+        button.addEventListener('click', () => {
+            modal.projectDetailsContainer.innerHTML = '';
+            for (let item of modal.projectData) {
+                if (button.name === item.name) {
+                    modal.projectDetailsModalContainer.classList.toggle("visible");
+                    // add project name
+                    const projectName = document.createElement("h2");
+                    projectName.textContent = item.name;
+                    modal.projectDetailsContainer.appendChild(projectName);
 
-    for(let item of modal.projectData) {
-        console.log("item name",item.name);
-        console.log("button name",button.name)
-        if(button.name === item.name){
-        console.log("content text", item.text);
-        
-        modal.projectDetailsModalContainer.classList.toggle("visible");
-        // add project name
-        const projectName = document.createElement("h2");
-        projectName.textContent = item.name;
-        modal.projectDetailsContainer.appendChild(projectName);
+                    // add Project description
+                    const projectDescription = document.createElement("p");
+                    projectDescription.textContent = item.text;
+                    modal.projectDetailsContainer.appendChild(projectDescription);
 
-        // add Project description
-        const projectDescription = document.createElement("p");
-        projectDescription.textContent = item.text;
-        modal.projectDetailsContainer.appendChild(projectDescription);
+                    // add Demo Button
+                    const projectButtonContainer = document.createElement("div");
+                    projectButtonContainer.classList.add("projectButtonContainer")
+                    modal.projectDetailsContainer.appendChild(projectButtonContainer);
 
-        // add Demo Button
-        const projectButtonContainer = document.createElement("div");
-        projectButtonContainer.classList.add("projectButtonContainer")
-        modal.projectDetailsContainer.appendChild(projectButtonContainer);
+                    // Demo button
+                    const demoBtn = document.createElement("a");
+                    demoBtn.href = item.demoLink;
+                    demoBtn.target = "_blank"
+                    demoBtn.textContent = "Demo";
+                    projectButtonContainer.appendChild(demoBtn);
 
-        // Demo button
-        const demoBtn = document.createElement("a");
-        demoBtn.href = item.demoLink;
-        demoBtn.target = "_blank"
-        demoBtn.textContent = "Demo";
-        projectButtonContainer.appendChild(demoBtn);
+                    // Code Button
+                    if (item.codeLink) {
+                        const codeBtn = document.createElement("a");
+                        codeBtn.href = item.codeLink;
+                        codeBtn.target = "_blank";
+                        const codeBtnText = document.createTextNode(" Code");
+                        projectButtonContainer.appendChild(codeBtn);
 
-        // Code Button
-        if(item.codeLink) {
-            const codeBtn = document.createElement("a");
-            codeBtn.href = item.codeLink;
-            codeBtn.target = "_blank";
-            const codeBtnText = document.createTextNode(" Code");
-            projectButtonContainer.appendChild(codeBtn);
-            
-            const codeIconBtn = document.createElement("i");
-            codeIconBtn.className = "fa-brands fa-github";
-            codeBtn.appendChild(codeIconBtn);
-            codeBtn.appendChild(codeBtnText);
-        } else {
-            const codeBtn = document.createElement("a");
-            // codeBtn.href = item.codeLink;
-            codeBtn.classList = "buttonDisabled"
-            const codeBtnText = document.createTextNode(" Code");
-            projectButtonContainer.appendChild(codeBtn);
-            
-            const codeIconBtn = document.createElement("i");
-            codeIconBtn.className = "fa-brands fa-github";
-            codeBtn.appendChild(codeIconBtn);
-            codeBtn.appendChild(codeBtnText);
-        }
-        
+                        const codeIconBtn = document.createElement("i");
+                        codeIconBtn.className = "fa-brands fa-github";
+                        codeBtn.appendChild(codeIconBtn);
+                        codeBtn.appendChild(codeBtnText);
+                    } else {
+                        const codeBtn = document.createElement("a");
+                        // codeBtn.href = item.codeLink;
+                        codeBtn.classList = "buttonDisabled"
+                        const codeBtnText = document.createTextNode(" Code");
+                        projectButtonContainer.appendChild(codeBtn);
 
+                        const codeIconBtn = document.createElement("i");
+                        codeIconBtn.className = "fa-brands fa-github";
+                        codeBtn.appendChild(codeIconBtn);
+                        codeBtn.appendChild(codeBtnText);
+                    }
+                }
+            }
+        });
 
-        console.log(modal.projectDetailsModalContainer);
-
-    }
-    }
-    
-});
-    
-});
-
+    });
 }
-
 
 export default projectDetailsModalInit;
