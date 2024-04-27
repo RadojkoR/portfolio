@@ -578,8 +578,8 @@ p {
 .portfolio .portfolioContainer .projectContainer {
   background-position: center;
   background-size: cover;
-  width: calc(33% - 50px);
-  height: auto;
+  width: 380px;
+  height: 380px;
   margin: 25px auto 0;
   cursor: pointer;
 }
@@ -1261,7 +1261,7 @@ footer p {
 
 .projectDetailsModal {
   width: 70vw;
-  height: 500px;
+  height: auto;
   background-color: #f9f9f9;
   position: fixed;
   top: 25%;
@@ -1305,7 +1305,10 @@ footer p {
   color: #3d3e42;
   padding: 3rem;
 }
-.projectDetailsModal .projectDetailsContainer a {
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer {
+  margin-bottom: 50px;
+}
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a {
   color: #3d3e42;
   background-color: #04c2c9;
   padding: 5px 30px 5px 5px;
@@ -1314,23 +1317,23 @@ footer p {
   transition: all 0.4s ease;
   cursor: pointer;
 }
-.projectDetailsModal .projectDetailsContainer a i {
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a i {
   padding-left: 25px;
   padding-right: 5px;
 }
-.projectDetailsModal .projectDetailsContainer a:first-child {
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a:first-child {
   padding-left: 30px;
 }
-.projectDetailsModal .projectDetailsContainer a:hover, .projectDetailsModal .projectDetailsContainer a:focus {
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a:hover, .projectDetailsModal .projectDetailsContainer .projectButtonContainer a:focus {
   color: #04c2c9;
   background-color: #3d3e42;
 }
-.projectDetailsModal .projectDetailsContainer a.buttonDisabled {
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a.buttonDisabled {
   color: #04c2c9;
   background-color: #3d3e42;
 }
-.projectDetailsModal .projectDetailsContainer a.buttonDisabled:hover,
-.projectDetailsModal .projectDetailsContainer a.buttonDisabled:focus {
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a.buttonDisabled:hover,
+.projectDetailsModal .projectDetailsContainer .projectButtonContainer a.buttonDisabled:focus {
   cursor: not-allowed;
 }
 

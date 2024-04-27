@@ -3,7 +3,7 @@
 
 .projectDetailsModal {
     width: 70vw;
-    height: 500px;
+    height: auto;
     background-color: variables.$pupupBg;
     position: fixed;
     top: 25%;
@@ -45,39 +45,44 @@
             padding: 3rem;
         }
 
-        a {
-            color: variables.$primaryBg;
-            background-color: variables.$tertinary;
-            padding: 5px 30px 5px 5px;
-            margin-right: 20px;
-            transition: all 0.4s ease;
-            cursor: pointer;
+        .projectButtonContainer {
+            margin-bottom: 50px;
+            a {
+                color: variables.$primaryBg;
+                background-color: variables.$tertinary;
+                padding: 5px 30px 5px 5px;
+                margin-right: 20px;
+                transition: all 0.4s ease;
+                cursor: pointer;
 
-            i {
-                padding-left: 25px;
-                padding-right: 5px;
+                i {
+                    padding-left: 25px;
+                    padding-right: 5px;
+                }
+
+                &:first-child {
+                    padding-left: 30px;
+                }
+
+                &:hover,
+                &:focus {
+                    color: variables.$tertinary;
+                    background-color: variables.$primaryBg;
+                }
             }
 
-            &:first-child {
-                padding-left: 30px;
-            }
-
-            &:hover,
-            &:focus {
+            a.buttonDisabled {
                 color: variables.$tertinary;
                 background-color: variables.$primaryBg;
             }
+
+            a.buttonDisabled:hover,
+            a.buttonDisabled:focus {
+                cursor: not-allowed;
+            }
         }
 
-        a.buttonDisabled {
-            color: variables.$tertinary;
-            background-color: variables.$primaryBg;
-        }
-
-        a.buttonDisabled:hover,
-        a.buttonDisabled:focus {
-            cursor: not-allowed;
-        }
+        
     }
 }
 
