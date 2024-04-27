@@ -32,6 +32,15 @@ modal.worldCuisine = {
     }
     modal.projectData.push(modal.whatDoYouNoApp)
 
+     // MES
+    modal.couchingApp = {
+        name: "Couching",
+        text: "Couching",
+        demoLink: "https://coachingjs.netlify.app/",
+        codeLink: "https://github.com/RadojkoR/CoachingJs"
+    }
+    modal.projectData.push(modal.couchingApp)
+
     // MES
     modal.mesApp = {
         name: "MES",
@@ -50,14 +59,38 @@ modal.worldCuisine = {
     }
     modal.projectData.push(modal.InteriorDApp)
 
-    // INTERIOR D
+    // Travels With Drea"
     modal.TravelsWithDreaApp = {
         name: "Travels With Drea",
         text: "Travelswithdrea.com is a blog migration from Blogger to WordPress, for which I created a new design for the blog using Elementor (website in progress). ",
-        demoLink: "https://travelswithdrea.com/",
-        codeLink: "hhttps://interiordesign-or.netlify.app/"
+        demoLink: "https://travelswithdrea.com/"
     }
     modal.projectData.push(modal.TravelsWithDreaApp)
+
+    // Lifco
+    modal.LifcoApp = {
+        name: "Lifco",
+        text: "Lifco Hydraulics is a North American wide hydraulic stocking distributor and service center. In business since 1978 and stocking Denison, Parker, and Linde hydraulics.",
+        demoLink: "https://www.lifcohydraulics.com/"
+    }
+    modal.projectData.push(modal.LifcoApp)
+
+    // Lifco 3D Viewer
+    modal.ViewerApp = {
+        name: "Lifco 3D Viewer",
+        text: "Explore the convenience of viewing 3D Models online and eliminating the need for specialized software installations. ",
+        demoLink: "http://lifcohydraulics.com/ConfigTest"
+    }
+    modal.projectData.push(modal.ViewerApp);
+
+    // Cocktails
+    modal.CocktailsApp = {
+        name: "Find your favorite cocktail",
+        text: "A web app that helps you find a reciepe and ingredients needed for your favorite cocktail",
+        demoLink: "https://best-cocktails.netlify.app/",
+        codeLink: "https://github.com/RadojkoR/cocktails"
+    }
+    modal.projectData.push(modal.CocktailsApp)
 
 
 
@@ -110,16 +143,30 @@ modal.seeMoreBtn.forEach(button => {
         projectButtonContainer.appendChild(demoBtn);
 
         // Code Button
-        const codeBtn = document.createElement("a");
-        codeBtn.href = item.codeLink;
-        codeBtn.target = "_blank";
-        const codeBtnText = document.createTextNode(" Code");
-        projectButtonContainer.appendChild(codeBtn);
+        if(item.codeLink) {
+            const codeBtn = document.createElement("a");
+            codeBtn.href = item.codeLink;
+            codeBtn.target = "_blank";
+            const codeBtnText = document.createTextNode(" Code");
+            projectButtonContainer.appendChild(codeBtn);
+            
+            const codeIconBtn = document.createElement("i");
+            codeIconBtn.className = "fa-brands fa-github";
+            codeBtn.appendChild(codeIconBtn);
+            codeBtn.appendChild(codeBtnText);
+        } else {
+            const codeBtn = document.createElement("a");
+            // codeBtn.href = item.codeLink;
+            codeBtn.classList = "buttonDisabled"
+            const codeBtnText = document.createTextNode(" Code");
+            projectButtonContainer.appendChild(codeBtn);
+            
+            const codeIconBtn = document.createElement("i");
+            codeIconBtn.className = "fa-brands fa-github";
+            codeBtn.appendChild(codeIconBtn);
+            codeBtn.appendChild(codeBtnText);
+        }
         
-        const codeIconBtn = document.createElement("i");
-        codeIconBtn.className = "fa-brands fa-github";
-        codeBtn.appendChild(codeIconBtn);
-        codeBtn.appendChild(codeBtnText);
 
 
         console.log(modal.projectDetailsModalContainer);

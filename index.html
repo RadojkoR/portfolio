@@ -26,631 +26,751 @@
 <body>
   <!-- SKIP LINK -->
   <a href="#mainContent" class="skipLink">Skip to main</a>
-<div class="mainContainer">
+  <div class="mainContainer">
 
-  <!-- NAV SECTION -->
-  <div class="collapsibleMenu">
-    <!-- WRAPPER -->
-    <div class="wrapper">
-      <div class="menuContent">
-        <nav class="menu">
-          <div class="logo">
-            <a href="#top"><img src="./assets/iconR-logo.webp" alt="Logo Radojko frontend web developer" /></a>
-          </div>
+    <!-- NAV SECTION -->
+    <div class="collapsibleMenu">
+      <!-- WRAPPER -->
+      <div class="wrapper">
+        <div class="menuContent">
+          <nav class="menu">
+            <div class="logo">
+              <a href="#top"><img src="./assets/iconR-logo.webp" alt="Logo Radojko frontend web developer" /></a>
+            </div>
 
-          <div class="hamburgerMenu">
-            <p>Menu</p>
-          </div>
-          <!--End .hamburgerMenu-->
+            <div class="hamburgerMenu">
+              <p>Menu</p>
+            </div>
+            <!--End .hamburgerMenu-->
 
-          <ul class="flexNav">
-            <li><a href="#aboutMeSection">About</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#portfolioSection">Portfolio</a></li>
-            <li><a href="#contactMeSection">Contact Me</a></li>
-          </ul>
-        </nav>
+            <ul class="flexNav">
+              <li><a href="#aboutMeSection">About</a></li>
+              <li><a href="#skills">My Skills</a></li>
+              <li><a href="#portfolioSection">Portfolio</a></li>
+              <li><a href="#contactMeSection">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+      <!--End .wrapper-->
     </div>
-    <!--End .wrapper-->
-  </div>
-  <!--END .collapsibleMenu-->
+    <!--END .collapsibleMenu-->
 
-  <!-------------------------------------------- HEADER SECTION -->
-  <header id="top" class="mainHeader">
-    <!-- WRAPPER -->
-    <div class="wrapper">
-      <div class="headerContainer">
-        <div class="headerTxtContainer">
-          <h1>I'm <span>Radojko</span></h1>
-          <p class="animatedTxt"></p>
+    <!-------------------------------------------- HEADER SECTION -->
+    <header id="top" class="mainHeader">
+      <!-- WRAPPER -->
+      <div class="wrapper">
+        <div class="headerContainer">
+          <div class="headerTxtContainer">
+            <h1>I'm <span>Radojko</span></h1>
+            <p class="animatedTxt"></p>
+          </div>
+          <!--End .headerTxtContainer-->
+          <div class="headerImgContainer">
+          </div>
+          <!--End .headerImgContainer-->
         </div>
-        <!--End .headerTxtContainer-->
-        <div class="headerImgContainer">
+        <!--End .HeaderContainer-->
+
+        <!-- SOCIAL MEDIA CONTAINER -->
+        <div class="headerSocialMedia">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/radojkoradulovic" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/RadoykoR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/radojkoradulovic/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/RadojkoR" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
         </div>
-        <!--End .headerImgContainer-->
       </div>
-      <!--End .HeaderContainer-->
+      <!--End .wrapper-->
+    </header>
 
-      <!-- SOCIAL MEDIA CONTAINER -->
-      <div class="headerSocialMedia">
-        <ul>
+    <!----------------------------------------------- MAIN SECTION -->
+    <main id="mainContent">
+      <!----------------------------------------- ABOUT ME SECTION --------------------------------------------->
+      <section id="aboutMeSection" class="aboutMe">
+        <div class="wrapper">
+          <h2 class="box">About</h2>
+          <div class="aboutTxtContainer box">
+            <p></p>
+            <p>
+              I'm a Front End Developer based in Burlington, Ontario, Canada. I
+              work full time as a Web Developer, and I'm open to new
+              opportunities as a freelancer.
+              <span>Let's work together to make great websites!</span>
+            </p>
+          </div>
+          <!--End .aboutTxtContainer-->
+        </div>
+        <!--End .wrapper-->
+      </section>
+
+      <!---------------------------------------------- SKILLS SECTION -->
+      <section id="skills" class="mySkills">
+        <div class="wrapper">
+          <div class="skillsEl">
+            <h2>My Skills</h2>
+            <article class="rowOne">
+              <div class="skillsRowOne">
+                <div class="htmlSkill boxEl">
+                  <i class="fa-brands fa-html5"></i>
+                  <p>HTML&nbsp5</p>
+                </div>
+
+                <div class="cssSkill boxEl">
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <p>CSS 3</p>
+                </div>
+
+                <div class="sassSkill boxEl">
+                  <i class="fa-brands fa-sass"></i>
+                  <p>Sass</p>
+                </div>
+
+                <div class="bootstrapSkill boxEl">
+                  <i class="fa-brands fa-bootstrap"></i>
+                  <p>Bootstrap</p>
+                </div>
+
+                <div class="jsSkill boxEl">
+                  <i class="fa-brands fa-square-js"></i>
+                  <p>JavaScript</p>
+                </div>
+
+                <div class="reactSkill boxEl">
+                  <i class="fa-brands fa-react"></i>
+                  <p>React</p>
+                </div>
+
+                <div class="angularSkill boxEl">
+                  <i class="fa-brands fa-angular"></i>
+                  <p>Angular</p>
+                </div>
+
+                <div class="typeScriptSkill boxEl">
+                  <i class="devicon-typescript-plain colored"></i>
+                  <p>TypeScript</p>
+                </div>
+              </div>
+
+              <div class="skillsRowTwo">
+                <div class="jquerySkill boxEl">
+                  <i class="devicon-jquery-plain"></i>
+                  <p>jQuery</p>
+                </div>
+
+                <div class="dotNetSkill boxEl">
+                  <i class="devicon-dotnetcore-plain colored"></i>
+                  <p>.NET</p>
+                </div>
+
+                <div class="cSkill boxEl">
+                  <i class="devicon-csharp-plain colored"></i>
+                  <p>C#</p>
+                </div>
+
+                <div class="wordpressSkill boxEl">
+                  <i class="fa-brands fa-wordpress"></i>
+                  <p>WordPress</p>
+                </div>
+
+                <div class="gitSkill boxEl">
+                  <i class="fa-brands fa-git-alt"></i>
+                  <p>Git</p>
+                </div>
+
+                <div class="firebase boxEl">
+                  <i class="devicon-firebase-plain colored"></i>
+                  <p>Firebase</p>
+                </div>
+
+                <div class="mobile boxEl">
+                  <i class="devicon-tailwindcss-original colored"></i>
+                  <p>
+                    Tailwind<br />CSS
+                  </p>
+                </div>
+
+                <div class="accessibility boxEl">
+                  <i class="fa-solid fa-universal-access"></i>
+                  <p>Web<br />Accessibility</p>
+                </div>
+              </div>
+            </article>
+            <!-- End .rowThree-->
+          </div>
+          <!-- End .skillsEl-->
+        </div>
+        <!--End .wrapper-->
+      </section>
+
+      <!---------------------------------------------- PORTFOLIO ----------------------------------------------->
+      <section id="portfolioSection" class="portfolio">
+        <div class="wrapper">
+          <h2>Portfolio</h2>
+
+          <section class="portfolioContainer">
+            <!-- World Cuisine Restaurant -->
+            <article class="projectContainer projectContainerWorldCuisine">
+              <div class="details">
+                <h4>World Cuisine Restaurant</h4>
+                <p>
+                  This is a web app wich has user authentication such as Sign Up, Sing In...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-react-original-wordmark colored"></i>
+                  <i class="devicon-typescript-plain colored"></i>
+                  <i class="devicon-bootstrap-plain colored"></i>
+                  <i class="devicon-dotnetcore-plain colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                  <i class="devicon-azure-plain colored"></i>
+                  <i class="devicon-azuresqldatabase-plain colored"></i>
+                </div>
+                <button type="button" name="World Cuisine" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- Ontario Weather App -->
+            <article class="projectContainer projectContainerOntarioWeather">
+              <div class="details">
+                <h4>Ontario Weather App</h4>
+                <p>
+                  A web app that uses APIs and datasets to find the current weather ...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-sass-original colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Ontario Weather App" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <article class="projectContainer projectContainerWhatDoYouNo">
+              <div class="details">
+                <h4>What do YOU no?</h4>
+                <p>
+                  This is a learning game web app that uses APIs to find the words and definition...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-react-original-wordmark colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                  <i class="devicon-firebase-plain colored"></i>
+                </div>
+                <button type="button" name="What do you no" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- MES -->
+            <article class="projectContainer projectContainerCoaching">
+              <div class="details">
+                <h4>Coaching</h4>
+                <p>
+                  Coaching ...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-react-original-wordmark colored"></i>
+                  <i class="devicon-tailwindcss-original colored"></i>
+                  <i class="devicon-sass-original colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Couching" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- MES -->
+            <article class="projectContainer projectContainerMes">
+              <div class="details">
+                <h4>MES</h4>
+                <p>
+                  MES is an electrical company that specializes in installing security systems, solar panels ...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-jquery-plain-wordmark colored"></i>
+                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="MES" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- Interior D -->
+            <article class="projectContainer projectContainerInteriorD">
+              <div class="details">
+                <h4>Interior D</h4>
+                <p>
+                  A web app for an Interior and Exterior design company.
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-sass-original colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Interior D" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- Travels With Drea -->
+            <article class="projectContainer projectContainerTravelsWithDrea">
+              <div class="details">
+                <h4>Travels With Drea</h4>
+                <p>
+                  Travelswithdrea.com is a blog migration from Blogger to WordPress...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-wordpress-plain-wordmark"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Travels With Drea" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- Lifco -->
+            <article class="projectContainer projectContainerLifco">
+              <div class="details">
+                <h4>Lifco Hydraulics</h4>
+                <p>
+                  Lifco Hydraulics is a North American wide hydraulic stocking distributor and service center...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-dotnetcore-plain colored"></i>
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-jquery-plain colored"></i>
+                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Lifco" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+
+            <!-- 3D Viewer -->
+            <article class="projectContainer projectContainerLifco3DViewer">
+              <div class="details">
+                <h4>Lifco 3D Viewer</h4>
+                <p>
+                  Explore the convenience of viewing 3D Models online...
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-typescript-plain colored"></i>
+                  <i class="devicon-angular-plain angularIcon"></i>
+                  <i class="devicon-threejs-original"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Lifco 3D Viewer" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+            <!-- 3D Viewer -->
+            <article class="projectContainer projectContainerCocktails">
+              <div class="details">
+                <h4>Find your favorite cocktail</h4>
+                <p>
+                  A web app that helps you find a reciepe and ingredients needed
+                for your favorite cocktail
+                </p>
+                <h5>Made With</h5>
+                <div class="madeWith">
+                  <i class="devicon-react-original-wordmark colored"></i>
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <button type="button" name="Find your favorite cocktail" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+              </div>
+            </article>
+          </section>
+
+
+
+
+
+          <article class="projectContainerEven">
+            <!-- PROJECT TEXT CONTAINER -->
+            <div class="projectTxtContainer">
+              <h3>World Cuisine Restaurant</h3>
+              <p>
+                This is a web app restaurant template that showcases features that can help restaurant admins keep track
+                of their online orders. Try it out by setting up a test admin or customer account!
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-dotnetcore-plain colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+                <i class="devicon-azure-plain colored"></i>
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://worldcuisine.netlify.app/" target="_blank">Demo</a>
+                <a href="https://github.com/RadojkoR/restaurant.git" target="_blank"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+
+            <!-- PROJECT IMG CONTAINER -->
+            <div class="projectImgContainer">
+              <img src="./assets/worldcuisine.webp" alt="Image of World Cuisine Restaurant" />
+            </div>
+            <!--End .projectImgContainer-->
+          </article>
+
+          <!-------------------------------- PROJECT Ontario Weather App Websites -->
+          <article class="projectContainerOdd projectContainer">
+            <div class="projectImgContainer">
+              <img src="./assets/projectTwo-sm.webp" alt="Image of Ontario Weather App Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+
+            <div class="projectTxtContainer">
+              <h3>Ontario Weather App</h3>
+              <p>
+                A web app that uses APIs and datasets to find the current
+                weather in different Ontario cities and towns.
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://ontario-weather-app.netlify.app/" target="_blank">Demo</a>
+                <a href="https://github.com/weatherAppJuno/weatherApp" target="_blank"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+          </article>
+
+          <!----------------------------------- PROJECT TWhat do YOU no Learning game-->
+          <article class="projectContainerEven">
+            <!-- PROJECT TEXT CONTAINER -->
+            <div class="projectTxtContainer">
+              <h3>What do YOU no?</h3>
+              <p>
+                This is a learning game web app that uses APIs to find the words
+                and definition. Users will be presented with two randomly
+                generated homophonous words and need to select the correct one.
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+                <i class="devicon-firebase-plain colored"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://whatchuknohuh.netlify.app/" target="_blank">Demo</a>
+                <a href="https://github.com/JunoProjectFour/whatchaKnoHuh.git" target="_blank"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+
+            <!-- PROJECT IMG CONTAINER -->
+            <div class="projectImgContainer">
+              <img src="./assets/What_do_YOU_no.webp" alt="Image of What do YOU no Learning game" />
+            </div>
+            <!--End .projectImgContainer-->
+          </article>
+
+          <!--------------------------------------------------------- PROJECT MES -->
+          <article class="projectContainerOdd">
+            <div class="projectImgContainer">
+              <img src="./assets/mes.webp" alt="Image of MES Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+
+            <div class="projectTxtContainer">
+              <h3>MES</h3>
+              <p>
+                MES is an electrical company that specializes in electrical
+                installations, repairing electrical devices, and installing
+                solar panels and security systems.
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://www.mes.rs" target="_blank">Demo</a>
+                <a href="https://github.com/RadojkoR/mes.git" target="_blank"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+          </article>
+
+          <!----------------------------------- PROJECT Lifco-->
+          <article class="projectContainerEven">
+            <!-- PROJECT TEXT CONTAINER -->
+            <div class="projectTxtContainer">
+              <h3>Lifco Hydraulics</h3>
+              <p>
+                Lifco Hydraulics is a North American wide hydraulic stocking
+                distributor and service center. In business since 1978 and
+                stocking Denison, Parker, and Linde hydraulics.
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-dotnetcore-plain colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-jquery-plain colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://www.lifcohydraulics.com/" target="_blank">Demo</a>
+                <a data-toggle="modal" data-target="#notAvailable" class="buttonDisabled" target="_blank"><i
+                    class="devicon-azure-plain colored"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+
+            <!-- PROJECT IMG CONTAINER -->
+            <div class="projectImgContainer">
+              <img src="./assets/LifcoImgsmall.webp" alt="Image of Lifco Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+          </article>
+          <!-- End projectFour-->
+
+          <!--------------------------------------------------------- PROJECT 3D viewer -->
+          <article class="projectContainerOdd">
+            <div class="projectImgContainer">
+              <img src="./assets/Lifco3DViewerSmall.webp" alt="Image of Lifco 3D viewer Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+
+            <div class="projectTxtContainer">
+              <h3>Lifco 3D Viewer</h3>
+              <p>
+                Explore the convenience of viewing 3D Models online and
+                eliminating the need for specialized software installations.
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-angular-plain angularIcon"></i>
+                <i class="devicon-threejs-original"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="http://lifcohydraulics.com/configtest" target="_blank">Demo</a>
+                <a data-toggle="modal" data-target="#notAvailable" class="buttonDisabled" target="_blank"><i
+                    class="devicon-azure-plain colored"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+          </article>
+
+          <!----------------------------------- PROJECT Travels With Drea-->
+          <article class="projectContainerEven">
+            <!-- PROJECT TEXT CONTAINER -->
+            <div class="projectTxtContainer">
+              <h3>Travels With Drea</h3>
+              <p>
+                Travelswithdrea.com is a blog migration from Blogger to
+                WordPress, for which I created a new design for the blog using
+                Elementor (website in progress).
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-wordpress-plain-wordmark"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://travelswithdrea.com/" target="_blank">Demo</a>
+                <a data-toggle="modal" data-target="#notAvailable" class="buttonDisabled"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+
+            <!-- PROJECT IMG CONTAINER -->
+            <div class="projectImgContainer">
+              <img src="./assets/travelsWithDrea.webp" alt="Image of Travels With Drea Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+          </article>
+
+          <!--------------------------------------------------------- PROJECT Cocktaile app -->
+          <article class="projectContainerOdd">
+            <div class="projectImgContainer">
+              <img src="./assets/cocktails.png" alt="Image of Cocktails App Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+
+            <div class="projectTxtContainer">
+              <h3>Find your favorite cocktail</h3>
+              <p>
+                A web app that helps you find a reciepe and ingredients needed
+                for your favorite cocktail
+              </p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://best-cocktails.netlify.app/" target="_blank">Demo</a>
+                <a href="https://github.com/RadojkoR/cocktails.git" target="_blank"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+          </article>
+
+          <!--------------------------------------------------------- PROJECT Interior Design -->
+          <article class="projectContainerEven">
+            <!-- PROJECT TEXT CONTAINER -->
+            <div class="projectTxtContainer">
+              <h3>Interior D</h3>
+              <p>A web app for an Interior and Exterior design company.</p>
+              <h5>Made With</h5>
+              <div class="madeWith">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <!-- End .madeWith-->
+              <div class="projectButtonContainer">
+                <a href="https://interiordesign-or.netlify.app" target="_blank">Demo</a>
+                <a href="https://github.com/RadojkoR/InteriorDesign.git" target="_blank"><i
+                    class="fa-brands fa-github"></i>Code</a>
+              </div>
+              <!--End .projectButtonContainer-->
+            </div>
+            <!--End .projectTxtContainer-->
+
+            <!-- PROJECT IMG CONTAINER -->
+            <div class="projectImgContainer">
+              <img src="./assets/interiorD.webp" alt="Image of Interior D Websites" />
+            </div>
+            <!--End .projectImgContainer-->
+          </article>
+        </div>
+        <!--End .wrapper-->
+      </section>
+
+      <!-- CONTACT ME SECTI0N -->
+      <section id="contactMeSection" class="contactMe">
+        <div class="contactHrContainer">
+          <p></p>
+          <h2>Contact Me</h2>
+          <p></p>
+        </div>
+        <ul class="contactInfo">
           <li>
-            <a href="https://www.linkedin.com/in/radojkoradulovic" target="_blank"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/RadoykoR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/radojkoradulovic/" target="_blank"><i
-                class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/RadojkoR" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:radulovicradoyko@gmail.com">
+              <i class="fa-regular fa-envelope"></i>radulovicradoyko@gmail.com</a>
           </li>
         </ul>
-      </div>
-    </div>
-    <!--End .wrapper-->
-  </header>
+      </section>
+    </main>
 
-  <!----------------------------------------------- MAIN SECTION -->
-  <main id="mainContent">
-    <!----------------------------------------- ABOUT ME SECTION --------------------------------------------->
-    <section id="aboutMeSection" class="aboutMe">
-      <div class="wrapper">
-        <h2 class="box">About</h2>
-        <div class="aboutTxtContainer box">
-          <p></p>
-          <p>
-            I'm a Front End Developer based in Burlington, Ontario, Canada. I
-            work full time as a Web Developer, and I'm open to new
-            opportunities as a freelancer.
-            <span>Let's work together to make great websites!</span>
-          </p>
-        </div>
-        <!--End .aboutTxtContainer-->
-      </div>
-      <!--End .wrapper-->
-    </section>
-
-    <!---------------------------------------------- SKILLS SECTION -->
-    <section id="skills" class="mySkills">
-      <div class="wrapper">
-        <div class="skillsEl">
-          <h2>My Skills</h2>
-          <article class="rowOne">
-            <div class="skillsRowOne">
-              <div class="htmlSkill boxEl">
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML&nbsp5</p>
-              </div>
-
-              <div class="cssSkill boxEl">
-                <i class="fa-brands fa-css3-alt"></i>
-                <p>CSS 3</p>
-              </div>
-
-              <div class="sassSkill boxEl">
-                <i class="fa-brands fa-sass"></i>
-                <p>Sass</p>
-              </div>
-
-              <div class="bootstrapSkill boxEl">
-                <i class="fa-brands fa-bootstrap"></i>
-                <p>Bootstrap</p>
-              </div>
-
-              <div class="jsSkill boxEl">
-                <i class="fa-brands fa-square-js"></i>
-                <p>JavaScript</p>
-              </div>
-
-              <div class="reactSkill boxEl">
-                <i class="fa-brands fa-react"></i>
-                <p>React</p>
-              </div>
-
-              <div class="angularSkill boxEl">
-                <i class="fa-brands fa-angular"></i>
-                <p>Angular</p>
-              </div>
-
-              <div class="typeScriptSkill boxEl">
-                <i class="devicon-typescript-plain colored"></i>
-                <p>TypeScript</p>
-              </div>
-            </div>
-
-            <div class="skillsRowTwo">
-              <div class="jquerySkill boxEl">
-                <i class="devicon-jquery-plain"></i>
-                <p>jQuery</p>
-              </div>
-
-              <div class="dotNetSkill boxEl">
-                <i class="devicon-dotnetcore-plain colored"></i>
-                <p>.NET</p>
-              </div>
-
-              <div class="cSkill boxEl">
-                <i class="devicon-csharp-plain colored"></i>
-                <p>C#</p>
-              </div>
-
-              <div class="wordpressSkill boxEl">
-                <i class="fa-brands fa-wordpress"></i>
-                <p>WordPress</p>
-              </div>
-
-              <div class="gitSkill boxEl">
-                <i class="fa-brands fa-git-alt"></i>
-                <p>Git</p>
-              </div>
-
-              <div class="firebase boxEl">
-                <i class="devicon-firebase-plain colored"></i>
-                <p>Firebase</p>
-              </div>
-
-              <div class="mobile boxEl">
-                <i class="fa-solid fa-mobile"></i>
-                <p>
-                  Responsive<br />
-                  Design
-                </p>
-              </div>
-
-              <div class="accessibility boxEl">
-                <i class="fa-solid fa-universal-access"></i>
-                <p>Web<br />Accessibility</p>
-              </div>
-            </div>
-          </article>
-          <!-- End .rowThree-->
-        </div>
-        <!-- End .skillsEl-->
-      </div>
-      <!--End .wrapper-->
-    </section>
-
-    <!---------------------------------------------- PORTFOLIO ----------------------------------------------->
-    <section id="portfolioSection" class="portfolio">
-      <div class="wrapper">
-        <h2>Portfolio</h2>
-
-        <section class="portfolioContainer">
-          <!-- World Cuisine Restaurant -->
-          <article class="projectContainer projectContainerWorldCuisine">
-            <div class="details">
-              <h4>World Cuisine Restaurant</h4>
-              <p>
-              This is a web app wich has user authentication such as Sign Up, Sing In...
-              </p>
-              <button type="button" name="World Cuisine" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-            </div>
-          </article>
-
-          <!-- Ontario Weather App -->
-          <article class="projectContainer projectContainerOntarioWeather">
-            <div class="details">
-              <h4>Ontario Weather App</h4>
-              <p>
-              A web app that uses APIs and datasets to find the current weather ...
-            </p>
-            <button type="button" name="Ontario Weather App" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-            </div>
-          </article>
-
-          <article class="projectContainer projectContainerWhatDoYouNo">
-            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
-             <div class="details">
-              <h4>What do YOU no?</h4>
-              <p>
-              This is a learning game web app that uses APIs to find the words and definition...
-            </p>
-            <button type="button" name="What do you no" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-            </div>
-          </article>
-
-          <!-- MES -->
-          <article class="projectContainer projectContainerMes">
-            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
-             <div class="details">
-              <h4>MES</h4>
-              <p>
-              MES is an electrical company that specializes in installing security systems, solar panels ...
-              </p>
-              <button type="button" name="MES" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-            </div>
-          </article>
-
-          <article class="projectContainer projectContainerInteriorD">
-            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
-             <div class="details">
-              <h4>Interior D</h4>
-              <p>
-              A web app for an Interior and Exterior design company.
-            </p>
-            <button type="button" name="Interior D" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-            </div>
-          </article>
-
-          <article class="projectContainer projectContainerTravelsWithDrea">
-            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
-             <div class="details">
-              <h4>WTravels With Drea</h4>
-              <p>
-              Travelswithdrea.com is a blog migration from Blogger to WordPress...
-            </p>
-            <button type="button" name="Travels With Drea" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-            </div>
-          </article>
-
-
-        </section>
-
-
-
-
-
-        <article class="projectContainerEven">
-          <!-- PROJECT TEXT CONTAINER -->
-          <div class="projectTxtContainer">
-            <h3>World Cuisine Restaurant</h3>
-            <p>
-              This is a web app restaurant template that showcases features that can help restaurant admins keep track of their online orders. Try it out by setting up a test admin or customer account! 
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-react-original-wordmark colored"></i>
-              <i class="devicon-typescript-plain colored"></i>
-              <i class="devicon-bootstrap-plain colored"></i>
-              <i class="devicon-dotnetcore-plain colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-            <i class="devicon-azure-plain colored"></i>
-            <i class="devicon-azuresqldatabase-plain colored"></i>
-          
-          
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://worldcuisine.netlify.app/" target="_blank">Demo</a>
-              <a href="https://github.com/RadojkoR/restaurant.git" target="_blank"><i
-                  class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-
-          <!-- PROJECT IMG CONTAINER -->
-          <div class="projectImgContainer">
-            <img src="./assets/worldcuisine.webp" alt="Image of World Cuisine Restaurant" />
-          </div>
-          <!--End .projectImgContainer-->
-        </article>
-
-        <!-------------------------------- PROJECT Ontario Weather App Websites -->
-        <article class="projectContainerOdd projectContainer">
-          <div class="projectImgContainer">
-            <img src="./assets/projectTwo-sm.webp" alt="Image of Ontario Weather App Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-
-          <div class="projectTxtContainer">
-            <h3>Ontario Weather App</h3>
-            <p>
-              A web app that uses APIs and datasets to find the current
-              weather in different Ontario cities and towns.
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-sass-original colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://ontario-weather-app.netlify.app/" target="_blank">Demo</a>
-              <a href="https://github.com/weatherAppJuno/weatherApp" target="_blank"><i
-                  class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-        </article>
-
-        <!----------------------------------- PROJECT TWhat do YOU no Learning game-->
-        <article class="projectContainerEven">
-          <!-- PROJECT TEXT CONTAINER -->
-          <div class="projectTxtContainer">
-            <h3>What do YOU no?</h3>
-            <p>
-              This is a learning game web app that uses APIs to find the words
-              and definition. Users will be presented with two randomly
-              generated homophonous words and need to select the correct one.
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-react-original-wordmark colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-              <i class="devicon-firebase-plain colored"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://whatchuknohuh.netlify.app/" target="_blank">Demo</a>
-              <a href="https://github.com/JunoProjectFour/whatchaKnoHuh.git" target="_blank"><i
-                  class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-
-          <!-- PROJECT IMG CONTAINER -->
-          <div class="projectImgContainer">
-            <img src="./assets/What_do_YOU_no.webp" alt="Image of What do YOU no Learning game" />
-          </div>
-          <!--End .projectImgContainer-->
-        </article>
-
-        <!--------------------------------------------------------- PROJECT MES -->
-        <article class="projectContainerOdd">
-          <div class="projectImgContainer">
-            <img src="./assets/mes.webp" alt="Image of MES Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-
-          <div class="projectTxtContainer">
-            <h3>MES</h3>
-            <p>
-              MES is an electrical company that specializes in electrical
-              installations, repairing electrical devices, and installing
-              solar panels and security systems.
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-jquery-plain-wordmark colored"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://www.mes.rs" target="_blank">Demo</a>
-              <a href="https://github.com/RadojkoR/mes.git" target="_blank"><i class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-        </article>
-
-        <!----------------------------------- PROJECT Lifco-->
-        <article class="projectContainerEven">
-          <!-- PROJECT TEXT CONTAINER -->
-          <div class="projectTxtContainer">
-            <h3>Lifco Hydraulics</h3>
-            <p>
-              Lifco Hydraulics is a North American wide hydraulic stocking
-              distributor and service center. In business since 1978 and
-              stocking Denison, Parker, and Linde hydraulics.
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-dotnetcore-plain colored"></i>
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-jquery-plain colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://www.lifcohydraulics.com/" target="_blank">Demo</a>
-              <a data-toggle="modal" data-target="#notAvailable" class="buttonDisabled" target="_blank"><i
-                  class="devicon-azure-plain colored"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-
-          <!-- PROJECT IMG CONTAINER -->
-          <div class="projectImgContainer">
-            <img src="./assets/LifcoImgsmall.webp" alt="Image of Lifco Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-        </article>
-        <!-- End projectFour-->
-
-        <!--------------------------------------------------------- PROJECT 3D viewer -->
-        <article class="projectContainerOdd">
-          <div class="projectImgContainer">
-            <img src="./assets/Lifco3DViewerSmall.webp" alt="Image of Lifco 3D viewer Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-
-          <div class="projectTxtContainer">
-            <h3>Lifco 3D Viewer</h3>
-            <p>
-              Explore the convenience of viewing 3D Models online and
-              eliminating the need for specialized software installations.
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-typescript-plain colored"></i>
-              <i class="devicon-angular-plain angularIcon"></i>
-              <i class="devicon-threejs-original"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="http://lifcohydraulics.com/configtest" target="_blank">Demo</a>
-              <a data-toggle="modal" data-target="#notAvailable" class="buttonDisabled" target="_blank"><i
-                  class="devicon-azure-plain colored"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-        </article>
-
-        <!----------------------------------- PROJECT Travels With Drea-->
-        <article class="projectContainerEven">
-          <!-- PROJECT TEXT CONTAINER -->
-          <div class="projectTxtContainer">
-            <h3>Travels With Drea</h3>
-            <p>
-              Travelswithdrea.com is a blog migration from Blogger to
-              WordPress, for which I created a new design for the blog using
-              Elementor (website in progress).
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-wordpress-plain-wordmark"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://travelswithdrea.com/" target="_blank">Demo</a>
-              <a data-toggle="modal" data-target="#notAvailable" class="buttonDisabled"><i
-                  class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-
-          <!-- PROJECT IMG CONTAINER -->
-          <div class="projectImgContainer">
-            <img src="./assets/travelsWithDrea.webp" alt="Image of Travels With Drea Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-        </article>
-
-        <!--------------------------------------------------------- PROJECT Cocktaile app -->
-        <article class="projectContainerOdd">
-          <div class="projectImgContainer">
-            <img src="./assets/cocktails.png" alt="Image of Cocktails App Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-
-          <div class="projectTxtContainer">
-            <h3>Find your favorite cocktail</h3>
-            <p>
-              A web app that helps you find a reciepe and ingredients needed
-              for your favorite cocktail
-            </p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-react-original-wordmark colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://best-cocktails.netlify.app/" target="_blank">Demo</a>
-              <a href="https://github.com/RadojkoR/cocktails.git" target="_blank"><i
-                  class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-        </article>
-
-        <!--------------------------------------------------------- PROJECT Interior Design -->
-        <article class="projectContainerEven">
-          <!-- PROJECT TEXT CONTAINER -->
-          <div class="projectTxtContainer">
-            <h3>Interior D</h3>
-            <p>A web app for an Interior and Exterior design company.</p>
-            <h5>Made With</h5>
-            <div class="madeWith">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-sass-original colored"></i>
-              <i class="fa-solid fa-mobile"></i>
-            </div>
-            <!-- End .madeWith-->
-            <div class="projectButtonContainer">
-              <a href="https://interiordesign-or.netlify.app" target="_blank">Demo</a>
-              <a href="https://github.com/RadojkoR/InteriorDesign.git" target="_blank"><i
-                  class="fa-brands fa-github"></i>Code</a>
-            </div>
-            <!--End .projectButtonContainer-->
-          </div>
-          <!--End .projectTxtContainer-->
-
-          <!-- PROJECT IMG CONTAINER -->
-          <div class="projectImgContainer">
-            <img src="./assets/interiorD.webp" alt="Image of Interior D Websites" />
-          </div>
-          <!--End .projectImgContainer-->
-        </article>
-      </div>
-      <!--End .wrapper-->
-    </section>
-
-    <!-- CONTACT ME SECTI0N -->
-    <section id="contactMeSection" class="contactMe">
-      <div class="contactHrContainer">
+    <!-- FOOTER SECTION -->
+    <footer>
+      <!-- SOCIAL MEDIA FOOTER -->
+      <ul>
         <p></p>
-        <h2>Contact Me</h2>
-        <p></p>
-      </div>
-      <ul class="contactInfo">
         <li>
-          <a href="mailto:radulovicradoyko@gmail.com">
-            <i class="fa-regular fa-envelope"></i>radulovicradoyko@gmail.com</a>
+          <a href="https://www.linkedin.com/in/radojkoradulovic" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
         </li>
+        <li>
+          <a href="https://twitter.com/RadoykoR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/radojkoradulovic/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/RadojkoR" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li> -->
+        <p></p>
       </ul>
-    </section>
-  </main>
 
-  <!-- FOOTER SECTION -->
-  <footer>
-    <!-- SOCIAL MEDIA FOOTER -->
-    <ul>
-      <p></p>
-      <li>
-        <a href="https://www.linkedin.com/in/radojkoradulovic" target="_blank"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/RadoykoR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/radojkoradulovic/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      </li>
-      <li>
-        <a href="https://github.com/RadojkoR" target="_blank"><i class="fa-brands fa-github"></i></a>
-      </li>
-      <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li> -->
-      <p></p>
-    </ul>
+      <h4>Thanks for Scrolling</h4>
 
-    <h4>Thanks for Scrolling</h4>
+      <p>
+        Copyright&copy; <span id="copyrightYear">2022</span> Radoyko Frontend
+        Web Developer
+      </p>
+    </footer>
 
-    <p>
-      Copyright&copy; <span id="copyrightYear">2022</span> Radoyko Frontend
-      Web Developer
-    </p>
-  </footer>
+    <div id="projectDetailsModal" class="projectDetailsModal">
+      <button type="button" id="exitButton" class="exitButton">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <section id="projectDetailsContainer" class="projectDetailsContainer">
 
-  <div id="projectDetailsModal" class="projectDetailsModal">
-    <button type="button" id="exitButton" class="exitButton">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-    <section id="projectDetailsContainer" class="projectDetailsContainer">
+      </section>
 
-    </section>
-    
+    </div>
+
   </div>
-
-</div>
 
   <!-- FONT AWESOME LINK -->
   <script src="https://kit.fontawesome.com/5479c1fd3b.js" crossorigin="anonymous"></script>

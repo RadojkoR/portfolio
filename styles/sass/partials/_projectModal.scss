@@ -21,11 +21,11 @@
 
         i {
             font-size: 1.7rem;
-            color: #ff0000;
+            color: variables.$tertinary;
         }
 
         &:hover i {
-            color: variables.$tertinary;
+            color: #F00;
         }
     }
 

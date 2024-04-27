@@ -47,13 +47,26 @@
                     font-weight: 800;
                     padding: 15px 30px;
                 }
+                h5{
+                    font-size: 1.2rem;
+                    margin: 10px;
+                }
+                .madeWith {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    i{
+                        font-size: 1.3rem;
+                    }
+                }
                 button {
                     text-align: center;
                     color: variables.$primaryBg;
                     background-color: variables.$tertinary;
                     padding: 8px 20px;
                     transition: all 0.4s ease;
-                    margin: 50px auto;
+                    margin: 25px auto;
                     border: none;
                     cursor: pointer;
 
@@ -79,6 +92,10 @@
             background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
         }
 
+        .projectContainerCoaching {
+            background-image: url("../../../assets/portfolioImg/coachingImg.webp");
+        }
+
         .projectContainerMes {
             background-image: url("../../../assets/portfolioImg/mesImg.webp");
         }
@@ -95,6 +112,17 @@
             background-image: url("../../../assets/portfolioImg/Screenshot\ 2024-04-26\ 163703.webp");
         }
 
+        .projectContainerLifco {
+            background-image: url("../../../assets/portfolioImg/lifco.webp");
+        }
+
+        .projectContainerLifco3DViewer {
+            background-image: url("../../../assets/portfolioImg/3DViewer.webp");
+        }
+
+        .projectContainerCocktails {
+            background-image: url("../../../assets/portfolioImg/Cocktails.webp");
+        }
         
     }
     

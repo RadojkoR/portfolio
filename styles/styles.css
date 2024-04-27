@@ -615,6 +615,23 @@ p {
   font-weight: 800;
   padding: 15px 30px;
 }
+.portfolio .portfolioContainer .projectContainer .details h5 {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.portfolio .portfolioContainer .projectContainer .details .madeWith {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+.portfolio .portfolioContainer .projectContainer .details .madeWith i {
+  font-size: 1.3rem;
+}
 .portfolio .portfolioContainer .projectContainer .details button {
   text-align: center;
   color: #3d3e42;
@@ -622,7 +639,7 @@ p {
   padding: 8px 20px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  margin: 50px auto;
+  margin: 25px auto;
   border: none;
   cursor: pointer;
 }
@@ -641,6 +658,9 @@ p {
 .portfolio .portfolioContainer .projectContainerOntarioWeather {
   background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
 }
+.portfolio .portfolioContainer .projectContainerCoaching {
+  background-image: url("../../../assets/portfolioImg/coachingImg.webp");
+}
 .portfolio .portfolioContainer .projectContainerMes {
   background-image: url("../../../assets/portfolioImg/mesImg.webp");
 }
@@ -652,6 +672,15 @@ p {
 }
 .portfolio .portfolioContainer .projectContainerTravelsWithDrea {
   background-image: url("../../../assets/portfolioImg/Screenshot 2024-04-26 163703.webp");
+}
+.portfolio .portfolioContainer .projectContainerLifco {
+  background-image: url("../../../assets/portfolioImg/lifco.webp");
+}
+.portfolio .portfolioContainer .projectContainerLifco3DViewer {
+  background-image: url("../../../assets/portfolioImg/3DViewer.webp");
+}
+.portfolio .portfolioContainer .projectContainerCocktails {
+  background-image: url("../../../assets/portfolioImg/Cocktails.webp");
 }
 .portfolio .projectContainerOdd,
 .portfolio .projectContainerEven {
@@ -1336,10 +1365,10 @@ footer p {
 }
 .projectDetailsModal .exitButton i {
   font-size: 1.7rem;
-  color: #ff0000;
+  color: #04c2c9;
 }
 .projectDetailsModal .exitButton:hover i {
-  color: #04c2c9;
+  color: #F00;
 }
 .projectDetailsModal .projectDetailsContainer {
   display: -webkit-box;
