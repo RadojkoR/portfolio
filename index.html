@@ -26,6 +26,7 @@
 <body>
   <!-- SKIP LINK -->
   <a href="#mainContent" class="skipLink">Skip to main</a>
+<div class="mainContainer">
 
   <!-- NAV SECTION -->
   <div class="collapsibleMenu">
@@ -218,6 +219,81 @@
     <section id="portfolioSection" class="portfolio">
       <div class="wrapper">
         <h2>Portfolio</h2>
+
+        <section class="portfolioContainer">
+          <!-- World Cuisine Restaurant -->
+          <article class="projectContainer projectContainerWorldCuisine">
+            <div class="details">
+              <h4>World Cuisine Restaurant</h4>
+              <p>
+              This is a web app wich has user authentication such as Sign Up, Sing In...
+              </p>
+              <button type="button" name="World Cuisine" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+            </div>
+          </article>
+
+          <!-- Ontario Weather App -->
+          <article class="projectContainer projectContainerOntarioWeather">
+            <div class="details">
+              <h4>Ontario Weather App</h4>
+              <p>
+              A web app that uses APIs and datasets to find the current weather ...
+            </p>
+            <button type="button" name="Ontario Weather App" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+            </div>
+          </article>
+
+          <article class="projectContainer projectContainerWhatDoYouNo">
+            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
+             <div class="details">
+              <h4>What do YOU no?</h4>
+              <p>
+              This is a learning game web app that uses APIs to find the words and definition...
+            </p>
+            <button type="button" name="What do you no" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+            </div>
+          </article>
+
+          <!-- MES -->
+          <article class="projectContainer projectContainerMes">
+            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
+             <div class="details">
+              <h4>MES</h4>
+              <p>
+              MES is an electrical company that specializes in installing security systems, solar panels ...
+              </p>
+              <button type="button" name="MES" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+            </div>
+          </article>
+
+          <article class="projectContainer projectContainerInteriorD">
+            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
+             <div class="details">
+              <h4>Interior D</h4>
+              <p>
+              A web app for an Interior and Exterior design company.
+            </p>
+            <button type="button" name="Interior D" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+            </div>
+          </article>
+
+          <article class="projectContainer projectContainerTravelsWithDrea">
+            <!-- <img src="./assets/portfolioImg/worldCuisineSmall.webp" alt="Worl Cuisine image"> -->
+             <div class="details">
+              <h4>WTravels With Drea</h4>
+              <p>
+              Travelswithdrea.com is a blog migration from Blogger to WordPress...
+            </p>
+            <button type="button" name="Travels With Drea" id="seeMoreBtn" class="seeMoreBtn">See More</button>
+            </div>
+          </article>
+
+
+        </section>
+
+
+
+
 
         <article class="projectContainerEven">
           <!-- PROJECT TEXT CONTAINER -->
@@ -563,6 +639,18 @@
       Web Developer
     </p>
   </footer>
+
+  <div id="projectDetailsModal" class="projectDetailsModal">
+    <button type="button" id="exitButton" class="exitButton">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <section id="projectDetailsContainer" class="projectDetailsContainer">
+
+    </section>
+    
+  </div>
+
+</div>
 
   <!-- FONT AWESOME LINK -->
   <script src="https://kit.fontawesome.com/5479c1fd3b.js" crossorigin="anonymous"></script>

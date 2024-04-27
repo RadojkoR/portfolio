@@ -6,6 +6,97 @@
     h2 {
         padding: 100px 0 50px;
     }
+
+
+    // NEW PORTFOLIO
+    .portfolioContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .projectContainer {
+            background-position: center;
+            background-size: cover;
+            width: calc(33% - 50px);
+            // min-width: 300px;
+            height: auto;
+            margin: 25px auto 0;
+            // transition: all 0.3 ease;
+            cursor: pointer;
+            .details {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                background-color: #31333bda;
+                transition: all 0.3s ease;
+                h4 {
+                    text-align: center;
+                    color: variables.$tertinary;
+                    font-size: 1.3rem;
+                    font-weight: 800;
+                    padding: 50px 30px 15px;
+                }
+                p {
+                    font-size: 1rem;
+                    // color: #000;
+                    font-weight: 800;
+                    padding: 15px 30px;
+                }
+                button {
+                    text-align: center;
+                    color: variables.$primaryBg;
+                    background-color: variables.$tertinary;
+                    padding: 8px 20px;
+                    transition: all 0.4s ease;
+                    margin: 50px auto;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover,
+                    &:focus {
+                        color: variables.$tertinary;
+                        background-color: variables.$primaryBg;
+                    }
+                }
+                
+            }
+            &:hover .details {
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        }
+
+        .projectContainerWorldCuisine {
+            background-image: url("../../../assets/portfolioImg/worldCuisineSmall.webp");
+        }
+
+        .projectContainerOntarioWeather {
+            background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
+        }
+
+        .projectContainerMes {
+            background-image: url("../../../assets/portfolioImg/mesImg.webp");
+        }
+
+        .projectContainerWhatDoYouNo {
+            background-image: url("../../../assets/portfolioImg/WhatDoYouNo.webp");
+        }
+
+        .projectContainerInteriorD {
+            background-image: url("../../../assets/portfolioImg/interiorDesign.webp");
+        }
+
+        .projectContainerTravelsWithDrea {
+            background-image: url("../../../assets/portfolioImg/Screenshot\ 2024-04-26\ 163703.webp");
+        }
+
+        
+    }
     
     .projectContainerOdd,
     .projectContainerEven {

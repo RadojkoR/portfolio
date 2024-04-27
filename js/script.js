@@ -1,6 +1,7 @@
 // IMPORT MODULES
 import typeInit from './typewriterEffect.js';
 import scrollInit from './scrollAnimation.js';
+import projectDetailsModalInit from './projectDetailsModal.js';
 
 //APP OBJECT
 const app = {};
@@ -10,6 +11,7 @@ app.init = () => {
     app.updateYear();
     typeInit();
     scrollInit();
+    projectDetailsModalInit();
 };
 
 // HAMBURGER MENU
@@ -64,6 +66,8 @@ app.hideHamburger = (listEl) => {
     //HIDE HAMBURGER MENU 
     listEl.offsetParent.classList.remove('showFlexNav');
 }
+
+
 
 //CALL THE INIT METHOD
 app.init()

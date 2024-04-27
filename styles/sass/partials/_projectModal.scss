@@ -1,0 +1,86 @@
+@use "./variables";
+
+
+.projectDetailsModal {
+    width: 70vw;
+    height: 500px;
+    background-color: variables.$pupupBg;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    z-index: 1000;
+    visibility: hidden;
+
+    .exitButton {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        i {
+            font-size: 1.7rem;
+            color: #ff0000;
+        }
+
+        &:hover i {
+            color: variables.$tertinary;
+        }
+    }
+
+    .projectDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: variables.$primaryBg;
+            font-size: 2.5rem;
+            margin: 50px 10px 15px;
+        }
+
+        p {
+            color: variables.$primaryBg;
+            padding: 3rem;
+        }
+
+        a {
+            color: variables.$primaryBg;
+            background-color: variables.$tertinary;
+            padding: 5px 30px 5px 5px;
+            margin-right: 20px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+
+            i {
+                padding-left: 25px;
+                padding-right: 5px;
+            }
+
+            &:first-child {
+                padding-left: 30px;
+            }
+
+            &:hover,
+            &:focus {
+                color: variables.$tertinary;
+                background-color: variables.$primaryBg;
+            }
+        }
+
+        a.buttonDisabled {
+            color: variables.$tertinary;
+            background-color: variables.$primaryBg;
+        }
+
+        a.buttonDisabled:hover,
+        a.buttonDisabled:focus {
+            cursor: not-allowed;
+        }
+    }
+}
+
+.visible {
+    visibility: visible;
+}

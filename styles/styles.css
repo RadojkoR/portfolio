@@ -245,6 +245,12 @@ html {
   text-align: center;
 }
 
+.mainContainer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -556,6 +562,96 @@ p {
 }
 .portfolio h2 {
   padding: 100px 0 50px;
+}
+.portfolio .portfolioContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.portfolio .portfolioContainer .projectContainer {
+  background-position: center;
+  background-size: cover;
+  width: calc(33% - 50px);
+  height: auto;
+  margin: 25px auto 0;
+  cursor: pointer;
+}
+.portfolio .portfolioContainer .projectContainer .details {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  background-color: rgba(49, 51, 59, 0.8549019608);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio .portfolioContainer .projectContainer .details h4 {
+  text-align: center;
+  color: #04c2c9;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 50px 30px 15px;
+}
+.portfolio .portfolioContainer .projectContainer .details p {
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 15px 30px;
+}
+.portfolio .portfolioContainer .projectContainer .details button {
+  text-align: center;
+  color: #3d3e42;
+  background-color: #04c2c9;
+  padding: 8px 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 50px auto;
+  border: none;
+  cursor: pointer;
+}
+.portfolio .portfolioContainer .projectContainer .details button:hover, .portfolio .portfolioContainer .projectContainer .details button:focus {
+  color: #04c2c9;
+  background-color: #3d3e42;
+}
+.portfolio .portfolioContainer .projectContainer:hover .details {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio .portfolioContainer .projectContainerWorldCuisine {
+  background-image: url("../../../assets/portfolioImg/worldCuisineSmall.webp");
+}
+.portfolio .portfolioContainer .projectContainerOntarioWeather {
+  background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
+}
+.portfolio .portfolioContainer .projectContainerMes {
+  background-image: url("../../../assets/portfolioImg/mesImg.webp");
+}
+.portfolio .portfolioContainer .projectContainerWhatDoYouNo {
+  background-image: url("../../../assets/portfolioImg/WhatDoYouNo.webp");
+}
+.portfolio .portfolioContainer .projectContainerInteriorD {
+  background-image: url("../../../assets/portfolioImg/interiorDesign.webp");
+}
+.portfolio .portfolioContainer .projectContainerTravelsWithDrea {
+  background-image: url("../../../assets/portfolioImg/Screenshot 2024-04-26 163703.webp");
 }
 .portfolio .projectContainerOdd,
 .portfolio .projectContainerEven {
@@ -1218,4 +1314,83 @@ footer p {
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
   text-align: center;
+}
+
+.projectDetailsModal {
+  width: 70vw;
+  height: 500px;
+  background-color: #f9f9f9;
+  position: fixed;
+  top: 25%;
+  left: 15%;
+  z-index: 1000;
+  visibility: hidden;
+}
+.projectDetailsModal .exitButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.projectDetailsModal .exitButton i {
+  font-size: 1.7rem;
+  color: #ff0000;
+}
+.projectDetailsModal .exitButton:hover i {
+  color: #04c2c9;
+}
+.projectDetailsModal .projectDetailsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projectDetailsModal .projectDetailsContainer h2 {
+  color: #3d3e42;
+  font-size: 2.5rem;
+  margin: 50px 10px 15px;
+}
+.projectDetailsModal .projectDetailsContainer p {
+  color: #3d3e42;
+  padding: 3rem;
+}
+.projectDetailsModal .projectDetailsContainer a {
+  color: #3d3e42;
+  background-color: #04c2c9;
+  padding: 5px 30px 5px 5px;
+  margin-right: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.projectDetailsModal .projectDetailsContainer a i {
+  padding-left: 25px;
+  padding-right: 5px;
+}
+.projectDetailsModal .projectDetailsContainer a:first-child {
+  padding-left: 30px;
+}
+.projectDetailsModal .projectDetailsContainer a:hover, .projectDetailsModal .projectDetailsContainer a:focus {
+  color: #04c2c9;
+  background-color: #3d3e42;
+}
+.projectDetailsModal .projectDetailsContainer a.buttonDisabled {
+  color: #04c2c9;
+  background-color: #3d3e42;
+}
+.projectDetailsModal .projectDetailsContainer a.buttonDisabled:hover,
+.projectDetailsModal .projectDetailsContainer a.buttonDisabled:focus {
+  cursor: not-allowed;
+}
+
+.visible {
+  visibility: visible;
 }
