@@ -559,6 +559,7 @@ p {
 .portfolio {
   width: 100%;
   background: #31333b;
+  padding-bottom: 50px;
 }
 .portfolio h2 {
   padding: 100px 0 50px;
@@ -681,93 +682,6 @@ p {
 }
 .portfolio .portfolioContainer .projectContainerCocktails {
   background-image: url("../../../assets/portfolioImg/Cocktails.webp");
-}
-.portfolio .projectContainerOdd,
-.portfolio .projectContainerEven {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 0 150px;
-}
-.portfolio .projectOdd .projectImgContainer {
-  margin-right: 2%;
-}
-.portfolio .projectImgContainer {
-  width: 52%;
-}
-.portfolio .projectImgContainer img {
-  width: 100%;
-}
-.portfolio .projectTxtContainer {
-  width: 43%;
-}
-.portfolio .projectTxtContainer h3 {
-  font-size: 1.5rem;
-  padding-bottom: 20px;
-}
-.portfolio .projectTxtContainer h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-.portfolio .projectTxtContainer p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-.portfolio .projectTxtContainer a {
-  color: #3d3e42;
-  background-color: #04c2c9;
-  padding: 5px 30px 5px 5px;
-  margin-right: 20px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.portfolio .projectTxtContainer a i {
-  padding-left: 25px;
-  padding-right: 5px;
-}
-.portfolio .projectTxtContainer a:first-child {
-  padding-left: 30px;
-}
-.portfolio .projectTxtContainer a:hover, .portfolio .projectTxtContainer a:focus {
-  color: #04c2c9;
-  background-color: #3d3e42;
-}
-.portfolio .projectTxtContainer a.buttonDisabled {
-  color: #04c2c9;
-  background-color: #3d3e42;
-}
-.portfolio .projectTxtContainer a.buttonDisabled:hover,
-.portfolio .projectTxtContainer a.buttonDisabled:focus {
-  cursor: not-allowed;
-}
-.portfolio .projectTxtContainer .madeWith {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-bottom: 20px;
-}
-.portfolio .projectTxtContainer .madeWith i {
-  font-size: 1.5rem;
-  margin-right: 20px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.portfolio .projectTxtContainer .madeWith i:hover, .portfolio .projectTxtContainer .madeWith i:focus {
-  color: #abacb0;
-}
-.portfolio .projectTxtContainer .madeWith .angularIcon {
-  color: #c4002b;
 }
 
 .contactMe {

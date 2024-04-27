@@ -3,6 +3,7 @@
 .portfolio {
     width: 100%;
     background: variables.$secondaryBg;
+    padding-bottom: 50px;
     h2 {
         padding: 100px 0 50px;
     }
@@ -122,97 +123,6 @@
 
         .projectContainerCocktails {
             background-image: url("../../../assets/portfolioImg/Cocktails.webp");
-        }
-        
-    }
-    
-    .projectContainerOdd,
-    .projectContainerEven {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        // outline: 2px solid red;
-        padding: 50px 0 150px;
-    }
-    .projectOdd .projectImgContainer {
-        margin-right: 2%;
-    }
-
-    .projectImgContainer {
-        width: 52%;
-        img {
-            width: 100%;
-        }
-    }
-
-    .projectTxtContainer {
-        width: 43%;
-        // outline: 2px solid red;
-        h3 {
-            font-size: 1.5rem;
-            padding-bottom: 20px;
-
-        }
-        h5 {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            padding-bottom: 20px;
-        }
-        p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: variables.$primaryBg;
-            background-color: variables.$tertinary;
-            padding: 5px 30px 5px 5px;
-            margin-right: 20px;
-            transition: all 0.4s ease;
-            
-
-            i {
-                padding-left: 25px;
-                padding-right: 5px;
-            }
-            &:first-child {
-                padding-left: 30px;
-            }
-
-            &:hover, 
-            &:focus {
-                color: variables.$tertinary;
-                background-color: variables.$primaryBg;
-            }
-        }
-
-        a.buttonDisabled {
-        color: variables.$tertinary;
-        background-color: variables.$primaryBg;
-        }
-    
-        a.buttonDisabled:hover, 
-        a.buttonDisabled:focus {
-            cursor: not-allowed;
-        }
-
-        .madeWith {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                padding-bottom: 20px;
-                i {
-                    font-size: 1.5rem;
-                    margin-right: 20px;
-                    transition: all 0.3s ease;
-                    &:hover, 
-                    &:focus {
-                        color: variables.$navFontColor;
-                    }
-                }
-                .angularIcon {
-                    color: variables.$angularColor;
-                }
-            }
-    }
+        }       
+    }   
 }
