@@ -33,13 +33,13 @@ modal.worldCuisine = {
     modal.projectData.push(modal.whatDoYouNoApp)
 
      // MES
-    modal.couchingApp = {
-        name: "Couching",
-        text: "Couching",
+    modal.coachingApp = {
+        name: "Coaching",
+        text: "A web app designed with professional coaches in mind to showcase their services. Templates can be custom made to the needs of the coach.",
         demoLink: "https://coachingjs.netlify.app/",
         codeLink: "https://github.com/RadojkoR/CoachingJs"
     }
-    modal.projectData.push(modal.couchingApp)
+    modal.projectData.push(modal.coachingApp)
 
     // MES
     modal.mesApp = {
