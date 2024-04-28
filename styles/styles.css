@@ -246,7 +246,7 @@ html {
 }
 
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.7803921569);
+  background-color: rgba(49, 51, 59, 0.8274509804);
   width: 100vw;
   height: 100vh;
   position: fixed;
