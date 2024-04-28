@@ -73,10 +73,14 @@
 
     //  PORTFOLIO MODAL
     .projectDetailsModal {
-
+        .exitButton {
+            top: 10px!important;
+            right: 10px!important;
+        }
         .projectDetailsContainer {
             h2{
-                font-size: 1.7rem!important;
+                font-size: 1.5rem!important;
+                padding-top: 30px;
             }
             p {
                 font-size: 0.9rem;

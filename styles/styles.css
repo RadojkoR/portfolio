@@ -1065,8 +1065,13 @@ footer p {
   .mySkills .skillsEl .boxEl p {
     font-size: 0.3rem;
   }
+  .projectDetailsModal .exitButton {
+    top: 10px !important;
+    right: 10px !important;
+  }
   .projectDetailsModal .projectDetailsContainer h2 {
-    font-size: 1.7rem !important;
+    font-size: 1.5rem !important;
+    padding-top: 30px;
   }
   .projectDetailsModal .projectDetailsContainer p {
     font-size: 0.9rem;
