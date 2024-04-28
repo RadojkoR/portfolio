@@ -245,6 +245,19 @@ html {
   text-align: center;
 }
 
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+
+.backdrop.visibleBackdrop {
+  display: unset;
+}
+
 .mainContainer {
   margin: 0;
   padding: 0;
