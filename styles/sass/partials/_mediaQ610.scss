@@ -49,6 +49,23 @@
         }
     }
 
+    //  PORTFOLIO MODAL
+    .projectDetailsModal {
+        width: 100vw!important;
+        left: unset!important;
+        .exitButton i {
+            font-size: 1.5rem!important;
+        }
+        .projectDetailsContainer {
+
+            p {
+                text-align: center;
+                line-height: 150%;
+                padding: 1rem!important;
+            }
+        }
+    }
+
     // CONTACT ME SECTION
     .contactMe {
         .contactHrContainer {

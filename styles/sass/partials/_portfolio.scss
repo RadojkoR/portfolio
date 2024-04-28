@@ -123,6 +123,7 @@
             margin: 25px auto;
             border: none;
             cursor: pointer;
+            display: none;
 
             &:hover,
             &:focus {
@@ -136,5 +137,9 @@
     &:hover .details {
         opacity: 1;
         transition: all 0.3s ease;
+    }
+
+    &:hover .seeMoreBtn {
+        display: unset;
     }
 }

@@ -674,6 +674,7 @@ p {
   margin: 25px auto;
   border: none;
   cursor: pointer;
+  display: none;
 }
 .projectContainer .details button:hover, .projectContainer .details button:focus {
   color: #04c2c9;
@@ -683,6 +684,9 @@ p {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.projectContainer:hover .seeMoreBtn {
+  display: unset;
 }
 
 .contactMe {
@@ -875,6 +879,13 @@ footer p {
   .portfolio .projectTxtContainer {
     width: 48%;
   }
+  .projectDetailsModal .projectDetailsContainer h2 {
+    font-size: 2rem !important;
+  }
+  .projectDetailsModal .projectDetailsContainer p {
+    font-size: 1rem;
+    padding: 30px !important;
+  }
 }
 @media (max-width: 768px) {
   html {
@@ -931,28 +942,11 @@ footer p {
   .mySkills .skillsEl .boxEl p {
     font-size: 0.35rem;
   }
-  .portfolio .projectContainerOdd {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 70px;
+  .projectDetailsModal .projectDetailsContainer h2 {
+    font-size: 1.5rem !important;
   }
-  .portfolio .projectContainerEven {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding-bottom: 70px;
-  }
-  .portfolio .projectImgContainer {
-    width: 95%;
-    margin: 0 auto;
-  }
-  .portfolio .projectTxtContainer {
-    width: 95%;
-    margin: 0 auto;
-    padding-top: 50px;
+  .projectDetailsModal .projectDetailsContainer p {
+    font-size: 1rem;
   }
   .contactMe .contactInfo a {
     font-size: 1.2rem;
@@ -996,6 +990,18 @@ footer p {
   }
   .portfolio h3 {
     padding-bottom: 20px;
+  }
+  .projectDetailsModal {
+    width: 100vw !important;
+    left: unset !important;
+  }
+  .projectDetailsModal .exitButton i {
+    font-size: 1.5rem !important;
+  }
+  .projectDetailsModal .projectDetailsContainer p {
+    text-align: center;
+    line-height: 150%;
+    padding: 1rem !important;
   }
   .contactMe .contactHrContainer p {
     width: 25%;
@@ -1059,28 +1065,11 @@ footer p {
   .mySkills .skillsEl .boxEl p {
     font-size: 0.3rem;
   }
-  .portfolio .projectContainerOdd {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 50px;
+  .projectDetailsModal .projectDetailsContainer h2 {
+    font-size: 1.7rem !important;
   }
-  .portfolio .projectTxtContainer h3 {
-    font-size: 1.3rem;
-  }
-  .portfolio .projectTxtContainer p {
+  .projectDetailsModal .projectDetailsContainer p {
     font-size: 0.9rem;
-  }
-  .portfolio .projectTxtContainer a {
-    padding: 5px 20px 5px 5px;
-    margin-right: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  .portfolio .projectTxtContainer a i {
-    padding-left: 15px;
-    padding-right: 5px;
   }
   .contactMe .contactHrContainer p {
     width: 21%;
