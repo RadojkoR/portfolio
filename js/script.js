@@ -80,7 +80,6 @@ app.showHideBackdrop = () => {
 app.hideMenu.addEventListener('click', (event) => {
     if(event.target.tagName === 'A') {
         toggleFlexNav = !toggleFlexNav;
-        console.log(toggleFlexNav);
         app.showHideBackdrop()
         app.updateIcon();
         app.showHideMenu()

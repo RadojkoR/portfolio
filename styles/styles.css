@@ -260,15 +260,6 @@ html {
   display: unset;
 }
 
-.backdropModal {
-  background-color: rgba(49, 51, 59, 0.8274509804);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 8;
-  display: none;
-}
-
 .mainContainer {
   margin: 0;
   padding: 0;
@@ -604,6 +595,7 @@ p {
   position: relative;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  padding-bottom: 130px;
 }
 .portfolio .portfolioContainer .projectContainerWorldCuisine {
   background-image: url("../../../assets/portfolioImg/worldCuisineSmall.webp");
