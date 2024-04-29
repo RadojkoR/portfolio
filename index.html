@@ -25,6 +25,7 @@
 
 <body>
   <div id="backdrop" class="backdrop"></div>
+  <div id="backdropModal" class="backdropModal"></div>
   <!-- SKIP LINK -->
   <a href="#mainContent" class="skipLink">Skip to main</a>
   <div class="mainContainer">
@@ -44,7 +45,7 @@
             </div>
             <!--End .hamburgerMenu-->
 
-            <ul class="flexNav">
+            <ul id="flexNav" class="flexNav">
               <li><a href="#aboutMeSection">About</a></li>
               <li><a href="#skills">My Skills</a></li>
               <li><a href="#portfolioSection">Portfolio</a></li>
@@ -220,7 +221,8 @@
         <div class="wrapper">
           <h2>Portfolio</h2>
 
-          <section class="portfolioContainer">
+          <section id="portfolioContainer" class="portfolioContainer">
+            
             <!-- World Cuisine Restaurant -->
             <article class="projectContainer projectContainerWorldCuisine">
               <div class="details">
@@ -409,6 +411,7 @@
                 <button type="button" name="Find your favorite cocktail" id="seeMoreBtn" class="seeMoreBtn">See More</button>
               </div>
             </article>
+            <button type="button" id="seeMoreProjectsBtn" class="seeMoreProjectsBtn">See More</button>
           </section>
         </div>
         <!--End .wrapper-->

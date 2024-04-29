@@ -40,9 +40,12 @@
    
     .portfolio {
         width: 100%;
-        background: variables.$primaryBg;
+        background: variables.$secondaryBg;
+        .projectContainer{
+            width: 95%!important;
+        }
         h2{
-            padding-top: 0px;;
+            padding: 50px 0 25px;
         }
         h3 {
             padding-bottom: 20px;

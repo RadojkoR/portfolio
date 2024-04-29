@@ -245,17 +245,28 @@ html {
   text-align: center;
 }
 
-.backdrop {
+.backdrop,
+.backdropModal {
   background-color: rgba(49, 51, 59, 0.8274509804);
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 999;
+  z-index: 8;
   display: none;
 }
 
-.backdrop.visibleBackdrop {
+.backdrop.visibleBackdrop,
+.backdropModal.visibleBackdropModal {
   display: unset;
+}
+
+.backdropModal {
+  background-color: rgba(49, 51, 59, 0.8274509804);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 8;
+  display: none;
 }
 
 .mainContainer {
@@ -587,6 +598,12 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
+  width: 100%;
+  height: 940px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .portfolio .portfolioContainer .projectContainerWorldCuisine {
   background-image: url("../../../assets/portfolioImg/worldCuisineSmall.webp");
@@ -618,6 +635,38 @@ p {
 .portfolio .portfolioContainer .projectContainerCocktails {
   background-image: url("../../../assets/portfolioImg/Cocktails.webp");
 }
+.portfolio .portfolioContainer .seeMoreProjectsBtn {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  color: #3d3e42;
+  background-color: #04c2c9;
+  padding: 8px 20px;
+  margin: 25px auto;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.portfolio .portfolioContainer .seeMoreProjectsBtn:hover, .portfolio .portfolioContainer .seeMoreProjectsBtn:focus {
+  color: #04c2c9;
+  background-color: #3d3e42;
+}
+.portfolio .portfolioContainer::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 120px;
+  background: #31333b;
+}
+.portfolio .showAllProjects {
+  height: auto !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
 
 .projectContainer {
   background-position: center;
@@ -626,6 +675,7 @@ p {
   height: 380px;
   margin: 25px auto 0;
   cursor: pointer;
+  position: relative;
 }
 .projectContainer .details {
   width: 100%;
@@ -858,7 +908,7 @@ footer p {
 }
 @media (max-width: 1024px) {
   .portfolio .projectContainer {
-    width: 300px !important;
+    width: calc(50% - 10px) !important;
     height: 350px;
   }
   .portfolio .projectContainer .details h4 {
@@ -996,10 +1046,13 @@ footer p {
   }
   .portfolio {
     width: 100%;
-    background: #3d3e42;
+    background: #31333b;
+  }
+  .portfolio .projectContainer {
+    width: 95% !important;
   }
   .portfolio h2 {
-    padding-top: 0px;
+    padding: 50px 0 25px;
   }
   .portfolio h3 {
     padding-bottom: 20px;

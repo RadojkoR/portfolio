@@ -4,7 +4,7 @@
 @media (max-width: 1024px) {
     .portfolio{
         .projectContainer {
-            width: calc(350px - 50px) !important;
+            width: calc(50% - 10px) !important;
             height: 350px;
 
             .details {

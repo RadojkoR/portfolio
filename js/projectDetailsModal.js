@@ -7,7 +7,9 @@ const projectDetailsModalInit = () => {
     modal.projectDetailsModalContainer = document.getElementById('projectDetailsModal');
     modal.projectDetailsContainer = document.getElementById('projectDetailsContainer')
     modal.exitButton = document.getElementById('exitButton');
-    modal.backdrop = document.getElementById('backdrop');
+    modal.backdrop = document.getElementById('backdropModal');
+    modal.seeMoreProjectsBtn = document.getElementById('seeMoreProjectsBtn');
+    modal.portfolioContainer = document.getElementById('portfolioContainer')
 
     modal.projectData = [];
     // World Cuisine
@@ -96,21 +98,15 @@ const projectDetailsModalInit = () => {
         codeLink: "https://github.com/RadojkoR/cocktails"
     };
     modal.projectData.push(modal.CocktailsApp);
-    // SEE MORE BUTTON
-    
 
+    // EXIT BUTTON
     modal.exitButton.addEventListener('click', () => {
         modal.projectDetailsModalContainer.classList.remove("visible");
         modal.projectDetailsContainer.innerHTML = '';
         toggleBackdrop();
-
     });
 
-    // TOGGLE BACKDROP
-    const toggleBackdrop = () => {
-        backdrop.classList.toggle("visibleBackdrop");
-    };
-
+    // SEE MORE BUTTON
     modal.seeMoreBtn.forEach(button => {
         button.addEventListener('click', () => {
             modal.projectDetailsContainer.innerHTML = '';
@@ -166,8 +162,23 @@ const projectDetailsModalInit = () => {
                 }
             }
         });
-
     });
+
+    // SEE ALL PROJECT BUTTON
+    modal.seeMoreProjectsBtn.addEventListener('click', () => {
+        modal.portfolioContainer.classList.toggle("showAllProjects");
+        if(modal.portfolioContainer.classList.contains("showAllProjects")) {
+            modal.seeMoreProjectsBtn.innerHTML = "See Less"
+        } else {
+            modal.seeMoreProjectsBtn.innerHTML = "See More"
+        }
+    })
+
+       // TOGGLE BACKDROP
+    const toggleBackdrop = () => {
+        modal.backdrop.classList.toggle("visibleBackdropModal");
+        modal.backdrop.style = "z-index: 12"
+    }
 }
 
 export default projectDetailsModalInit;
