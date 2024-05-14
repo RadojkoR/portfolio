@@ -13,13 +13,13 @@ const projectDetailsModalInit = () => {
 
     modal.projectData = [];
     // World Cuisine
-    modal.worldCuisine = {
-        name: "World Cuisine",
-        text: "This is a web app restaurant template that showcases features that can help restaurant admins keep track of their online orders. Try it out by setting up a test admin or customer account! ",
-        demoLink: "https://worldcuisine.netlify.app/",
-        codeLink: "https://github.com/RadojkoR/restaurant",
-    };
-    modal.projectData.push(modal.worldCuisine);
+    // modal.worldCuisine = {
+    //     name: "World Cuisine",
+    //     text: "This is a web app restaurant template that showcases features that can help restaurant admins keep track of their online orders. Try it out by setting up a test admin or customer account! ",
+    //     demoLink: "https://worldcuisine.netlify.app/",
+    //     codeLink: "https://github.com/RadojkoR/restaurant",
+    // };
+    // modal.projectData.push(modal.worldCuisine);
 
     // Ontario Weather App
     modal.ontarioWeatherApp = {
