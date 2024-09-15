@@ -1,230 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radoyko Web Developer</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radoyko Web Developer</title>
-  <meta name="description"
-    content="Welcome to Radojko Radulovic porfolio web site, web developer working to make blogger and business websites better" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TKEB925PTW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="./iconR-favicon.webp" type="image/x-icon" />
+      gtag("config", "G-TKEB925PTW");
+    </script>
 
-  <!-- SITE STYLE -->
-  <link rel="stylesheet" href="./styles/styles.css" />
+    <meta
+      name="description"
+      content="Welcome to Radojko Radulovic porfolio web site, web developer working to make blogger and business websites better"
+    />
 
-  <!-- GOOGLE FONT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./iconR-favicon.webp" type="image/x-icon" />
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-</head>
+    <!-- SITE STYLE -->
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-<body>
-  <div id="backdrop" class="backdrop"></div>
-  <div id="backdropModal" class="backdropModal"></div>
-  <!-- SKIP LINK -->
-  <a href="#mainContent" class="skipLink">Skip to main</a>
-  <div class="mainContainer">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- NAV SECTION -->
-    <div class="collapsibleMenu">
-      <!-- WRAPPER -->
-      <div class="wrapper">
-        <div class="menuContent">
-          <nav class="menu">
-            <div class="logo">
-              <a href="#top"><img src="./assets/iconR-logo.webp" alt="Logo Radojko frontend web developer" /></a>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="backdrop" class="backdrop"></div>
+    <div id="backdropModal" class="backdropModal"></div>
+    <!-- SKIP LINK -->
+    <a href="#mainContent" class="skipLink">Skip to main</a>
+    <div class="mainContainer">
+      <!-- NAV SECTION -->
+      <div class="collapsibleMenu">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+          <div class="menuContent">
+            <nav class="menu">
+              <div class="logo">
+                <a href="#top"
+                  ><img
+                    src="./assets/iconR-logo.webp"
+                    alt="Logo Radojko frontend web developer"
+                /></a>
+              </div>
+
+              <div class="hamburgerMenu">
+                <p>Menu</p>
+              </div>
+              <!--End .hamburgerMenu-->
+
+              <ul id="flexNav" class="flexNav">
+                <li><a href="#aboutMeSection">About</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#portfolioSection">Portfolio</a></li>
+                <li><a href="#contactMeSection">Contact Me</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!--End .wrapper-->
+      </div>
+      <!--END .collapsibleMenu-->
+
+      <!-------------------------------------------- HEADER SECTION -->
+      <header id="top" class="mainHeader">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+          <div class="headerContainer">
+            <div class="headerTxtContainer">
+              <h1>I'm <span>Radojko</span></h1>
+              <p class="animatedTxt"></p>
             </div>
+            <!--End .headerTxtContainer-->
+            <div class="headerImgContainer"></div>
+            <!--End .headerImgContainer-->
+          </div>
+          <!--End .HeaderContainer-->
 
-            <div class="hamburgerMenu">
-              <p>Menu</p>
-            </div>
-            <!--End .hamburgerMenu-->
-
-            <ul id="flexNav" class="flexNav">
-              <li><a href="#aboutMeSection">About</a></li>
-              <li><a href="#skills">My Skills</a></li>
-              <li><a href="#portfolioSection">Portfolio</a></li>
-              <li><a href="#contactMeSection">Contact Me</a></li>
+          <!-- SOCIAL MEDIA CONTAINER -->
+          <div class="headerSocialMedia">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/radojkoradulovic"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/RadoykoR" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/radojkoradulovic/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/RadojkoR" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
             </ul>
-          </nav>
-        </div>
-      </div>
-      <!--End .wrapper-->
-    </div>
-    <!--END .collapsibleMenu-->
-
-    <!-------------------------------------------- HEADER SECTION -->
-    <header id="top" class="mainHeader">
-      <!-- WRAPPER -->
-      <div class="wrapper">
-        <div class="headerContainer">
-          <div class="headerTxtContainer">
-            <h1>I'm <span>Radojko</span></h1>
-            <p class="animatedTxt"></p>
           </div>
-          <!--End .headerTxtContainer-->
-          <div class="headerImgContainer">
-          </div>
-          <!--End .headerImgContainer-->
-        </div>
-        <!--End .HeaderContainer-->
-
-        <!-- SOCIAL MEDIA CONTAINER -->
-        <div class="headerSocialMedia">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/radojkoradulovic" target="_blank"><i
-                  class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/RadoykoR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/radojkoradulovic/" target="_blank"><i
-                  class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/RadojkoR" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End .wrapper-->
-    </header>
-
-    <!----------------------------------------------- MAIN SECTION -->
-    <main id="mainContent">
-      <!----------------------------------------- ABOUT ME SECTION --------------------------------------------->
-      <section id="aboutMeSection" class="aboutMe">
-        <div class="wrapper">
-          <h2 class="box">About</h2>
-          <div class="aboutTxtContainer box">
-            <p></p>
-            <p>
-              I'm a Front End Developer based in Burlington, Ontario, Canada. I
-              work full time as a Web Developer, and I'm open to new
-              opportunities as a freelancer.
-              <span>Let's work together to make great websites!</span>
-            </p>
-          </div>
-          <!--End .aboutTxtContainer-->
         </div>
         <!--End .wrapper-->
-      </section>
+      </header>
 
-      <!---------------------------------------------- SKILLS SECTION -->
-      <section id="skills" class="mySkills">
-        <div class="wrapper">
-          <div class="skillsEl">
-            <h2>My Skills</h2>
-            <article class="rowOne">
-              <div class="skillsRowOne">
-                <div class="htmlSkill boxEl">
-                  <i class="fa-brands fa-html5"></i>
-                  <p>HTML&nbsp5</p>
-                </div>
-
-                <div class="cssSkill boxEl">
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <p>CSS 3</p>
-                </div>
-
-                <div class="sassSkill boxEl">
-                  <i class="fa-brands fa-sass"></i>
-                  <p>Sass</p>
-                </div>
-
-                <div class="bootstrapSkill boxEl">
-                  <i class="fa-brands fa-bootstrap"></i>
-                  <p>Bootstrap</p>
-                </div>
-
-                <div class="jsSkill boxEl">
-                  <i class="fa-brands fa-square-js"></i>
-                  <p>JavaScript</p>
-                </div>
-
-                <div class="reactSkill boxEl">
-                  <i class="fa-brands fa-react"></i>
-                  <p>React</p>
-                </div>
-
-                <div class="angularSkill boxEl">
-                  <i class="fa-brands fa-angular"></i>
-                  <p>Angular</p>
-                </div>
-
-                <div class="typeScriptSkill boxEl">
-                  <i class="devicon-typescript-plain colored"></i>
-                  <p>TypeScript</p>
-                </div>
-              </div>
-
-              <div class="skillsRowTwo">
-                <div class="jquerySkill boxEl">
-                  <i class="devicon-jquery-plain"></i>
-                  <p>jQuery</p>
-                </div>
-
-                <div class="dotNetSkill boxEl">
-                  <i class="devicon-dotnetcore-plain colored"></i>
-                  <p>.NET</p>
-                </div>
-
-                <div class="cSkill boxEl">
-                  <i class="devicon-csharp-plain colored"></i>
-                  <p>C#</p>
-                </div>
-
-                <div class="wordpressSkill boxEl">
-                  <i class="fa-brands fa-wordpress"></i>
-                  <p>WordPress</p>
-                </div>
-
-                <div class="gitSkill boxEl">
-                  <i class="fa-brands fa-git-alt"></i>
-                  <p>Git</p>
-                </div>
-
-                <div class="firebase boxEl">
-                  <i class="devicon-firebase-plain colored"></i>
-                  <p>Firebase</p>
-                </div>
-
-                <div class="mobile boxEl">
-                  <i class="devicon-tailwindcss-original colored"></i>
-                  <p>
-                    Tailwind<br />CSS
-                  </p>
-                </div>
-
-                <div class="accessibility boxEl">
-                  <i class="fa-solid fa-universal-access"></i>
-                  <p>Web<br />Accessibility</p>
-                </div>
-              </div>
-            </article>
-            <!-- End .rowThree-->
+      <!----------------------------------------------- MAIN SECTION -->
+      <main id="mainContent">
+        <!----------------------------------------- ABOUT ME SECTION --------------------------------------------->
+        <section id="aboutMeSection" class="aboutMe">
+          <div class="wrapper">
+            <h2 class="box">About</h2>
+            <div class="aboutTxtContainer box">
+              <p></p>
+              <p>
+                I'm a Front End Developer based in Burlington, Ontario, Canada.
+                I work full time as a Web Developer, and I'm open to new
+                opportunities as a freelancer.
+                <span>Let's work together to make great websites!</span>
+              </p>
+            </div>
+            <!--End .aboutTxtContainer-->
           </div>
-          <!-- End .skillsEl-->
-        </div>
-        <!--End .wrapper-->
-      </section>
+          <!--End .wrapper-->
+        </section>
 
-      <!---------------------------------------------- PORTFOLIO ----------------------------------------------->
-      <section id="portfolioSection" class="portfolio">
-        <div class="wrapper">
-          <h2>Portfolio</h2>
+        <!---------------------------------------------- SKILLS SECTION -->
+        <section id="skills" class="mySkills">
+          <div class="wrapper">
+            <div class="skillsEl">
+              <h2>My Skills</h2>
+              <article class="rowOne">
+                <div class="skillsRowOne">
+                  <div class="htmlSkill boxEl">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML&nbsp5</p>
+                  </div>
 
-          <section id="portfolioContainer" class="portfolioContainer">
-            
-            <!-- World Cuisine Restaurant -->
-            <!-- <article class="projectContainer projectContainerWorldCuisine">
+                  <div class="cssSkill boxEl">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS 3</p>
+                  </div>
+
+                  <div class="sassSkill boxEl">
+                    <i class="fa-brands fa-sass"></i>
+                    <p>Sass</p>
+                  </div>
+
+                  <div class="bootstrapSkill boxEl">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <p>Bootstrap</p>
+                  </div>
+
+                  <div class="jsSkill boxEl">
+                    <i class="fa-brands fa-square-js"></i>
+                    <p>JavaScript</p>
+                  </div>
+
+                  <div class="reactSkill boxEl">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                  </div>
+
+                  <div class="angularSkill boxEl">
+                    <i class="fa-brands fa-angular"></i>
+                    <p>Angular</p>
+                  </div>
+
+                  <div class="typeScriptSkill boxEl">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <p>TypeScript</p>
+                  </div>
+                </div>
+
+                <div class="skillsRowTwo">
+                  <div class="jquerySkill boxEl">
+                    <i class="devicon-jquery-plain"></i>
+                    <p>jQuery</p>
+                  </div>
+
+                  <div class="dotNetSkill boxEl">
+                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <p>.NET</p>
+                  </div>
+
+                  <div class="cSkill boxEl">
+                    <i class="devicon-csharp-plain colored"></i>
+                    <p>C#</p>
+                  </div>
+
+                  <div class="wordpressSkill boxEl">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <p>WordPress</p>
+                  </div>
+
+                  <div class="gitSkill boxEl">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <p>Git</p>
+                  </div>
+
+                  <div class="firebase boxEl">
+                    <i class="devicon-firebase-plain colored"></i>
+                    <p>Firebase</p>
+                  </div>
+
+                  <div class="mobile boxEl">
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <p>Tailwind<br />CSS</p>
+                  </div>
+
+                  <div class="accessibility boxEl">
+                    <i class="fa-solid fa-universal-access"></i>
+                    <p>Web<br />Accessibility</p>
+                  </div>
+                </div>
+              </article>
+              <!-- End .rowThree-->
+            </div>
+            <!-- End .skillsEl-->
+          </div>
+          <!--End .wrapper-->
+        </section>
+
+        <!---------------------------------------------- PORTFOLIO ----------------------------------------------->
+        <section id="portfolioSection" class="portfolio">
+          <div class="wrapper">
+            <h2>Portfolio</h2>
+
+            <section id="portfolioContainer" class="portfolioContainer">
+              <!-- World Cuisine Restaurant -->
+              <!-- <article class="projectContainer projectContainerWorldCuisine">
               <div class="details">
                 <h4>World Cuisine Restaurant</h4>
                 <p>
@@ -244,243 +277,327 @@
               </div>
             </article> -->
 
-            <!-- Ontario Weather App -->
-            <article class="projectContainer projectContainerOntarioWeather">
-              <div class="details">
-                <h4>Ontario Weather App</h4>
-                <p>
-                  A web app that uses APIs and datasets to find the current weather ...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <i class="devicon-sass-original colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- Ontario Weather App -->
+              <article class="projectContainer projectContainerOntarioWeather">
+                <div class="details">
+                  <h4>Ontario Weather App</h4>
+                  <p>
+                    A web app that uses APIs and datasets to find the current
+                    weather ...
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Ontario Weather App"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Ontario Weather App" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <article class="projectContainer projectContainerWhatDoYouNo">
-              <div class="details">
-                <h4>What do YOU no?</h4>
-                <p>
-                  This is a learning game web app that uses APIs to find the words and definition...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-react-original-wordmark colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
-                  <i class="devicon-firebase-plain colored"></i>
+              <article class="projectContainer projectContainerWhatDoYouNo">
+                <div class="details">
+                  <h4>What do YOU no?</h4>
+                  <p>
+                    This is a learning game web app that uses APIs to find the
+                    words and definition...
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-react-original-wordmark colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                    <i class="devicon-firebase-plain colored"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="What do you no"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="What do you no" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <!-- MES -->
-            <article class="projectContainer projectContainerCoaching">
-              <div class="details">
-                <h4>Coaching</h4>
-                <p>
-                  A web app designed with professional coaches in mind to showcase their services...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <i class="devicon-react-original-wordmark colored"></i>
-                  <i class="devicon-tailwindcss-original colored"></i>
-                  <i class="devicon-sass-original colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- MES -->
+              <article class="projectContainer projectContainerCoaching">
+                <div class="details">
+                  <h4>Coaching</h4>
+                  <p>
+                    A web app designed with professional coaches in mind to
+                    showcase their services...
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-react-original-wordmark colored"></i>
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Coaching"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Coaching" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <!-- MES -->
-            <article class="projectContainer projectContainerMes">
-              <div class="details">
-                <h4>MES</h4>
-                <p>
-                  MES is an electrical company that specializes in installing security systems, solar panels ...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <i class="devicon-jquery-plain-wordmark colored"></i>
-                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- MES -->
+              <article class="projectContainer projectContainerMes">
+                <div class="details">
+                  <h4>MES</h4>
+                  <p>
+                    MES is an electrical company that specializes in installing
+                    security systems, solar panels ...
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="MES"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="MES" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <!-- Interior D -->
-            <article class="projectContainer projectContainerInteriorD">
-              <div class="details">
-                <h4>Interior D</h4>
-                <p>
-                  A web app for an Interior and Exterior design company.
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <i class="devicon-sass-original colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- Interior D -->
+              <article class="projectContainer projectContainerInteriorD">
+                <div class="details">
+                  <h4>Interior D</h4>
+                  <p>A web app for an Interior and Exterior design company.</p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Interior D"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Interior D" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <!-- Travels With Drea -->
-            <article class="projectContainer projectContainerTravelsWithDrea">
-              <div class="details">
-                <h4>Travels With Drea</h4>
-                <p>
-                  Travelswithdrea.com is a blog migration from Blogger to WordPress...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-wordpress-plain-wordmark"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- Travels With Drea -->
+              <article class="projectContainer projectContainerTravelsWithDrea">
+                <div class="details">
+                  <h4>Travels With Drea</h4>
+                  <p>
+                    Travelswithdrea.com is a blog migration from Blogger to
+                    WordPress...
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-wordpress-plain-wordmark"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Travels With Drea"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Travels With Drea" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <!-- Lifco -->
-            <article class="projectContainer projectContainerLifco">
-              <div class="details">
-                <h4>Lifco Hydraulics</h4>
-                <p>
-                  Lifco Hydraulics is a North American wide hydraulic stocking distributor and service center...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-dotnetcore-plain colored"></i>
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <i class="devicon-jquery-plain colored"></i>
-                  <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- Lifco -->
+              <article class="projectContainer projectContainerLifco">
+                <div class="details">
+                  <h4>Lifco Hydraulics</h4>
+                  <p>
+                    Lifco Hydraulics is a North American wide hydraulic stocking
+                    distributor and service center...
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-jquery-plain colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Lifco"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Lifco" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
+              </article>
 
-            <!-- 3D Viewer -->
-            <article class="projectContainer projectContainerLifco3DViewer">
-              <div class="details">
-                <h4>Lifco 3D Viewer</h4>
-                <p>
-                  Explore the convenience of viewing 3D Models online...
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-html5-plain-wordmark colored"></i>
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-typescript-plain colored"></i>
-                  <i class="devicon-angular-plain angularIcon"></i>
-                  <i class="devicon-threejs-original"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              <!-- 3D Viewer -->
+              <article class="projectContainer projectContainerLifco3DViewer">
+                <div class="details">
+                  <h4>Lifco 3D Viewer</h4>
+                  <p>Explore the convenience of viewing 3D Models online...</p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-typescript-plain colored"></i>
+                    <i class="devicon-angular-plain angularIcon"></i>
+                    <i class="devicon-threejs-original"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Lifco 3D Viewer"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Lifco 3D Viewer" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
-            <!-- 3D Viewer -->
-            <article class="projectContainer projectContainerCocktails">
-              <div class="details">
-                <h4>Find your favorite cocktail</h4>
-                <p>
-                  A web app that helps you find a reciepe and ingredients needed
-                for your favorite cocktail
-                </p>
-                <h5>Made With</h5>
-                <div class="madeWith">
-                  <i class="devicon-react-original-wordmark colored"></i>
-                  <i class="fa-solid fa-mobile"></i>
+              </article>
+              <!-- 3D Viewer -->
+              <article class="projectContainer projectContainerCocktails">
+                <div class="details">
+                  <h4>Find your favorite cocktail</h4>
+                  <p>
+                    A web app that helps you find a reciepe and ingredients
+                    needed for your favorite cocktail
+                  </p>
+                  <h5>Made With</h5>
+                  <div class="madeWith">
+                    <i class="devicon-react-original-wordmark colored"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                  </div>
+                  <button
+                    type="button"
+                    name="Find your favorite cocktail"
+                    id="seeMoreBtn"
+                    class="seeMoreBtn"
+                  >
+                    See More
+                  </button>
                 </div>
-                <button type="button" name="Find your favorite cocktail" id="seeMoreBtn" class="seeMoreBtn">See More</button>
-              </div>
-            </article>
-            <button type="button" id="seeMoreProjectsBtn" class="seeMoreProjectsBtn">See More</button>
-          </section>
-        </div>
-        <!--End .wrapper-->
-      </section>
+              </article>
+              <button
+                type="button"
+                id="seeMoreProjectsBtn"
+                class="seeMoreProjectsBtn"
+              >
+                See More
+              </button>
+            </section>
+          </div>
+          <!--End .wrapper-->
+        </section>
 
-      <!-- CONTACT ME SECTI0N -->
-      <section id="contactMeSection" class="contactMe">
-        <div class="contactHrContainer">
+        <!-- CONTACT ME SECTI0N -->
+        <section id="contactMeSection" class="contactMe">
+          <div class="contactHrContainer">
+            <p></p>
+            <h2>Contact Me</h2>
+            <p></p>
+          </div>
+          <ul class="contactInfo">
+            <li>
+              <a href="mailto:radulovicradoyko@gmail.com">
+                <i class="fa-regular fa-envelope"></i
+                >radulovicradoyko@gmail.com</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- FOOTER SECTION -->
+      <footer>
+        <!-- SOCIAL MEDIA FOOTER -->
+        <ul>
           <p></p>
-          <h2>Contact Me</h2>
-          <p></p>
-        </div>
-        <ul class="contactInfo">
           <li>
-            <a href="mailto:radulovicradoyko@gmail.com">
-              <i class="fa-regular fa-envelope"></i>radulovicradoyko@gmail.com</a>
+            <a
+              href="https://www.linkedin.com/in/radojkoradulovic"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
           </li>
+          <li>
+            <a href="https://twitter.com/RadoykoR" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/radojkoradulovic/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/RadojkoR" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li> -->
+          <p></p>
         </ul>
-      </section>
-    </main>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-      <!-- SOCIAL MEDIA FOOTER -->
-      <ul>
-        <p></p>
-        <li>
-          <a href="https://www.linkedin.com/in/radojkoradulovic" target="_blank"><i
-              class="fa-brands fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/RadoykoR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/radojkoradulovic/" target="_blank"><i
-              class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/RadojkoR" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </li>
-        <!-- <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li> -->
-        <p></p>
-      </ul>
+        <h4>Thanks for Scrolling</h4>
 
-      <h4>Thanks for Scrolling</h4>
+        <p>
+          Copyright&copy; <span id="copyrightYear">2022</span> Radoyko Frontend
+          Web Developer
+        </p>
+      </footer>
 
-      <p>
-        Copyright&copy; <span id="copyrightYear">2022</span> Radoyko Frontend
-        Web Developer
-      </p>
-    </footer>
-
-    <div id="projectDetailsModal" class="projectDetailsModal">
-      <button type="button" id="exitButton" class="exitButton">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <section id="projectDetailsContainer" class="projectDetailsContainer">
-
-      </section>
-
+      <div id="projectDetailsModal" class="projectDetailsModal">
+        <button type="button" id="exitButton" class="exitButton">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <section
+          id="projectDetailsContainer"
+          class="projectDetailsContainer"
+        ></section>
+      </div>
     </div>
 
-  </div>
+    <!-- FONT AWESOME LINK -->
+    <script
+      src="https://kit.fontawesome.com/5479c1fd3b.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- FONT AWESOME LINK -->
-  <script src="https://kit.fontawesome.com/5479c1fd3b.js" crossorigin="anonymous"></script>
-
-  <!-- JS LINK -->
-  <script type="module" src="./js/script.js"></script>
-</body>
-
+    <!-- JS LINK -->
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>
