@@ -39,14 +39,15 @@ const projectDetailsModalInit = () => {
     };
     modal.projectData.push(modal.whatDoYouNoApp);
 
-    // MES
-    modal.coachingApp = {
-        name: "Coaching",
-        text: "A web app designed with professional coaches in mind to showcase their services. Templates can be custom made to the needs of the coach.",
-        demoLink: "https://coachingjs.netlify.app/",
-        codeLink: "https://github.com/RadojkoR/CoachingJs"
+    // IZO DECOR GLASS
+    modal.izoDecorGlassApp = {
+        name: "Izo Decor Glass",
+        text: "Izo Decor Glass specializes in custom decorative glass products, including glass panels, partitions, and shower enclosures. They provide high-quality, modern glass solutions for both residential and commercial spaces, ensuring professional design and installation services.",
+        demoLink: "https://izodecorglass.rs/",
+        codeLink: "https://github.com/RadojkoR/IzoDecorGlass"
     };
-    modal.projectData.push(modal.coachingApp);
+    modal.projectData.push(modal.izoDecorGlassApp);
+    
 
     // MES
     modal.mesApp = {
@@ -56,6 +57,15 @@ const projectDetailsModalInit = () => {
         codeLink: "https://github.com/RadojkoR/mes"
     };
     modal.projectData.push(modal.mesApp);
+
+    // COACHING
+    modal.coachingApp = {
+        name: "Coaching",
+        text: "A web app designed with professional coaches in mind to showcase their services. Templates can be custom made to the needs of the coach.",
+        demoLink: "https://coachingjs.netlify.app/",
+        codeLink: "https://github.com/RadojkoR/CoachingJs"
+    };
+    modal.projectData.push(modal.coachingApp);
 
     // INTERIOR D
     modal.InteriorDApp = {

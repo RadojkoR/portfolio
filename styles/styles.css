@@ -603,8 +603,8 @@ p {
 .portfolio .portfolioContainer .projectContainerOntarioWeather {
   background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
 }
-.portfolio .portfolioContainer .projectContainerCoaching {
-  background-image: url("../../../assets/portfolioImg/coachingImg.webp");
+.portfolio .portfolioContainer .projectContainerIzoDecorGlass {
+  background-image: url("../../../assets/portfolioImg/izoDecorGlass.webp");
 }
 .portfolio .portfolioContainer .projectContainerMes {
   background-image: url("../../../assets/portfolioImg/mesImg.webp");
@@ -617,6 +617,9 @@ p {
 }
 .portfolio .portfolioContainer .projectContainerTravelsWithDrea {
   background-image: url("../../../assets/portfolioImg/Screenshot 2024-04-26 163703.webp");
+}
+.portfolio .portfolioContainer .projectContainerCoaching {
+  background-image: url("../../../assets/portfolioImg/coachingImg.webp");
 }
 .portfolio .portfolioContainer .projectContainerLifco {
   background-image: url("../../../assets/portfolioImg/lifco.webp");
