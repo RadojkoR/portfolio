@@ -220,8 +220,7 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -600,11 +599,17 @@ p {
 .portfolio .portfolioContainer .projectContainerWorldCuisine {
   background-image: url("../../../assets/portfolioImg/worldCuisineSmall.webp");
 }
-.portfolio .portfolioContainer .projectContainerOntarioWeather {
-  background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
-}
 .portfolio .portfolioContainer .projectContainerIzoDecorGlass {
   background-image: url("../../../assets/portfolioImg/izoDecorGlass.webp");
+}
+.portfolio .portfolioContainer .projectContainerUrosMilos {
+  background-image: url("../../../assets/portfolioImg/urosMilos.webp");
+}
+.portfolio .portfolioContainer .projectContainerWebHubStudio {
+  background-image: url("../../../assets/portfolioImg/WebHubStudio.webp");
+}
+.portfolio .portfolioContainer .projectContainerOntarioWeather {
+  background-image: url("../../../assets/portfolioImg/ontarioWeather.webp");
 }
 .portfolio .portfolioContainer .projectContainerMes {
   background-image: url("../../../assets/portfolioImg/mesImg.webp");

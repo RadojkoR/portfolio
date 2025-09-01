@@ -21,6 +21,33 @@ const projectDetailsModalInit = () => {
     // };
     // modal.projectData.push(modal.worldCuisine);
 
+    // Web Hub Studio
+    modal.webHubStudioApp = {
+        name: "Web Hub Studio",
+        text: "Web Hub Studio is my professional website dedicated to building modern, high-performing web solutions. I specialize in custom web development, creative design, SEO optimization, reliable web hosting, and bilingual websites (English & Serbian). Each project is designed to be fast, secure, and visually engaging, helping businesses grow their online presence",
+        demoLink: "https://webhubstudio.com/",
+        // codeLink: "https://github.com/RadojkoR/IzoDecorGlass"
+    };
+    modal.projectData.push(modal.webHubStudioApp);
+
+    // IZO DECOR GLASS
+    modal.izoDecorGlassApp = {
+        name: "Izo Decor Glass",
+        text: "Izo Decor Glass specializes in custom decorative glass products, including glass panels, partitions, and shower enclosures. They provide high-quality, modern glass solutions for both residential and commercial spaces, ensuring professional design and installation services.",
+        demoLink: "https://izodecorglass.rs/",
+        codeLink: "https://github.com/RadojkoR/IzoDecorGlass"
+    };
+    modal.projectData.push(modal.izoDecorGlassApp);
+
+    // UROS & MILOS
+    modal.urosMilosApp = {
+        name: "GTR Uroš i Miloš",
+        text: "GTR Uroš i Miloš a construction company specializing in high-quality building, renovation, and finishing works. The website showcases their projects, services, and commitment to precision, durability, and modern construction standards.(website in progress)",
+        demoLink: "https://urosmilos.rs/",
+        codeLink: "https://github.com/RadojkoR/Uros-Milos"
+    };
+    modal.projectData.push(modal.urosMilosApp);
+
     // Ontario Weather App
     modal.ontarioWeatherApp = {
         name: "Ontario Weather App",
@@ -38,16 +65,6 @@ const projectDetailsModalInit = () => {
         codeLink: "https://github.com/JunoProjectFour/whatchaKnoHuh"
     };
     modal.projectData.push(modal.whatDoYouNoApp);
-
-    // IZO DECOR GLASS
-    modal.izoDecorGlassApp = {
-        name: "Izo Decor Glass",
-        text: "Izo Decor Glass specializes in custom decorative glass products, including glass panels, partitions, and shower enclosures. They provide high-quality, modern glass solutions for both residential and commercial spaces, ensuring professional design and installation services.",
-        demoLink: "https://izodecorglass.rs/",
-        codeLink: "https://github.com/RadojkoR/IzoDecorGlass"
-    };
-    modal.projectData.push(modal.izoDecorGlassApp);
-    
 
     // MES
     modal.mesApp = {
