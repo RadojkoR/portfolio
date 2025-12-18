@@ -51,7 +51,7 @@ const projectDetailsModalInit = () => {
     // Kurs Nordijskog Hodanja
     modal.kursNordijskogHodanjaApp = {
         name: "Kurs Nordijskog Hodanja",
-        text: "Nordic Walking Online Course is an online education platform. The website www.nordicwalkingcourse.com showcases their courses, provides user-friendly navigation, and allows participants to register for classes directly online.(website in progress)",
+        text: "Nordic Walking Online Course is an online education platform designed to offer interactive courses for Nordic walking enthusiasts. The website was built using Hello Elementor to create a fast, lightweight site with minimal plugins. It includes Masterio integration for course management, user registration for participants, and a responsive design to ensure a smooth experience across all devices.(website in progress)",
         demoLink: "https://kursnordijskoghodanja.com/",
         codeLink: ""
     };
