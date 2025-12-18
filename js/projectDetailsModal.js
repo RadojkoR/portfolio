@@ -57,6 +57,15 @@ const projectDetailsModalInit = () => {
     };
     modal.projectData.push(modal.kursNordijskogHodanjaApp);
 
+    // MES
+    modal.mesApp = {
+        name: "MES",
+        text: "MES is an electrical company that specializes in electrical installations, repairing electrical devices, and installing solar panels and security systems.  ",
+        demoLink: "https://www.mes.rs/",
+        codeLink: "https://github.com/RadojkoR/mes"
+    };
+    modal.projectData.push(modal.mesApp);
+
     // Ontario Weather App
     modal.ontarioWeatherApp = {
         name: "Ontario Weather App",
@@ -74,15 +83,6 @@ const projectDetailsModalInit = () => {
         codeLink: "https://github.com/JunoProjectFour/whatchaKnoHuh"
     };
     modal.projectData.push(modal.whatDoYouNoApp);
-
-    // MES
-    modal.mesApp = {
-        name: "MES",
-        text: "MES is an electrical company that specializes in electrical installations, repairing electrical devices, and installing solar panels and security systems.  ",
-        demoLink: "https://www.mes.rs/",
-        codeLink: "https://github.com/RadojkoR/mes"
-    };
-    modal.projectData.push(modal.mesApp);
 
     // COACHING
     modal.coachingApp = {
