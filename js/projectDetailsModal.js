@@ -48,6 +48,15 @@ const projectDetailsModalInit = () => {
     };
     modal.projectData.push(modal.urosMilosApp);
 
+    // Kurs Nordijskog Hodanja
+    modal.kursNordijskogHodanjaApp = {
+        name: "Kurs Nordijskog Hodanja",
+        text: "Nordic Walking Online Course is an online education platform. The website www.nordicwalkingcourse.com showcases their courses, provides user-friendly navigation, and allows participants to register for classes directly online.(website in progress)",
+        demoLink: "https://kursnordijskoghodanja.com/",
+        codeLink: ""
+    };
+    modal.projectData.push(modal.kursNordijskogHodanjaApp);
+
     // Ontario Weather App
     modal.ontarioWeatherApp = {
         name: "Ontario Weather App",

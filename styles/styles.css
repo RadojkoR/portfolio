@@ -605,6 +605,9 @@ p {
 .portfolio .portfolioContainer .projectContainerUrosMilos {
   background-image: url("../../../assets/portfolioImg/urosMilos.webp");
 }
+.portfolio .portfolioContainer .projectContainerKursNordijskogHodanja {
+  background-image: url("../../../assets/portfolioImg/kurs-nordijskog-hodanja.webp");
+}
 .portfolio .portfolioContainer .projectContainerWebHubStudio {
   background-image: url("../../../assets/portfolioImg/WebHubStudio.webp");
 }
