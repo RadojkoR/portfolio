@@ -24,7 +24,7 @@ const projectDetailsModalInit = () => {
     // Planora Hub
     modal.planoraHubApp = {
         name: "Planora Hub",
-        text: "Planora Hub is my professional website dedicated to building modern, high-performing web solutions. I specialize in custom web development, creative design, SEO optimization, reliable web hosting, and bilingual websites (English & Serbian). Each project is designed to be fast, secure, and visually engaging, helping businesses grow their online presence",
+        text: "PlanoraHub is a full stack SaaS for deadline tracking and automated email reminders. It is built with Next.js, TypeScript, Tailwind CSS, Supabase, PostgreSQL, Upstash Redis, and Vercel. Authentication uses JWT and bcrypt password hashing. A scheduled job sends automatic email reminders over SMTP, and quotes are rendered to PDF directly in the browser. The app runs over HTTPS with AES 256 encrypted database backups and bilingual English and Serbian support.",
         demoLink: "https://planorahub.com/",
         // codeLink: "https://github.com/RadojkoR/IzoDecorGlass"
     };
