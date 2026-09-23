@@ -127,14 +127,6 @@ const projectDetailsModalInit = () => {
     };
     modal.projectData.push(modal.LifcoApp);
 
-    // Lifco 3D Viewer
-    modal.ViewerApp = {
-        name: "Lifco 3D Viewer",
-        text: "Explore the convenience of viewing 3D Models online and eliminating the need for specialized software installations. ",
-        demoLink: "http://lifcohydraulics.com/ConfigTest"
-    };
-    modal.projectData.push(modal.ViewerApp);
-
     // Cocktails
     modal.CocktailsApp = {
         name: "Find your favorite cocktail",
