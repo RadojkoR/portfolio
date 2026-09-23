@@ -609,7 +609,10 @@ p {
   background-image: url("../../../assets/portfolioImg/kurs-nordijskog-hodanja.webp");
 }
 .portfolio .portfolioContainer .projectContainerPlanoraHub {
-  background-image: url("../../../assets/portfolioImg/WebHubStudio.webp");
+  background-image: url("../../../assets/portfolioImg/PlanoraHub.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .portfolio .portfolioContainer .projectContainerWebHubStudio {
   background-image: url("../../../assets/portfolioImg/WebHubStudio.webp");
