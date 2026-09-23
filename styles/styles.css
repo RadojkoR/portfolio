@@ -608,6 +608,9 @@ p {
 .portfolio .portfolioContainer .projectContainerKursNordijskogHodanja {
   background-image: url("../../../assets/portfolioImg/kurs-nordijskog-hodanja.webp");
 }
+.portfolio .portfolioContainer .projectContainerPlanoraHub {
+  background-image: url("../../../assets/portfolioImg/WebHubStudio.webp");
+}
 .portfolio .portfolioContainer .projectContainerWebHubStudio {
   background-image: url("../../../assets/portfolioImg/WebHubStudio.webp");
 }

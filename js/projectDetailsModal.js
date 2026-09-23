@@ -21,6 +21,15 @@ const projectDetailsModalInit = () => {
     // };
     // modal.projectData.push(modal.worldCuisine);
 
+    // Planora Hub
+    modal.planoraHubApp = {
+        name: "Planora Hub",
+        text: "Planora Hub is my professional website dedicated to building modern, high-performing web solutions. I specialize in custom web development, creative design, SEO optimization, reliable web hosting, and bilingual websites (English & Serbian). Each project is designed to be fast, secure, and visually engaging, helping businesses grow their online presence",
+        demoLink: "https://planorahub.com/",
+        // codeLink: "https://github.com/RadojkoR/IzoDecorGlass"
+    };
+    modal.projectData.push(modal.planoraHubApp);
+
     // Web Hub Studio
     modal.webHubStudioApp = {
         name: "Web Hub Studio",
