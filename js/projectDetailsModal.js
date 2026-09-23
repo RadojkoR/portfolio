@@ -201,6 +201,7 @@ const projectDetailsModalInit = () => {
         });
     });
 
+    
     // SEE ALL PROJECT BUTTON
     modal.seeMoreProjectsBtn.addEventListener('click', () => {
         modal.portfolioContainer.classList.toggle("showAllProjects");
